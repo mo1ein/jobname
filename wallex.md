@@ -1,1 +1,1 @@
-# [wallex](www.wallex.ir)
+# [wallex](https://wallex.ir)

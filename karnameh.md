@@ -1,1 +1,1 @@
-# [karnameh](www.karnameh.com)
+# [karnameh](https://karnameh.com)
