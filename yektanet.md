@@ -1,1 +1,1 @@
-# [yektanet](www.yektanet.com)
+# [yektanet](https://yektanet.com)
