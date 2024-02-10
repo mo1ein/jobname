@@ -1,1 +1,1 @@
-# Quiz of Kings
+# [Quiz of Kings](https://quizofkings.com )

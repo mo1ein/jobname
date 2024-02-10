@@ -1,1 +1,1 @@
-# [golrang-ozon](www.ozon-social)
+# [golrang-ozon](https://ozon-social)
