@@ -1,6 +1,15 @@
 # [digikala](https://digikala.com)
-
-### Python developer(Digicloud)
+### Python developer (Digicloud)
+### Interview process
+```mermaid
+flowchart LR
+    sr(Send resume) --> hr(HR call)
+    hr(HR call) --> ti1(1st Technical Interview)
+    ti1(1st Technical Interview) --> t(Task)
+    t(Task) --> ti2("2nd Technical Interview (task review)") 
+    ti2("2nd Technical Interview (task review)") -- rejected --x hri(HR Interview)
+    hri(HR Interview) -.-> o(Offer)
+```
 
 ## 1st interview
 
