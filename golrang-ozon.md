@@ -1,5 +1,4 @@
 # [golrang-ozon](https://ozon-social)
-# [cpol](https://cpol.co)
 
 ## Golang developer
 ### Interview process
