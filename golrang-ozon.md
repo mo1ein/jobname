@@ -1,1 +1,10 @@
 # [golrang-ozon](https://ozon-social)
+# [cpol](https://cpol.co)
+
+## Golang developer
+### Interview process
+```mermaid
+flowchart LR
+    sr(Send resume) --> hr(HR call)
+    hr(HR call) --> ti1(1st Technical Interview) --rejected--x hri(HR Interview on-site) -.-> o(Offer)
+```
