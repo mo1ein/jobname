@@ -1,5 +1,14 @@
 # [snapp](snapp.ir)
 
+### Interview process
+```mermaid
+flowchart LR
+    sr(Send resume) --> hr(HR call) --> ti1(1st Technical Interview) --rejected--x  ti1(2nd Technical Interview) -.-> hri(HR Interview) -.-> o(Offer)
+```
+### Interview duration
+
+do nafar bodan
+
 - Tell us about yourself.
 
 - How know a project or code(codebase?), is good? What's your parameters to determine?
@@ -37,3 +46,6 @@
 - Do u know what is memory leak? how we handle it in golang?
 
 - What is defer? and give me an example of usage.
+
+## Score
+8/10
