@@ -4,7 +4,6 @@
 ```mermaid
 flowchart LR
     sr(Send resume) --> hr(HR call) --> ti1(1st Technical Interview) --rejected--x hri(HR Interview) -.-> o(Offer)
-    ti1(1st Technical Interview) -->  r((" "))
 ```
 ### Interview duration
 when start when end
