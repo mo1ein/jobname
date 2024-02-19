@@ -6,7 +6,7 @@ flowchart LR
     sr(Send resume) --> hr(HR call)
     hr(HR call) --> ti1(1st Technical Interview)
     ti1(1st Technical Interview) --> t(Task)
-    t(Task) --> ti2("2nd Technical Interview (task review)") 
+    t(Task) --> ti2("2nd Technical Interview (task review)")
     ti2("2nd Technical Interview (task review)") -- rejected --x hri(HR Interview)
     hri(HR Interview) -.-> o(Offer)
 ```
@@ -53,3 +53,9 @@ flowchart LR
 ### Task
 [this](./DigiCloud_Programming_Challenge.pdf)
 And my answer
+
+
+### Score
+#### 8.5/10
+
+TODO
