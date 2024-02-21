@@ -1,5 +1,4 @@
 # [Quiz of Kings](https://quizofkings.com )
-# [karnameh](https://karnameh.com)
 
 ## BackEnd Developer (Go)
 ### Interview process
