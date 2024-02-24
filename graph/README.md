@@ -1,5 +1,7 @@
 # [graph](https://graph-inc.ir)
 
+### Status
+#### 📜📞👱🏻‍♀️❌
 ## C++ developer
 ### Interview process
 ```mermaid

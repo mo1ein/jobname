@@ -1,10 +1,12 @@
 # [exalab](https://exalab.com)
 
+### Status
+#### 📜📞🔧❌
 ### Python developer
 ### Interview process
 ```mermaid
 flowchart LR
-    sr(Send resume) --> hr(HR call) --> ti1(1st Technical Interview) -.-> hri(HR Interview) -.-> o(Offer)
+    sr(Send resume) --> hr(HR call) --> ti(Technical Interview) --rejected--x hri(HR Interview) -.-> o(Offer)
 ```
 ### Interview duration
 n hours
