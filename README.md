@@ -15,7 +15,7 @@ Table of Contents
 - [gharar](./gharar.md)
 - [Digikala](./digikala.md)
 - [Snapp](./snapp.md)
-- [Snapp Market](./snapp-market.md)
+- [Snapp Market](./snapp/snapp-market.md)
 - [Yektanet](./yektanet.md)
 - [Wallex](./wallex.md)
 - [Graph](./graph)
