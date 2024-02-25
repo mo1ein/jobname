@@ -1,0 +1,646 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>jobname</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded "><a href="phanous.html"><strong aria-hidden="true">1.</strong> phanous</a></li><li class="chapter-item expanded "><a href="gharar.html"><strong aria-hidden="true">2.</strong> gharar</a></li><li class="chapter-item expanded "><a href="digikala/index.html"><strong aria-hidden="true">3.</strong> Digikala</a></li><li class="chapter-item expanded "><a href="snapp/index.html"><strong aria-hidden="true">4.</strong> Snapp</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="snapp/snapp_cab_1.html"><strong aria-hidden="true">4.1.</strong> snapp cab 1</a></li><li class="chapter-item expanded "><a href="snapp/snapp_cab_2.html"><strong aria-hidden="true">4.2.</strong> snapp cab 2</a></li><li class="chapter-item expanded "><a href="snapp/snapp-market.html"><strong aria-hidden="true">4.3.</strong> Snapp Market</a></li></ol></li><li class="chapter-item expanded "><a href="yektanet.html"><strong aria-hidden="true">5.</strong> Yektanet</a></li><li class="chapter-item expanded "><a href="wallex.html"><strong aria-hidden="true">6.</strong> Wallex</a></li><li class="chapter-item expanded "><a href="graph/index.html"><strong aria-hidden="true">7.</strong> Graph</a></li><li class="chapter-item expanded "><a href="golrang-ozon.html"><strong aria-hidden="true">8.</strong> Golrang-ozon</a></li><li class="chapter-item expanded "><a href="hamkaran-system.html"><strong aria-hidden="true">9.</strong> Hamkaran system</a></li><li class="chapter-item expanded "><a href="hamravesh/hamravesh.html"><strong aria-hidden="true">10.</strong> Hamravesh</a></li><li class="chapter-item expanded "><a href="hermes.html"><strong aria-hidden="true">11.</strong> Hermes</a></li><li class="chapter-item expanded "><a href="sternx.html"><strong aria-hidden="true">12.</strong> Sternx</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">13.</strong> Quiz of Kings</div></li><li class="chapter-item expanded "><a href="narvan.html"><strong aria-hidden="true">14.</strong> Narvan</a></li><li class="chapter-item expanded "><a href="sizetel.html"><strong aria-hidden="true">15.</strong> siztel</a></li><li class="chapter-item expanded "><a href="cpol.html"><strong aria-hidden="true">16.</strong> cpol</a></li><li class="chapter-item expanded "><a href="daa.html"><strong aria-hidden="true">17.</strong> Dadeh Afzar Arman</a></li><li class="chapter-item expanded "><a href="mhholding.html"><strong aria-hidden="true">18.</strong> MH holding</a></li><li class="chapter-item expanded "><a href="itool.html"><strong aria-hidden="true">19.</strong> itool</a></li><li class="chapter-item expanded "><a href="autoshenas.html"><strong aria-hidden="true">20.</strong> autoshenas</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">jobname</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="jobname--جابنامه"><a class="header" href="#jobname--جابنامه">Jobname | جاب‌نامه</a></h1>
+<p>This repo is about my interview experiences in Iran.</p>
+<h1 id="table-of-contents"><a class="header" href="#table-of-contents">Table of Contents</a></h1>
+<ul>
+<li><a href="index.html#companies">Companies</a></li>
+<li><a href="index.html#interfuckingview">interfuckingview</a></li>
+</ul>
+<h2 id="companies"><a class="header" href="#companies">Companies</a></h2>
+<ul>
+<li>Cafe bazzar</li>
+<li><a href="./phanous.html">phanous</a></li>
+<li><a href="./gharar.html">gharar</a></li>
+<li><a href="./digikala/README.html">Digikala</a></li>
+<li><a href="./snapp/README.html">Snapp</a></li>
+<li><a href="./snapp/snapp-market.html">Snapp Market</a></li>
+<li><a href="./yektanet.html">Yektanet</a></li>
+<li><a href="./wallex.html">Wallex</a></li>
+<li><a href="./graph/README.html">Graph</a></li>
+<li><a href="./golrang-ozon.html">Golrang-ozon</a></li>
+<li><a href="./hamkaran-system.html">Hamkaran system</a></li>
+<li><a href="./hamravesh/hamravesh.html">Hamravesh</a></li>
+<li><a href="./hermes.html">Hermes</a></li>
+<li><a href="./sternx.html">Sternx</a></li>
+<li><a href="">Quiz of Kings</a></li>
+<li><a href="./narvan.html">Narvan</a></li>
+<li><a href="./sizetel.html">siztel</a></li>
+<li><a href="./cpol.html">cpol</a></li>
+<li><a href="./daa.html">Dadeh Afzar Arman</a></li>
+<li><a href="./mhholding.html">MH holding</a></li>
+<li><a href="./itool.html">itool</a></li>
+<li><a href="./autoshenas.html">autoshenas</a></li>
+</ul>
+<h1 id="interfuckingview"><a class="header" href="#interfuckingview">interfuckingview</a></h1>
+<p>This is about my interview experiences out of Iran.
+TODO (add README) :)</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="phanous"><a class="header" href="#phanous"><a href="https://phanous.ir">phanous</a></a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gharar"><a class="header" href="#gharar">gharar</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="digikala"><a class="header" href="#digikala"><a href="https://digikala.com">digikala</a></a></h1>
+<h3 id="python-developer-digicloud"><a class="header" href="#python-developer-digicloud">Python developer (Digicloud)</a></h3>
+<h3 id="interview-process"><a class="header" href="#interview-process">Interview process</a></h3>
+<pre><code class="language-mermaid">flowchart LR
+    sr(Send resume) --&gt; hr(HR call)
+    hr(HR call) --&gt; ti1(1st Technical Interview)
+    ti1(1st Technical Interview) --&gt; t(Task)
+    t(Task) --&gt; ti2("2nd Technical Interview (task review)")
+    ti2("2nd Technical Interview (task review)") -- rejected --x hri(HR Interview)
+    hri(HR Interview) -.-&gt; o(Offer)
+</code></pre>
+<h2 id="1st-interview"><a class="header" href="#1st-interview">1st interview</a></h2>
+<p dir = "rtl"> خودت رو معرفی کن</p>
+<ul>
+<li>
+<p>What is abc?</p>
+</li>
+<li>
+<p>What is decorator? and what feature python have that help decorator functionallity?</p>
+</li>
+<li>
+<p>What is django architecture? what is MVT?</p>
+</li>
+<li>
+<p>What is DI?</p>
+</li>
+<li>
+<p>Can we inherit from multiclasses in python? what algorithm behind it?</p>
+</li>
+<li>
+<p>What is list comprehension?</p>
+</li>
+<li>
+<p>What is SOLID?</p>
+</li>
+<li>
+<p>What is design pattern and which design pattern do u used?</p>
+</li>
+<li>
+<p>What is microservice? ...</p>
+</li>
+<li>
+<p>How can solve latency between our services in microservice architecture? how protect for loss data....</p>
+</li>
+<li>
+<p>Databases how in microservice arch?</p>
+</li>
+<li>
+<p>What is ACID?</p>
+</li>
+<li>
+<p>scenario</p>
+</li>
+<li>
+<p>What is RPC?</p>
+</li>
+<li>
+<p>How much do u work for DevOps stuffs?</p>
+</li>
+<li>
+<p>What is your git workflow?</p>
+</li>
+<li>
+<p>What is async and parallelism?</p>
+</li>
+</ul>
+<h3 id="task"><a class="header" href="#task">Task</a></h3>
+<p><a href="digikala/./DigiCloud_Programming_Challenge.pdf">this</a>
+And my answer</p>
+<h2 id="2nd-interview"><a class="header" href="#2nd-interview">2nd interview</a></h2>
+<p>TODO: about task</p>
+<h3 id="score"><a class="header" href="#score">Score</a></h3>
+<h4 id="8510"><a class="header" href="#8510">8.5/10</a></h4>
+<p>TODO</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="snapp"><a class="header" href="#snapp">Snapp</a></h1>
+<ul>
+<li><a href="snapp/./snapp_cab_1.html">first</a></li>
+<li><a href="snapp/./snapp_cab_1.html">second</a></li>
+<li><a href="snapp/./snapp-market.html">snapp market</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="snapp-1"><a class="header" href="#snapp-1"><a href="snapp/snapp.ir">snapp</a></a></h1>
+<h3 id="interview-process-1"><a class="header" href="#interview-process-1">Interview process</a></h3>
+<pre><code class="language-mermaid">flowchart LR
+    sr(Send resume) --&gt; hr(HR call) --&gt; ti1(1st Technical Interview) --rejected--x  ti2(2nd Technical Interview) -.-&gt; hri(HR Interview) -.-&gt; o(Offer)
+</code></pre>
+<h3 id="interview-duration"><a class="header" href="#interview-duration">Interview duration</a></h3>
+<h2 id="score-1"><a class="header" href="#score-1">Score</a></h2>
+<p>7/10</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="snapp-2"><a class="header" href="#snapp-2"><a href="snapp/snapp.ir">snapp</a></a></h1>
+<h3 id="interview-process-2"><a class="header" href="#interview-process-2">Interview process</a></h3>
+<pre><code class="language-mermaid">flowchart LR
+    sr(Send resume) --&gt; hr(HR call) --&gt; ti1(1st Technical Interview) --rejected--x  ti2(2nd Technical Interview) -.-&gt; hri(HR Interview) -.-&gt; o(Offer)
+</code></pre>
+<h3 id="interview-duration-1"><a class="header" href="#interview-duration-1">Interview duration</a></h3>
+<p>do nafar bodan</p>
+<ul>
+<li>
+<p>Tell us about yourself.</p>
+</li>
+<li>
+<p>How know a project or code(codebase?), is good? What's your parameters to determine?</p>
+</li>
+<li>
+<p>What is SOLID? tell us about 2 of them.</p>
+</li>
+<li>
+<p>What is CI/CD? and differences?</p>
+</li>
+<li>
+<p>Do u Dockerize golang project?</p>
+</li>
+<li>
+<p>How we can optimize docker image size? what parameters depends it?</p>
+</li>
+<li>
+<p>Difference between virtual machine and docker?</p>
+</li>
+<li>
+<p>Which command use to if container is up or not do sth? idk i think docker ps</p>
+</li>
+<li>
+<p>What is index in database?</p>
+</li>
+<li>
+<p>What is Microservices vs monolotic? when u choose?</p>
+</li>
+<li>
+<p>Do u know semantic versioning?</p>
+</li>
+<li>
+<p>SQL vs NoSQL</p>
+</li>
+<li>
+<p>What is CAP theory?</p>
+</li>
+<li>
+<p>We have two api and we have feature in new and how can we compatible with older version? v1 v2</p>
+</li>
+<li>
+<p>Difference between multiprocess and multithread?</p>
+</li>
+<li>
+<p>What is mutable and immutable and why python tuples can change but they are immutable</p>
+</li>
+<li>
+<p>How u optimize a query? what's your approach to better a query? and i said my answer is correct? not an exact answer u can use explain...</p>
+</li>
+<li>
+<p>Do u know what is memory leak? how we handle it in golang?</p>
+</li>
+<li>
+<p>What is defer? and give me an example of usage.</p>
+</li>
+</ul>
+<h2 id="score-2"><a class="header" href="#score-2">Score</a></h2>
+<p>8/10</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="snapp-market"><a class="header" href="#snapp-market">snapp-market</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="yektanet"><a class="header" href="#yektanet"><a href="https://yektanet.com">yektanet</a></a></h1>
+<p dir="rtl">از اینترنت نمی‌شد استفاده کرد ولی از مصاحبه‌کنده می‌شد سوال کرد.</p>
+<p dir="rtl">کل مصاحبه نیم ساعت بود که هیچ معرفی و اینام نداشت و دو تا سوال تو گوگل داک نوشته بودن که همون جا کد میزدم سوالاش اینا بود</p>
+<p dir="rtl">تابعی بنویسید که عدد n را ورودی بگیرد. اگر عدد به 15 بخش‌پذیر بود، عبارت FizzBuzz، اگربه 3 بخش‌پذیر بود، عبارت Fizz و اگر به 5 بخش‌پذیر بود، عبارت Buzz را چاپ کند.</p>
+<pre><code>def check_buzz(n: int) -&gt; str | None:
+    if n % 15 == 0:
+        return "FizzBuzz"
+    if n % 3 == 0:
+        return "Fizz"
+    if n % 5 == 0:
+        return "Buzz"
+    return None
+
+</code></pre>
+<ul>
+<li><a href="https://leetcode.com/problems/two-sum/">two sum</a></li>
+</ul>
+<p>my first answer with o(n ^ 2)</p>
+<pre><code class="language-python">def check_2sum(nums: list, k: int) -&gt; tuples:
+index = 0
+for item in n:
+    for item_2 in n[index +1:]:
+        if item_2 + item == k:
+            return item, item_2
+    index +=1
+</code></pre>
+<p>my second answer with O(n)</p>
+<pre><code class="language-python">def check_2sum(nums: list, k: int) -&gt; tuples:
+    map = {}
+    for i in range(len(nums)):
+        map[nums[i]] = i
+    for i in range(len(nums)):
+        target = k - nums[i]
+        if target in map[target] != i:
+            return i, nums
+
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="wallex"><a class="header" href="#wallex"><a href="https://wallex.ir">wallex</a></a></h1>
+<h3 id="interview-process-3"><a class="header" href="#interview-process-3">Interview process</a></h3>
+<pre><code class="language-mermaid">flowchart LR
+    sr(Send resume) --&gt; hr(HR call) --&gt; ti1(1st Technical Interview) --rejected--x hri(HR Interview) -.-&gt; o(Offer)
+</code></pre>
+<h3 id="interview-duration-2"><a class="header" href="#interview-duration-2">Interview duration</a></h3>
+<p>when start when end
+1 hour &amp; 10 minutes</p>
+<p dir = "rtl">مصاحبه دو نفر بودن به جز خودم که هر دو فنی بودن.</p>
+<ul>
+<li>Tell us about yourself.</li>
+<li>Can u tell software layer when request come from to our code and where go?</li>
+<li>What is ORM?</li>
+<li>Suppose we want to sent 1 million notification and need request it to db how u handle it?</li>
+<li>When we want to know a user authenticated or not for some action, how know that and how we handle that?</li>
+<li>Can u example of some tables with one-to-one one-to-many many-to-many many-to-one?</li>
+<li>Consider we have some tables and we have fk in each...</li>
+<li>What is design pattern? why is good?</li>
+<li>What is SOLID?</li>
+<li>What is dependency inversion?</li>
+<li>Example dependency inversion in real world.</li>
+<li>Example dependency inversion in code. interface go ro gofram</li>
+<li>When u use cache?</li>
+<li>TDD is OK? when we say don't use what is your reaction?</li>
+<li>What's your languages u experienced?</li>
+<li>What is disturb u in work?</li>
+<li>Why you want to out or why u want to new company?</li>
+<li>Any question? what is your team structure</li>
+</ul>
+<h2 id="score-3"><a class="header" href="#score-3">Score</a></h2>
+<p>7/10</p>
+<p>hr after i messaged to linkedin call me back and said overqualified and position hold!!!
+az in sherkate khob baeiide</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="graph"><a class="header" href="#graph"><a href="https://graph-inc.ir">graph</a></a></h1>
+<h3 id="status"><a class="header" href="#status">Status</a></h3>
+<h4 id=""><a class="header" href="#">📜📞👱🏻‍♀️❌</a></h4>
+<h2 id="c-developer"><a class="header" href="#c-developer">C++ developer</a></h2>
+<h3 id="interview-process-4"><a class="header" href="#interview-process-4">Interview process</a></h3>
+<pre><code class="language-mermaid">flowchart LR
+    sr(Send resume) --&gt; hr(HR call) --&gt; hri(HR Interview) --&gt; task(Technical Task) --rejected--x ti(Technical Interview) -.-&gt; o(Offer)
+</code></pre>
+<h3 id="hr-interview"><a class="header" href="#hr-interview">HR Interview</a></h3>
+<ul dir="rtl">
+    <li>خودت رو معرفی کن.</li>
+    <li>ترم چندی؟ دانشگاهت چقد مونده؟</li>
+    <li>قصد مهاجرت داری؟</li>
+    <li>پنج سال آینده خودتو کجا می‌بینی؟</li>
+    <li>حقوق مدنظرت؟</li>
+</ul>
+<h3 id="task-1"><a class="header" href="#task-1">Task</a></h3>
+<p dir="rtl">
+یک
+<a href="graph/./graph-task.pdf">تسک</a>
+فرستادن که ددلاینش یک هفته بود.
+<br />
+تسکش رو خوب نزدم و یه چیزی ماسمال کردم فرستادم که زده باشم. ایمیل دادن گفتن فلان جاشو درست کن بفرست که دیگه نفرستادم خیلی خوب بلد نبودم اون تایم تسکه رو و بیخیالش شدم.
+</p>
+<h3 id="score-4"><a class="header" href="#score-4">Score</a></h3>
+<h4 id="6510"><a class="header" href="#6510">6.5/10</a></h4>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="golrang-ozon"><a class="header" href="#golrang-ozon"><a href="https://ozon-social">golrang-ozon</a></a></h1>
+<h2 id="golang-developer"><a class="header" href="#golang-developer">Golang developer</a></h2>
+<h3 id="interview-process-5"><a class="header" href="#interview-process-5">Interview process</a></h3>
+<pre><code class="language-mermaid">flowchart LR
+    sr(Send resume) --&gt; hr(HR call)
+    hr(HR call) --&gt; ti1(Technical Interview) --rejected--x hri(HR Interview on-site) -.-&gt; o(Offer)
+</code></pre>
+<h3 id="1st-interview-1"><a class="header" href="#1st-interview-1">1st Interview</a></h3>
+<ul>
+<li>
+<p>Tell me about yourself.</p>
+</li>
+<li>
+<p>How does Golang handle memory management?</p>
+</li>
+<li>
+<p>Golang is OOP? have inheritance?</p>
+</li>
+<li>
+<p>What is Mutex?</p>
+</li>
+<li>
+<p>Suppose we have send a request to a service and some action failed. how can handle to break after process or other works?</p>
+</li>
+<li>
+<p>What is channel?</p>
+</li>
+<li>
+<p>What is waitgroup?</p>
+</li>
+<li>
+<p>Have you experience with RabbitMQ?</p>
+</li>
+</ul>
+<h4 id="live-code"><a class="header" href="#live-code">Live code</a></h4>
+<p dir="rtl">
+یه سوال الگوریتمی از codewars انتخاب کرده بودن که
+<a href="https://www.codewars.com/kata/515decfd9dcfc23bb6000006/train/go">این</a>
+بود. سرچ کردن هم آزاد بود.
+<br />
+من با استفاده از string و این‌ها سعی کردم مسئله رو حل کنم و روشی هم که تو ذهنم داشتم اوکی بود و مصاحبه‌‌کننده تایید کرد اما یه سری پیشنهاد داد که می‌تونی از لایبرری استفاده کنی برای ولیدیشن که خب من گفتم نمی‌دونستم می‌شه استفاده کرد چون مسائل الگوریتمی جوریه که می‌خوان بدونن چطور فکر می‌کنی. یه جاهایی برای تبدیل string به int سرچ کردم از اون‌جایی که سرچ آزاد بود. در کل ایزی بود.
+</p>
+<h3 id="2nd-interview-1"><a class="header" href="#2nd-interview-1">2nd Interview</a></h3>
+<p>TODO</p>
+<h3 id="score-5"><a class="header" href="#score-5">Score</a></h3>
+<h4 id="710"><a class="header" href="#710">7/10</a></h4>
+<p dir="rtl">قبلش به من نگفتن که لایوکد هم هست و من خیلی شرایط درستی براش نداشتم هر چند که کار دراومد ولی بهتر بود می‌گفتن.</p>
+<p>TODO: I rejected in first one</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="hamkaran-system"><a class="header" href="#hamkaran-system">Hamkaran system</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="hamravesh"><a class="header" href="#hamravesh"><a href="https://hamravesh.com/">hamravesh</a></a></h1>
+<h3 id="interview-process-6"><a class="header" href="#interview-process-6">Interview process</a></h3>
+<pre><code class="language-mermaid">flowchart LR
+    sr(Send resume) --&gt; hr(HR call) --&gt; task(Technical Task) --rejected--x  ti(Technical Interview) -.-&gt; hri(HR Interview) -.-&gt; o(Offer)
+</code></pre>
+<h3 id="interview-duration-3"><a class="header" href="#interview-duration-3">Interview duration</a></h3>
+<p>task deadline 1 week</p>
+<h3 id="task-2"><a class="header" href="#task-2">Task</a></h3>
+<p>task file is [here](./Back-end Task.pdf).</p>
+<p>And my answer is [here](hamravesh project path).</p>
+<h3 id="score-6"><a class="header" href="#score-6">Score</a></h3>
+<h4 id="510"><a class="header" href="#510">5/10</a></h4>
+<p dir="rtl">تسک، خیلی چیز خاصی نداشت اما چون من اون موقع خیلی با این ابزارها کار نکرده بودم، عمیق نبودم روشون. گر جه فرستادم پروژه رو که مقداری از نیازمندی‌های پروژه رو پوشش می‌داد. در کل مصاحبه‌هایی که اولش تسک باید بزنی تا به نوعی وارد فرآیند مصاحبه بشی یه مقدار ستمه. چون شما وقت می‌ذارید در هر صورت اما ممکنه کامل زخمت‌تون هدر بره چون صرفا تسکیه که برای هدف خاصیه نمی‌تونید به عنوان پروژه‌ای جایی بذارید یا یادگیری جالبی توش داشته باشه. خیلی نمی‌شه به فرآیند مصاحبه نظر داد فقط می‌تونم تا همین حایی که تجربه کردم نظر بدم که اگه مصاحبه‌ها مسئله کوچک و یا سوال‌ چالش‌برانگیز باشه بهتره باز هم همه اینا سلیقس ولی از ساید کسی که مصاحبه می‌کنه نمی‌خوام نظر بدن از ساید خودم به نظرم می‌شه جور دیگری فیلتر کرد.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="hermes-capital"><a class="header" href="#hermes-capital"><a href="https://hermescapital.ir">hermes capital</a></a></h1>
+<p dir="rtl">یکی از عجیب‌ترین مصاحبه هایی که داشتم بود. اولش شروع کرد به توضیح شرکت و استک که با clojure عه و بعدش حتی ازم نخواست خودمو معرفی کنم و مستقیم رفت سراغ طرح یک سوال. حتی وب کم رو هم باز نکرد. و یه ساعت بحث و صحبت در مورد این سوال بود.</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Pirate_game">game theory question (pirate game)</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="sternx"><a class="header" href="#sternx"><a href="sternx.de">sternx</a></a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="narvan"><a class="header" href="#narvan"><a href="https://narvanventures.com/">narvan</a></a></h1>
+<h3 id="status-1"><a class="header" href="#status-1">Status</a></h3>
+<h4 id="-1"><a class="header" href="#-1">📜📞🔧👱🏻‍♀️✅</a></h4>
+<h2 id="python-developer"><a class="header" href="#python-developer">Python developer</a></h2>
+<h3 id="interview-process-7"><a class="header" href="#interview-process-7">Interview process</a></h3>
+<pre><code class="language-mermaid">flowchart LR
+    sr(Send resume) --&gt; hr(HR call) --&gt; ti1(Technical Interview) --&gt; hri(HR Interview on-site) --&gt; o(Offer) --accepted--&gt; r((" "))
+</code></pre>
+<h3 id="technical-interview"><a class="header" href="#technical-interview">Technical Interview</a></h3>
+<ul>
+<li>Tell me about yourself.</li>
+<li>What is systemD?</li>
+<li>How can we know capacity of disk or directory? what command?</li>
+<li>What is your OS?</li>
+<li>How much you experienced with django?</li>
+<li>What is middleware in django?</li>
+<li>What is your typing speed?</li>
+<li>Do you like golang or python and why?</li>
+<li>Do you familiar with docker?</li>
+<li>How network models in docker?</li>
+<li>What is http1 and http2 differences?</li>
+<li>Python is call by reference or call by value?</li>
+<li>What is call by reference and value?</li>
+<li>What is gRPC?</li>
+<li>What are differences between python async and go concurrency?</li>
+<li>What databases do you work?</li>
+<li>What is NoSql?</li>
+<li>mongoDB is NoSql?</li>
+<li>Can you write query?</li>
+<li>What is LEFT OUTER JOIN?</li>
+<li>What is GIL?</li>
+<li>What is python memory management?</li>
+</ul>
+<p>TODO: add more questions</p>
+<h3 id="hr-interview-on-site"><a class="header" href="#hr-interview-on-site">HR Interview (On-site)</a></h3>
+<p>TODO</p>
+<h3 id="score-7"><a class="header" href="#score-7">Score</a></h3>
+<h4 id="7510"><a class="header" href="#7510">7.5/10</a></h4>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="sizetel"><a class="header" href="#sizetel"><a href="http://siz-tel.com/">sizetel</a></a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="cpol"><a class="header" href="#cpol"><a href="https://cpol.co">cpol</a></a></h1>
+<h3 id="interview-process-8"><a class="header" href="#interview-process-8">Interview process</a></h3>
+<pre><code class="language-mermaid">flowchart LR
+    sr(Send resume) --&gt; hr(HR call)
+    hr(HR call) --&gt; hri(HR Interview)
+    hri(HR Interview) --&gt; ti1(1st Technical Interview)
+    ti1(1st Technical Interview) --&gt; o(Offer) --rejected--&gt; r((" "))
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="daa"><a class="header" href="#daa"><a href="http://daa.computer">daa</a></a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="mhholding"><a class="header" href="#mhholding"><a href="">mhholding</a></a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="itool"><a class="header" href="#itool">itool</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="autoshenas"><a class="header" href="#autoshenas"><a href="https://autoshenas.ir">autoshenas</a></a></h1>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </div>
+    </body>
+</html>
