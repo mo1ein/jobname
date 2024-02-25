@@ -1,7 +1,6 @@
 # Summary
 
 [Introduction](README.md)
-
 - [phanous](./phanous.md)
 - [gharar](./gharar.md)
 - [Digikala](./digikala/README.md)
@@ -17,7 +16,7 @@
 - [Hamravesh](./hamravesh/hamravesh.md)
 - [Hermes](./hermes.md)
 - [Sternx](./sternx.md)
-- [Quiz of Kings]()
+- [Quiz of Kings](./QuizOfKings.md)
 - [Narvan](./narvan.md)
 - [siztel](./sizetel.md)
 - [cpol](./cpol.md)
