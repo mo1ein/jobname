@@ -1,0 +1,10 @@
+bin/
+todo.md
+gh-md-toc
+
+# Ignore Jetbrains specific files.
+.idea/
+
+# Ignore Vim temporary and swap files.
+*.sw?
+*~
