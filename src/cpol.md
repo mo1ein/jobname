@@ -1,5 +1,8 @@
 # [cpol](https://cpol.co)
 
+### Status
+#### 📜📞👱🏻‍♀️🔧❎
+## Back-End developer (Django)
 ### Interview process
 ```mermaid
 flowchart LR
@@ -8,10 +11,6 @@ flowchart LR
     hri(HR Interview) --> ti1(1st Technical Interview)
     ti1(1st Technical Interview) --> o(Offer) --rejected--> r((" "))
 ```
-
-### Status
-#### 📜📞👱🏻‍♀️🔧❎
-## Back-End developer (Django)
 
 ### Apply way
 jobinja
@@ -51,3 +50,4 @@ TODO offer story
 <p dir="rtl">
 دوست نداشتم این تجربه رو گرچه منجر به آفر شد. از نظر میزان سختی و چالش، من چیزی حس نکردم. خیلی راحت و بدون زحمت بود کل فرآیند که خود این، قضیه رو عجیب می‌کنه.
 </p>
+TODO: my rejecttion story

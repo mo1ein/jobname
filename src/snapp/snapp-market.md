@@ -1,1 +1,1 @@
-# snapp-market
+# Snapp Market

@@ -1,5 +1,7 @@
 # [golrang-ozon](https://ozon-social)
 
+### Status
+#### 📜📞🔧👱🏻‍♀️❎
 ## Golang developer
 ### Interview process
 ```mermaid
