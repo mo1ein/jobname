@@ -11,6 +11,7 @@ Table of Contents
 
 ## Companies
 - Cafe bazzar
+- [exa](./exalab.md)
 - [phanous](./phanous.md)
 - [gharar](./gharar.md)
 - [Digikala](./digikala/README.md)
