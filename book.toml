@@ -5,8 +5,8 @@ multilingual = true
 src = "src"
 title = "jobname"
 
-# [preprocessor.mermaid]
-# command = "mdbook-mermaid"
+[preprocessor.mermaid]
+command = "./bin/mdbook-mermaid"
 
-# [output.html]
-# additional-js = ["mermaid.min.js", "mermaid-init.js"]
+[output.html]
+additional-js = ["mermaid.min.js", "mermaid-init.js"]
