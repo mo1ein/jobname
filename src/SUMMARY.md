@@ -11,7 +11,7 @@
 - [Hamkaran system](./hamkaran-system.md)
 - [Hamravesh](./hamravesh/hamravesh.md)
 - [Hermes](./hermes.md)
-- [itool](./itool.md)
+- [itoll](./itoll.md)
 - [Narvan](./narvan.md)
 - [Ozone social](./golrang-ozon.md)
 - [Quiz of Kings](./QuizOfKings.md)
