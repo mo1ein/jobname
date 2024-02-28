@@ -23,4 +23,4 @@ About 1 hour
 - [Game theory question (pirate game)](https://en.wikipedia.org/wiki/Pirate_game)
 
 ### Score
-5/10
+<h5><mark style="background-color:#ffd700">5/10</mark></h5>

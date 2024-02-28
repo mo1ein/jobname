@@ -2,6 +2,7 @@
 
 ### Status
 #### 📜📞🔧❌
+## Software Engineer
 ### Interview process
 ```mermaid
 flowchart LR
@@ -67,4 +68,4 @@ def check_2sum(nums: list, k: int) -> tuples:
 ```
 
 ### Score
-**5/10**
+<h5><mark style="background-color:#ffd700">5/10</mark></h5>

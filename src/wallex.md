@@ -50,7 +50,7 @@ when start when end
 - git flow... and asked why u don't used rebase and merged master to your branch?...
 
 ## Score
-**7/10**
+<h5><mark style="background-color:#54ca56">7/10</mark></h5>
 
 hr after i messaged to linkedin call me back and said overqualified and position hold!!!
 az in sherkate khob baeiide
