@@ -1,17 +1,39 @@
-# [digikala](https://digikala.com)
-### Python developer (Digicloud)
+# [digikala(digicloud)](https://digicloud.ir/)
+
+### Status
+#### 📜📞🔧📝⚖️❌
+## Python Engineer (Digicloud)
 ### Interview process
 ```mermaid
 flowchart LR
-    sr(Send resume) --> hr(HR call)
-    hr(HR call) --> ti1(1st Technical Interview)
-    ti1(1st Technical Interview) --> t(Task)
-    t(Task) --> ti2("2nd Technical Interview (task review)")
-    ti2("2nd Technical Interview (task review)") -- rejected --x hri(HR Interview)
-    hri(HR Interview) -.-> o(Offer)
+    sr(Send resume) --> hr(HR Call) --> ti1(Technical Interview) --> t(Task) --> ti2(Task Review) -- rejected --x hri(HR Interview) -.-> o(Offer)
 ```
 
-## 1st interview
+### Apply way
+jobinja & site
+
+### Interview date
+- **Sent Resume** <br /> 1401.08.02
+
+- **HR Call**<br /> 1401.08.09
+
+- **Technical Interview** <br> 1402.08.15 AT 4 PM
+
+- **Task** <br /> They sent 1402.08.23 <br /> I sent 1402.08.29
+
+- **Task Review** <br> 1402.09.08 AT 1 PM
+
+- **Rejection Email** <br /> 1402.09.28
+
+### Interview duration
+- **Technical Interview** <br> 1 hour & About 30 minutes
+
+- **Task** <br /> 1 week
+
+- **Task Review** <br> About 1 hour
+
+
+### Technical Interview
 
 <p dir = "rtl"> خودت رو معرفی کن</p>
 
@@ -53,10 +75,8 @@ flowchart LR
 [this](./DigiCloud_Programming_Challenge.pdf)
 And my answer
 
-## 2nd interview
+### Task Review
 TODO: about task
 
 ### Score
 #### 8.5/10
-
-TODO
