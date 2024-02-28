@@ -13,9 +13,9 @@ flowchart LR
 jobinja & site
 
 ### Interview date
-- **Sent Resume** <br /> 1401.08.02
+- **Sent Resume** <br /> 1402.08.02
 
-- **HR Call**<br /> 1401.08.09
+- **HR Call**<br /> 1402.08.09
 
 - **Technical Interview** <br> 1402.08.15 AT 4 PM
 

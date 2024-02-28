@@ -2,6 +2,8 @@
 
 [Introduction](README.md)
 - [autoshenas](./autoshenas.md)
+- [bitex](./bitex/bitex.md)
+    - [task](./bitex/bitex_task.md)
 - [cpol](./cpol.md)
 - [Digikala](./digikala/README.md)
 - [Dadeh Afzar Arman](./daa.md)
