@@ -9,4 +9,5 @@ title = "jobname"
 command = "./bin/mdbook-mermaid"
 
 [output.html]
+default-theme = "rust"
 additional-js = ["mermaid.min.js", "mermaid-init.js"]
