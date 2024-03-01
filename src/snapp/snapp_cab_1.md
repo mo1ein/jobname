@@ -41,6 +41,8 @@ Site
 
 - What is inheritance?
 
+- Write a base class in C++ that name is Animal then create two child classes of it like Dog and Cat and each of these have Eat method but Eat is different in Dog and Cat. And we create some instance of these classes and put them into an array. How can we do that? What is the type of this array?
+
 - What is primary key and foreign key in database? And what's differences?
 
 - What is design patterns?
@@ -50,8 +52,6 @@ Site
 - What is fastest sorting algorithm? And what's that time complexity?
 
 - Any questions?
-
-TODO dog animal class
 
 ### Score
 <h4><mark style="background-color:#54ca56">6.5/10</mark></h4>
