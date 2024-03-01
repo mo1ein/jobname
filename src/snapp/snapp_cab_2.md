@@ -1,13 +1,31 @@
 # [snapp](snapp.ir)
-
+### Status
+#### 📜📞🔧❌
+## Software Engineer
 ### Interview process
 ```mermaid
 flowchart LR
     sr(Send resume) --> hr(HR call) --> ti1(1st Technical Interview) --rejected--x  ti2(2nd Technical Interview) -.-> hri(HR Interview) -.-> o(Offer)
 ```
-### Interview duration
 
-do nafar bodan
+### Apply way
+Site
+
+### Interview date
+- **Sent Resume** <br /> 1402.08.02 TODO
+
+- **HR Call**<br /> 1402.08.09 TODO
+
+- **Technical Interview** <br> 1402.08.15 AT 4 PM TODO
+
+- **Rejection Email** <br /> 1402.09.28 TODO
+
+### Interview duration
+- **Technical Interview** <br> 1 hour & About 30 minutes
+TODO
+
+### 1st Technical Interview
+TODO: do nafar bodan
 
 - Tell us about yourself.
 
@@ -47,5 +65,6 @@ do nafar bodan
 
 - What is defer? and give me an example of usage.
 
-## Score
-8/10
+### Score
+<h4><mark style="background-color:#54ca56">8.5/10</mark></h4>
+TODO: change score

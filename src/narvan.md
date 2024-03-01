@@ -41,4 +41,4 @@ TODO: add more questions
 TODO
 
 ### Score
-<h5><mark style="background-color:#54ca56">7.5/10</mark></h5>
+<p><mark style="background-color:#54ca56; font-size:16 px;"><b>7.5/10</b></mark></p>

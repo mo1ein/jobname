@@ -24,4 +24,4 @@ Linkedin
 - Why go?
 
 ### Score
-**7/10**
+<h4><mark style="background-color:#54ca56">7/10</mark></h4>

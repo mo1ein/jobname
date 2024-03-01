@@ -32,4 +32,4 @@ About 30 minutes!
 TODO: add more questions
 
 ### Score
-#### 5/10
+<h4><mark style="background-color:#54ca56">5/10</mark></h4>

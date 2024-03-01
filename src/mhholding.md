@@ -68,5 +68,5 @@ jobinja
 TODO
 
 ### Score
-#### 7/10
+<h4><mark style="background-color:#54ca56">7/10</mark></h4>
 I got one offer and not so meaning this job and sholex kardam

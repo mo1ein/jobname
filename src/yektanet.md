@@ -68,4 +68,4 @@ def check_2sum(nums: list, k: int) -> tuples:
 ```
 
 ### Score
-<h5><mark style="background-color:#ffd700">5/10</mark></h5>
+<h4><mark style="background-color:#ffd700">5/10</mark></h4>

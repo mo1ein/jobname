@@ -1,8 +1,8 @@
-# [golrang-ozon](https://ozon-social)
+# [ozone social](https://ozone.ir)
 
 ### Status
 #### 📜📞🔧👱🏻‍♀️❎
-## Golang developer
+## Go developer
 ### Interview process
 ```mermaid
 flowchart LR
@@ -10,7 +10,10 @@ flowchart LR
     hr(HR call) --> ti1(Technical Interview) --rejected--x hri(HR Interview on-site) -.-> o(Offer)
 ```
 
-### 1st Interview
+### Apply way
+Linkedin
+
+### Technical Interview
 
 - Tell me about yourself.
 
@@ -43,7 +46,7 @@ flowchart LR
 TODO
 
 ### Score
-#### 7/10
+<h4><mark style="background-color:#54ca56">7/10</mark></h4>
 
 <p dir="rtl">قبلش به من نگفتن که لایوکد هم هست و من خیلی شرایط درستی براش نداشتم هر چند که کار دراومد ولی بهتر بود می‌گفتن.</p>
 
