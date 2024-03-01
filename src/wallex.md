@@ -1,21 +1,43 @@
 # [wallex](https://wallex.ir)
 
+
+### Status
+#### 📜📞🔧❌
+## Junior Backend Developer
 ### Interview process
 ```mermaid
 flowchart LR
-    sr(Send resume) --> hr(HR call) --> ti1(1st Technical Interview) --rejected--x hri(HR Interview) -.-> o(Offer)
+    sr(Send Resume) --> hr(HR Call) --> ti(Technical Interview) --rejected--x hri(HR Interview) -.-> o(Offer)
 ```
-### Interview duration
-when start when end
-1 hour & 10 minutes
 
-<p dir = "rtl">مصاحبه دو نفر بودن به جز خودم که هر دو فنی بودن.</p>
+### Apply way
+Site & Linkedin & Refer :)
+
+### Interview date
+- **Sent Resume** <br /> 1402.08.08
+
+- **HR Call**<br /> 1402.08.16
+
+- **Technical Interview** <br> 1402.08.21 AT 1 PM
+
+- **Rejection Email** <br /> 1402.09.11
+
+### Interview duration
+- **Technical Interview** <br>1 hour & 10 minutes
+
+### Interview Platform
+Google Meet
+
+### Technical Interview
+<p dir = "rtl">مصاحبه با دو نفر بود که هر دو فنی بودن.</p>
 
 - Tell us about yourself.
 
 - Can u tell software layer when request come from to our code and where go?
 
 - What is ORM?
+
+- What is REST?
 
 - Suppose we want to sent 1 million notification and need request it to db how u handle it?
 
@@ -35,22 +57,27 @@ when start when end
 
 - Example dependency inversion in code. interface go ro gofram
 
-- When u use cache?
+- When you use cache?
 
-- TDD is OK? when we say don't use what is your reaction?
+- TDD is OK? If I say don't need to write test, what's your reaction in a team?
 
-- What's your languages u experienced?
+- Have you ever have experienced about test you written and that fixes bug and cause make you happy?
 
-- What is disturb u in work?
+- What languages Are you familiar with?
 
-- Why you want to out or why u want to new company?
+- Are you OK with php? Our stack is php.
+
+- What is disturb you in work?
+
+- Why you want to out or why you want to find job in a new company?
+
+- What is your git flow in past company? Why not rebase instead of merged master branch with your task branch?
 
 - Any question? what is your team structure
-
-- git flow... and asked why u don't used rebase and merged master to your branch?...
 
 ## Score
 <h4><mark style="background-color:#54ca56">7/10</mark></h4>
 
-hr after i messaged to linkedin call me back and said overqualified and position hold!!!
-az in sherkate khob baeiide
+<p dir="rtl">
+سوالای خوبی پرسیدن که پایه مهندسی نرم‌افزار داشت نه فریموورک و زبان و ابزار. سوالای دیتابیسی و اون سوال یک میلیون ریکوئست رو خوب جواب ندادم و به نظرم همون فاتحمو خوند. به جز اینا مشکلی تو بقیه موارد نداشتم. فقط یه مورد عجیب دیدم که هنوزم برام خنده‌داره. بعد مصاحبه حدود چند هفته گذشت و خبری نشد. بوی ریجکتی و گوست شدن میومد قشنگ. اما هرگز همینجوری شل نگیرید، پیگیر باشید و موقع نتیجه هم فیدبک بخواید. فیدبک خواستنیه و گرفتنی کسی فیدبک نمی‌ده باید بگیریش. شرکت خوبیم بود تمام زورمو می‌خواستم بزنم یه جورایی. تو لینکدین به hr پیام دادم پس چی شد نتیجه مصاحبه ما؟ (حالا اینجوری نه منطقا) فورا بعد چند دقیقه زنگ زد و عذرخواهی و اینا که دیر شده و گفت پوزیشن hold شده و شما هم overqualified شدی سطح‌تون بالا بوده و تو لول مید هستید و فراتر از جونیورید. خیلی جلوی خندمو نگه داشتم. به نظرم اینجوری گفت که مثلا ناراحت نشم و این حرفا وگرنه من خودم می‌دونم که سگ‌جونیورم، سابقه کاریم مشخصه خب. البته که مودب و محترم صحبت می‌کرد. برای شرکتی تو این سطح بعیده. شگفت‌انگیز!
+</p>
