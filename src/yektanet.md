@@ -6,20 +6,31 @@
 ### Interview process
 ```mermaid
 flowchart LR
-    sr(Send resume) --> hr(HR call) --> ti1(1st Technical Interview) --rejected--x ti2(2nd Technical Interview) -.-> hri(HR Interview) -.-> o(Offer)
+    sr(Send resume) --> hr(HR call) --> ti1(1st Technical Interview) --rejected--x ti2("2nd Technical Interview (On-site)") -.-> hri(HR Interview) -.-> o(Offer)
 
 ```
 
 ### Apply way
-jobinja
+Site & jobinja
 
-### Interview duration
+### Interview Date
+- **Sent Resume** <br /> 1402.08.05
+
+- **HR Call**<br /> 1402.08.27
+
+- **Technical Interview** <br> 1402.08.30 AT 4 PM
+
+- **Rejection Email** <br /> 1402.09.15
+
+### Interview Duration
 30 minutes
+
+### Interview Platform
+Google Meet
 
 ### Technical Interview
 #### Live code
 
-TODO: add hr talk in phone
 <p dir="rtl">از اینترنت نمی‌شد استفاده کرد ولی از مصاحبه‌کنده می‌شد سوال کرد.</p>
 <p dir="rtl">کل مصاحبه نیم ساعت بود که هیچ معرفی و اینام نداشت و دو تا سوال تو گوگل داک نوشته بودن که همون جا کد میزدم سوالاش اینا بود</p>
 
@@ -69,3 +80,5 @@ def check_2sum(nums: list, k: int) -> tuples:
 
 ### Score
 <h4><mark style="background-color:#ffd700">5/10</mark></h4>
+TODO: hr & hr call
+in call said hoghogh, 1 month later and faraiand mosahebe ke marhale 2 hozorie, and email more for rejectrion
