@@ -23,7 +23,7 @@
     - [Snapp Market](./snapp/snapp-market.md)
 - [siz-tel](./siz-tel.md)
 - [Sternx](./sternx.md)
-- [phanous](./phanous.md)
+- [phanous](./phanous/phanous.md)
 - [MH holding](./mhholding.md)
 - [Wallex](./wallex.md)
 - [Yektanet](./yektanet.md)

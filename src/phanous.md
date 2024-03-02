@@ -1,1 +1,0 @@
-# [phanous](https://phanous.ir)
