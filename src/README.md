@@ -42,6 +42,13 @@
 - [itool](./itool.md)
 - [autoshenas](./autoshenas.md)
 
+<br />
+<br />
+
+<h2 id="statistics" dir="rtl"><a class="header" href="#statistics">نگاه آماری</a></h2>
+<center><iframe src="./assets/interview_platform.html" style="border:none;" width="600 px" height="350 px"></iframe></center>
+<p dir="rtl">از ۲۲ شرکت که به مصاحبه کشیده شده.</p>
+
 
 # interfuckingview
 This is about my interview experiences out of Iran.
