@@ -1,1 +1,0 @@
-# Snapp Market
