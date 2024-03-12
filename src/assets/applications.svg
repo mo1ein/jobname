@@ -1,0 +1,59 @@
+<svg height="600" width="1000" xmlns="http://www.w3.org/2000/svg">
+<title>Your Diagram Title</title>
+<!-- Generated with SankeyMATIC: 3/12/2024, 8:42:49 PM -->
+<g transform="translate(165.84198,18)">
+<g id="sankey_flows">
+<path id="flow1" d="M29 408.06197C127.04481 408.06197 127.04481 455.79117 225.08962 455.79117" fill="none" stroke-width="180.00727" stroke="#f28e2c" opacity="0.4"><title>Applications → No Answer &amp; Rejected: 318</title></path>
+<path id="flow0" d="M29 314.66197C125.14229 314.66197 125.14229 183.69369 221.28458 183.69369" fill="none" stroke-width="6.79273" stroke="#4e79a7" opacity="0.4"><title>Applications → Interviews: 12</title></path>
+<path id="flow2" d="M250.28458 184.82581C310.75459 184.82581 310.75459 308.60876 371.22461 308.60876" fill="none" stroke-width="4.52848" stroke="#e15759" opacity="0.4"><title>Interviews → Rejected: 8</title></path>
+<path id="flow3" d="M250.28458 181.42945C309.80333 181.42945 309.80333 68.54397 369.32208 68.54397" fill="none" stroke-width="2.26424" stroke="#76b7b2" opacity="0.4"><title>Interviews → Offers: 4</title></path>
+<path id="flow5" d="M398.32208 68.827C468.27844 68.827 468.27844 152.6976 538.23479 152.6976" fill="none" stroke-width="1.69818" stroke="#edc949" opacity="0.4"><title>Offers → Declined: 3</title></path>
+<path id="flow4" d="M398.32208 67.69488C468.75407 67.69488 468.75407 19.57417 539.18605 19.57417" fill="none" stroke-width="1" stroke="#59a14f" opacity="0.4"><title>Offers → Accepted: 1</title></path>
+</g>
+<g id="sankey_nodes">
+<g class="node">
+<rect id="r0" class="for_r0" x="0" y="279.85936" height="186.8" width="29" fill="#bab0ab" fill-opacity="1" transform="translate(0,31.40625)"><title>Applications:
+330</title></rect>
+</g>
+<g class="node">
+<rect id="r1" class="for_r1" x="223.1871" y="135.23281" height="6.79273" width="29" fill="#4e79a7" fill-opacity="1" transform="translate(-1.90252,45.06452)"><title>Interviews:
+12</title></rect>
+</g>
+<g class="node">
+<rect id="r2" class="for_r2" x="223.1871" y="295.85753" height="180.00727" width="29" fill="#f28e2c" fill-opacity="1" transform="translate(1.90252,69.93)"><title>No Answer &amp; Rejected:
+318</title></rect>
+</g>
+<g class="node">
+<rect id="r3" class="for_r3" x="446.3742" y="86.13519" height="4.52848" width="29" fill="#e15759" fill-opacity="1" transform="translate(-75.14959,220.20933)"><title>Rejected:
+8</title></rect>
+</g>
+<g class="node">
+<rect id="r4" class="for_r4" x="446.3742" y="244.49568" height="2.26424" width="29" fill="#76b7b2" fill-opacity="1" transform="translate(-77.05211,-177.08383)"><title>Offers:
+4</title></rect>
+</g>
+<g class="node">
+<rect id="r5" class="for_r5" x="669.56129" y="125.06472" height="1" width="29" fill="#59a14f" fill-opacity="1" transform="translate(-130.37524,-105.77357)"><title>Accepted:
+1</title></rect>
+</g>
+<g class="node">
+<rect id="r6" class="for_r6" x="669.56129" y="279.89672" height="1.69818" width="29" fill="#edc949" fill-opacity="1" transform="translate(-131.3265,-128.04821)"><title>Declined:
+3</title></rect>
+</g>
+</g>
+<g id="sankey_labels" font-family="monospace" font-size="25px" fill="#000000">
+<rect id="label0_bg" class="for_r0" x="-153.84199" y="342.06175" width="151.735" height="62.44373" rx="6.25" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(0,31.40625)"></rect>
+<text id="label0" class="for_r0" text-anchor="end" x="-7.3745" y="373.25936" font-weight="400" font-size="26.45px" dy="-1.93262" transform="translate(0,31.40625)">330<tspan x="-7.3745" dy="24.46625" font-weight="400" font-size="19.55px">Applications</tspan></text>
+<rect id="label1_bg" class="for_r1" x="254.7155" y="103.44916" width="148.035" height="71.0565" rx="6.25" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(-1.90252,45.06452)"></rect>
+<text id="label1" class="for_r1" text-anchor="start" x="259.983" y="138.62917" font-weight="400" font-size="30.8962px" dy="-1.865" transform="translate(-1.90252,45.06452)">12<tspan x="259.983" dy="28.57899" font-weight="400" font-size="22.83632px">Interviews</tspan></text>
+<rect id="label2_bg" class="for_r2" x="254.7155" y="354.58595" width="247.20166" height="62.59894" rx="6.25" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(1.90252,69.93)"></rect>
+<text id="label2" class="for_r2" text-anchor="start" x="259.983" y="385.86117" font-weight="400" font-size="26.61778px" dy="-2.01022" transform="translate(1.90252,69.93)">318<tspan x="259.983" dy="24.62145" font-weight="400" font-size="19.67401px">No Answer &amp; Rejected</tspan></text>
+<rect id="label3_bg" class="for_r3" x="477.9026" y="53.19358" width="120.80166" height="71.10822" rx="6.25" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(-75.14959,220.20933)"></rect>
+<text id="label3" class="for_r3" text-anchor="start" x="483.1701" y="88.39944" font-weight="400" font-size="30.95213px" dy="-1.89086" transform="translate(-75.14959,220.20933)">8<tspan x="483.1701" dy="28.63072" font-weight="400" font-size="22.87766px">Rejected</tspan></text>
+<rect id="label4_bg" class="for_r4" x="477.9026" y="210.17108" width="93.33499" height="71.60994" rx="6.25" fill="#fff" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(-77.05211,-177.08383)"></rect>
+<text id="label4" class="for_r4" text-anchor="start" x="483.1701" y="245.6278" font-weight="400" font-size="31.00805px" dy="-2.14173" transform="translate(-77.05211,-177.08383)">4<tspan x="483.1701" dy="28.68245" font-weight="400" font-size="22.919px">Offers</tspan></text>
+<rect id="label5_bg" class="for_r5" x="701.08968" y="89.77809" width="121.06833" height="72.09874" rx="6.25" fill="#059200" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(-130.37524,-105.77357)"></rect>
+<text id="label5" class="for_r5" text-anchor="start" x="706.35719" y="125.56472" font-weight="400" font-size="31.05px" dy="-2.02163" transform="translate(-130.37524,-105.77357)">1<tspan x="706.35719" dy="28.72125" font-weight="400" font-size="22.95px">Accepted</tspan></text>
+<rect id="label6_bg" class="for_r6" x="701.08968" y="245.28264" width="121.06833" height="71.6229" rx="6.25" fill="red" fill-opacity="0.55" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(-131.3265,-128.04821)"></rect>
+<text id="label6" class="for_r6" text-anchor="start" x="706.35719" y="280.74581" font-weight="400" font-size="31.02204px" dy="-2.14818" transform="translate(-131.3265,-128.04821)">3<tspan x="706.35719" dy="28.69538" font-weight="400" font-size="22.92933px">Declined</tspan></text>
+</g>
+</g></svg>
