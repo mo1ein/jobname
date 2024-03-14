@@ -21,7 +21,7 @@
     - [snapp cab 1](./snapp/snapp_cab_1.md)
     - [snapp cab 2](./snapp/snapp_cab_2.md)
     - [Snapp Market](./snapp/snapp-supply.md)
-- [siz-tel](./siztel/siz-tel.md)
+- [siz-tel](./siztel/README.md)
     - [internship](./siztel/siztel.md)
     - [junior](./siztel/siztel_junior.md)
 - [Sternx](./sternx.md)
