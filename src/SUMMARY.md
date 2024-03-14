@@ -15,7 +15,7 @@
 - [Hermes](./hermes.md)
 - [itoll](./itoll.md)
 - [Narvan](./narvan.md)
-- [Ozone social](./golrang-ozon.md)
+- [Ozone social](./ozone.md)
 - [Quiz of Kings](./QuizOfKings.md)
 - [Snapp](./snapp/README.md)
     - [snapp cab 1](./snapp/snapp_cab_1.md)
