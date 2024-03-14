@@ -13,8 +13,21 @@ flowchart LR
 ### Apply way
 jobinja
 
+### Interview date
+
+- **Sent Resume** <br /> 1402.10.04
+
+- **HR Call**<br /> 1402.10.04
+
+- **Technical Interview** <br> 1402.10.09 AT 5 PM
+
+- **Rejection Email** <br /> 1402.10.13
+
 ### Interview duration
-About 1 hour
+- **Technical Interview** <br> About 1 hour
+
+### Interview Platform
+Google Meet
 
 ### Technical interview
 
