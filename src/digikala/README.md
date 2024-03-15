@@ -9,10 +9,10 @@ flowchart LR
     sr(Send resume) --> hr(HR Call) --> ti1(Technical Interview) --> t(Task) --> ti2(Task Review) -- rejected --x hri(HR Interview) -.-> o(Offer)
 ```
 
-### Apply way
+### Apply Way
 jobinja & site
 
-### Interview date
+### Interview Date
 - **Sent Resume** <br /> 1402.08.02
 
 - **HR Call**<br /> 1402.08.09
@@ -25,13 +25,15 @@ jobinja & site
 
 - **Rejection Email** <br /> 1402.09.28
 
-### Interview duration
+### Interview Duration
 - **Technical Interview** <br> 1 hour & About 30 minutes
 
 - **Task** <br /> 1 week
 
 - **Task Review** <br> About 1 hour
 
+### Interview Date
+Google Meet
 
 ### Technical Interview
 

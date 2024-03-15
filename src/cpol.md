@@ -3,16 +3,16 @@
 ### Status
 #### 📜📞👱🏻‍♀️🔧❎
 ## Back-End developer (Django)
-### Interview process
+### Interview Process
 ```mermaid
 flowchart LR
     sr(Send Resume) --> hr(HR Call) --> hri(HR Interview) --> ti(Technical Interview) --> o(Offer) --rejected--> r((" "))
 ```
 
-### Apply way
+### Apply Way
 jobinja
 
-### Interview date
+### Interview Date
 - **Sent Resume** <br /> 1402.10.21
 
 - **HR Call**<br /> 1402.10.26
@@ -23,10 +23,13 @@ jobinja
 
 - **Offer** <br> 1402.11.07
 
-### Interview duration
+### Interview Duration
 - **HR Interview** <br>About 30 minutes
 
 - **Technical Interview** <br> About 40 minutes
+
+### Interview Platform
+Google Meet
 
 ### HR Interview
 <p dir="rtl">تیپیکال سوالای hrای!</p>

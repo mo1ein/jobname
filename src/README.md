@@ -63,8 +63,8 @@
 <br />
 
 <center><iframe src="./assets/apply_way.html" style="border:none;" width="600 px" height="400 px"></iframe></center>
-<p dir="rtl" style="font-size: 13px;">نمودار حاصل از ۲۴ شرکتی که اپلای شده و حداقل یک مرحله به جلو رفته.</p>
 
+<p dir="rtl" style="font-size: 13px;">نمودار حاصل از ۲۴ شرکتی که اپلای شده و حداقل یک مرحله به جلو رفته.</p>
 
 
 

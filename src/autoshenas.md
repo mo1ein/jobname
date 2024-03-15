@@ -21,8 +21,11 @@ jobinja
 
 - **Rejection Email** <br /> TODO, jobinja?? or not??
 
-### Interview duration
+### Interview Duration
 - **Technical Interview** <br> About 45 minutes
+
+### Interview Platform
+Google Meet
 
 ### Technical Interview
 
