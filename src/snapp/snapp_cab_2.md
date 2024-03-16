@@ -1,70 +1,85 @@
 # [snapp](snapp.ir)
 ### Status
 #### 📜📞🔧❌
-## Software Engineer
+## Software Engineer (Golang)
 ### Interview process
 ```mermaid
 flowchart LR
     sr(Send resume) --> hr(HR call) --> ti1(1st Technical Interview) --rejected--x  ti2(2nd Technical Interview) -.-> hri(HR Interview) -.-> o(Offer)
 ```
 
-### Apply way
+### Apply Way
 Site
 
-### Interview date
-- **Sent Resume** <br /> 1402.08.02 TODO
+### Interview Date
+- **Sent Resume** <br /> 1402.10.22 (IDK really)
 
-- **HR Call**<br /> 1402.08.09 TODO
+- **HR Call**<br /> 1402.11.08
 
-- **Technical Interview** <br> 1402.08.15 AT 4 PM TODO
+- **Technical Interview** <br> 1402.11.14 AT 12 PM
 
-- **Rejection Email** <br /> 1402.09.28 TODO
+- **Rejection Email** <br /> 1402.11.18
 
-### Interview duration
-- **Technical Interview** <br> 1 hour & About 30 minutes
-TODO
+### Interview Duration
+- **Technical Interview** <br> 1 hour & 30 minutes
+
+### Interview Platform
+Skype
 
 ### 1st Technical Interview
-TODO: do nafar bodan
+
+<p dir="rtl">
+اول مصاحبه بلوتوث هندزفریم قطع و وصل می‌شد و یک دقیقه از تایم مورد نظر گذشته بود (دقیقا یک دقیقه!) تا جوین شم که تو این فاصله HR زنگ زد و علت را جویا شد! و مشکل رو توضیح دادم. </br>
+مصاحبه با دونفر بود که هر دو فنی بودن.
+</p>
 
 - Tell us about yourself.
 
-- How know a project or code(codebase?), is good? What's your parameters to determine?
+- How do you know a project, code or codebase is good? What's your parameters to determine?
 
 - What is SOLID? tell us about 2 of them.
 
 - What is CI/CD? and differences?
 
-- Do u Dockerize golang project?
+- Difference between virtual machine and docker?
+
+- Have you ever Dockerized a golang project?
 
 - How we can optimize docker image size? what parameters depends it?
 
-- Difference between virtual machine and docker?
-
 - Which command use to if container is up or not do sth? idk i think docker ps
 
-- What is index in database?
+- Have you experienced with Kuber?
 
-- What is Microservices vs monolotic? when u choose?
+- What is index in database? i said if don't know it or overuse is bad.
 
-- Do u know semantic versioning?
+- When indexing is bad?
+
+- Microservices vs monolotic? How do you choose it when you want to start a project?
+
+- Do you know what semantic versioning is?
 
 - SQL vs NoSQL
 
 - What is CAP theory?
 
-- We have two api and we have feature in new and how can we compatible with older version? v1 v2
+- We have an API and we want to add new features on it. How can handle compatibality with older version? v1 v2
 
 - Difference between multiprocess and multithread?
 
-- What is mutable and immutable and why python tuples can change but they are immutable
+- What is mutable and immutable?
 
-- How u optimize a query? what's your approach to better a query? and i said my answer is correct? not an exact answer u can use explain...
+- Why are we able to change python tuple values even though they are immutable?
 
-- Do u know what is memory leak? how we handle it in golang?
+- How you optimize a query? what's your approach to better a query? and i said my answer is correct? not an exact answer u can use explain...
+
+- Do you know what is memory leak? How golang handle it?
 
 - What is defer? and give me an example of usage.
 
 ### Score
 <h4><mark style="background-color:#54ca56">8.5/10</mark></h4>
-TODO: change score
+
+<p dir="rtl">
+مصاحبه خوبی بود. شب قبلش هر چی سوال از مصاحبه‌ها پرسیده بودن رو مرور کردم، تو مصاحبه هم عالی بودم اما دو سوال ریز رو خوب جواب ندادم یکم استرس داشتم ولی به نظرم تاثیرش اونقد نبود. واقعا بسته بودم که می‌رم اسنپ. یه مرحله به نظرم باید می‌رفت جلو. از نظر سوالا خوب بود. تقریبا چکیده‌ای از همه سوالا بود و هر چی که می‌تونستن، پرسیدن. بعدش که ایمیل ریجکتی اومد، ریپلای زدم فیدبک بدید که چرا. یه طومار فرستادن (تو ژانر میم‌های نخوندم) و گفتن که به خاطر پالیسی‌های اسنپ و اینا نمی‌تونیم فیدبک بدیم. چه پالیسی‌ای؟ چه کشکی؟ این پالیسی‌ هم از اون اداهایه که تا از شرکت یکی سوال می‌کنیم می‌گه NDA امضا کردم. روشی شیک برای پیچوندن. همیشه فیدبک بخواید، فیدبک گرفتنیه نه دادنی! این که رفتار شرکت رو نسبت به این سوال ببینید خودش خیلی چیزا رو نشون می‌ده وگرنه منم می‌دونم کسی فیدبک نمی‌ده. انی‌وی، به جز این مورد عجیب، بقیه چیزا منطقی و معقول بود.
+</p>
