@@ -17,7 +17,7 @@
 - [Hamravesh](./hamravesh/hamravesh.md)
 - [Hermes](./hermes.md)
 - [Itoll](./itoll.md)
-- [Narvan](./narvan.md)
+- [Narvan (invex)](./narvan.md)
 - [Ozone social](./ozone.md)
 - [Quiz of Kings](./QuizOfKings.md)
 - [Snapp](./snapp/README.md)
