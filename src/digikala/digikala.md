@@ -74,9 +74,17 @@ Google Meet
 - What is async and parallelism?
 
 ### Task
-[this](./DigiCloud_Programming_Challenge.pdf)
-And my answer
 
+<p dir="rtl">
+من خیلی وقت نداشتم برای انجام تسک حتی می‌خواستم کلا نزنم دیدم حسش نیس زیاده وقت بذارم ممکنه کلا ریجکت شه ولی گفتم دیجی‌کالاس یهو دیدی اوکی شد. خلاصه سعی کردم از اون‌جاهایی که بلدم شروع کنم و سه روزه زدم. همه چی داشت تسک‌شون. مهم‌ترین بخش، قسمت async و back-offاش بود که خوب نزدم ولی بقیه قسمتا رو خیلی تمیز زدم هدفم این بود کد مرتبی باشه و خب مثل این که همون دو قسمت براشون مهم بود.
+<br />
+<a href="./DigiCloud_Programming_Challenge.pdf">تسک</a>
+ و
+<a href="">جواب</a>
+ من.
+</p>
+
+TODO my answer
 ### Task Review
 TODO: about task
 
