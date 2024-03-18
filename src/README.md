@@ -53,6 +53,7 @@
 - [Snapp Market](./snapp/snapp-supply.md)
 - [phanous](./phanous/phanous.md)
 - [gharar](./gharar.md)
+- [sahmeto](./sahmeto.md)
 
 <br />
 <br />

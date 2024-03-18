@@ -32,3 +32,4 @@
 - [MH holding](./mhholding.md)
 - [Wallex](./wallex.md)
 - [Yektanet](./yektanet.md)
+- [Sahmeto](./sahmeto.md)

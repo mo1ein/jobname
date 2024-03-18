@@ -13,26 +13,26 @@ flowchart LR
 jobinja & site
 
 ### Interview Date
-- **Sent Resume** <br /> 1402.08.02
+- **Sent Resume** <br />1402.08.02
 
-- **HR Call**<br /> 1402.08.09
+- **HR Call**<br />1402.08.09
 
-- **Technical Interview** <br> 1402.08.15 AT 4 PM
+- **Technical Interview** <br>1402.08.15 AT 4 PM
 
-- **Task** <br /> They sent 1402.08.23 <br /> I sent 1402.08.29
+- **Task** <br />They sent 1402.08.23 <br />I sent 1402.08.29
 
-- **Task Review** <br> 1402.09.08 AT 1 PM
+- **Task Review** <br>1402.09.08 AT 1 PM
 
-- **Rejection Email** <br /> 1402.09.28
+- **Rejection Email** <br />1402.09.28
 
 ### Interview Duration
-- **Technical Interview** <br> 1 hour & About 30 minutes
+- **Technical Interview** <br>1 hour & About 30 minutes
 
-- **Task** <br /> 1 week
+- **Task** <br />1 week
 
-- **Task Review** <br> About 1 hour
+- **Task Review** <br>About 1 hour
 
-### Interview Date
+### Interview Platform
 Google Meet
 
 ### Technical Interview
