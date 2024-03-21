@@ -71,6 +71,8 @@ Google Meet
 
 - What go freamwork you are familiar with?
 
+- When you recieve a request, how you read data? How you unmarshal it?
+
 - What is middleware?
 
 - What is context in go?
@@ -79,7 +81,7 @@ Google Meet
 
 - What databases you worked with?
 
-- What is your salary expectation?
+- What is your salary expectation? Write the number in chat.
 
 ### 2nd Technical Interview
 #### Live code
