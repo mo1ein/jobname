@@ -4,98 +4,100 @@
 -->
 <!DOCTYPE html>
 <html lang="en" style="height: 100%">
-<head>
-  <meta charset="utf-8">
-</head>
-<body style="height: 100%; margin: 0">
-  <div id="container" style="height: 100%"></div>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body style="height: 100%; margin: 0">
+    <div id="container" style="height: 100%"></div>
 
-  
-  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
-  
-  <!-- Uncomment this line if you want to dataTool extension
+    <script
+      type="text/javascript"
+      src="https://fastly.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"
+    ></script>
+
+    <!-- Uncomment this line if you want to dataTool extension
   <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.5.0/dist/extension/dataTool.min.js"></script>
   -->
-  <!-- Uncomment this line if you want to use gl extension
+    <!-- Uncomment this line if you want to use gl extension
   <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
   -->
-  <!-- Uncomment this line if you want to echarts-stat extension
+    <!-- Uncomment this line if you want to echarts-stat extension
   <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
   -->
-  <!-- Uncomment this line if you want to use map
+    <!-- Uncomment this line if you want to use map
   <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
   <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
   -->
-  <!-- Uncomment these two lines if you want to use bmap extension
+    <!-- Uncomment these two lines if you want to use bmap extension
   <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
   <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.5.0/dist/extension/bmap.min.js"></script>
   -->
 
-  <script type="text/javascript">
-    var dom = document.getElementById('container');
-    var myChart = echarts.init(dom, null, {
-      renderer: 'canvas',
-      useDirtyRect: false
-    });
-    var app = {};
-    var ROOT_PATH = 'https://echarts.apache.org/examples';
-    var option;
+    <script type="text/javascript">
+      var dom = document.getElementById("container");
+      var myChart = echarts.init(dom, null, {
+        renderer: "canvas",
+        useDirtyRect: false,
+      });
+      var app = {};
+      var ROOT_PATH = "https://echarts.apache.org/examples";
+      var option;
 
-    const weatherIcons = {
-  Sunny: ROOT_PATH + '/data/asset/img/weather/sunny_128.png',
-  Cloudy: ROOT_PATH + '/data/asset/img/weather/cloudy_128.png',
-  Showers: ROOT_PATH + '/data/asset/img/weather/showers_128.png'
-};
-var colorPalette = ['#00b04f', '#ffbf00', '#ff0000'];
-option = {
-  title: {
-    text: 'Interview Platform',
-    subtext: '',
-    left: 'center'
-  },
-  tooltip: {
-    trigger: 'item',
-    formatter: '{a} <br/>{b} : {c} ({d}%)'
-  },
-  legend: {
-    bottom: 10,
-    left: 'center',
-    data: ['Google Meet', 'Skype', 'Other']
-  },
-  series: [
-    {
-      type: 'pie',
-      radius: '65%',
-      center: ['50%', '50%'],
-      selectedMode: 'single',
-      selectedOffset: 30,
-        colorStops: [
-          {offset: 0, color: 'yellow'}, 
-          {offset: 1, color: 'red' }, 
-          {offset: 2, color: 'black'}
+      const weatherIcons = {
+        Sunny: ROOT_PATH + "/data/asset/img/weather/sunny_128.png",
+        Cloudy: ROOT_PATH + "/data/asset/img/weather/cloudy_128.png",
+        Showers: ROOT_PATH + "/data/asset/img/weather/showers_128.png",
+      };
+      var colorPalette = ["#00b04f", "#ffbf00", "#ff0000"];
+      option = {
+        title: {
+          text: "Interview Platform",
+          subtext: "",
+          left: "center",
+        },
+        tooltip: {
+          trigger: "item",
+          formatter: "{b}: {d}%",
+        },
+        legend: {
+          bottom: 10,
+          left: "center",
+          data: ["Google Meet", "Skype", "Other"],
+        },
+        series: [
+          {
+            type: "pie",
+            radius: "65%",
+            center: ["50%", "50%"],
+            selectedMode: "single",
+            selectedOffset: 30,
+            colorStops: [
+              { offset: 0, color: "yellow" },
+              { offset: 1, color: "red" },
+              { offset: 2, color: "black" },
+            ],
+            data: [
+              { value: 73, name: "Google Meet" },
+              { value: 18, name: "Skype" },
+              { value: 9, name: "Other" },
+            ],
+            color: ["#FFBA00", "#00aff0", "#ff0000"],
+            emphasis: {
+              itemStyle: {
+                shadowBlur: 10,
+                shadowOffsetX: 0,
+                shadowColor: "rgba(0, 0, 0, 0.5)",
+              },
+            },
+          },
         ],
-      data: [
-        { value: 73, name: 'Google Meet'},
-        { value: 18, name: 'Skype' },
-        { value: 9, name: 'Other' },
-      ],
-      color: ['#FFBA00', '#00aff0', '#ff0000'],
-      emphasis: {
-        itemStyle: {
-          shadowBlur: 10,
-          shadowOffsetX: 0,
-          shadowColor: 'rgba(0, 0, 0, 0.5)'
-        }
+      };
+
+      if (option && typeof option === "object") {
+        myChart.setOption(option);
       }
-    }
-  ]
-};
 
-    if (option && typeof option === 'object') {
-      myChart.setOption(option);
-    }
-
-    window.addEventListener('resize', myChart.resize);
-  </script>
-</body>
+      window.addEventListener("resize", myChart.resize);
+    </script>
+  </body>
 </html>

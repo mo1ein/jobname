@@ -37,31 +37,51 @@ Google Meet
 
 ### Technical Interview
 
-<p dir = "rtl"> خودت رو معرفی کن</p>
+<p dir="rtl">
+مصاحبه با دو نفر بود که هر دو فنی بودن. یکی‌شون خیلی سوالای کمی پرسید و دیگری حضور پررنگ‌تری داشت. قبل مصاحبه، hr که پروسه رو توضیح داد، از لایوکد هم حرف زد امّا خبری از لایوکد و الگوریتم نبود. مصاحبه‌کننده بسیار خوش‌برخورد، مودب و باحوصله بود. خوب گوش می‌کرد، استرس نمی‌داد و باعث می‌شد ریلکس باشی. ذهنش هم خیلی مرتب و منسجم بود. سوالات درهم و میکسی از هر شاخه نمی‌پرسید. مثلا در مورد پایتون می‌پرسید بعد می‌گفت خب دیگه سوالام از این بخش تموم شد بریم در مورد دیتابیس حرف بزنیم بعد سوالای دیتابیس رو مطرح می‌کرد بعد می‌گفت به نظرم کافیه بریم در مورد معماری و میکروسرویس صحبت کنیم. این خیلی برام جالب بود که ذهن منظمی داره و step by step جلو می‌ره. ممکن بود یه سوالایی بپرسه که فراتر باشه بعدش می‌گفت نگران نباش اگه خیلی باهاش آشنا نیستی انتظار نمی‌ره که بدونی و جزو مصاحبه نبود صرفا خواستم ببینم باهاش آشنایی داری یا نه. در کل حال کردم با مصاحبه چون یادگیری داشت توش و تقریبا هر چی که می‌تونستن، پرسیدن.
+</p>
+
+- Tell us about yourself.
 
 - What is abc?
 
-- What is decorator? and what feature python have that help decorator functionallity?
+- What is decorator?
 
-- What is django architecture? what is MVT?
+- What feature of python that help decorator functionallity?
+
+- What is django architecture?
+
+- What is MVT?
+
+- Which part of MVT we working with data?
+
+- How can create private methods?
 
 - What is DI?
 
-- Can we inherit from multiclasses in python? what algorithm behind it?
+- Can we inherit from multiclasses? What algorithm behind it?
 
 - What is list comprehension?
 
-- What is SOLID?
-
 - What is design pattern and which design pattern do u used?
 
-- What is microservice? ...
+- What is SOLID?
+
+- What is microservice? Are you familliar with that?
 
 - How can solve latency between our services in microservice architecture? how protect for loss data....
 
+- Do you know saga roll-back mechanism?
+
 - Databases how in microservice arch?
 
+- If some service failed in microservice or some database broken, which approach can solve that?
+
 - What is ACID?
+
+- Can you example about consistancy issue in work?
+
+- Which SQL engines support ACID?
 
 - scenario
 
@@ -71,7 +91,23 @@ Google Meet
 
 - What is your git workflow?
 
-- What is async and parallelism?
+- What is concurrency and parallelism?
+
+- Have you ever written async project?
+
+- What is python function run task in background? For example we have 4 request and we want send all of it in one time.
+
+- If you think something is correct and your tech-lead thinks not, how you deal with it?
+
+- If you had a problem with someone in work, how you solve that?
+
+- If you had a problem with your tech-lead, how you solve that?
+
+- Think your problem with your tech-lead is very extreme and worst case. What's your approach?
+
+- Any questions?
+
+- Can you say your feedback about interview that helps us to improve?
 
 ### Task
 
