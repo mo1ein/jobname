@@ -2,7 +2,7 @@
 
 ### Status
 #### 📜📞🔧🔧❌
-## Golang developer
+## Senior Golang Developer
 ### Interview process
 ```mermaid
 flowchart LR
@@ -12,30 +12,50 @@ flowchart LR
 ### Apply way
 jobinja
 
-### Interview duration
-- **1st Technical Interview** <br> About 1 hours (TODO: check for exact)
-
-- **2nd Technical Interview** <br> About 1 hour and 30 minutes (TODO: check for exact)
-
 ### Interview date
-- **1st Technical Interview** <br /> 25 dey 1401
-- **2nd Technical Interview** <br /> TODO
+- **Sent Resume** <br />1401.10.24
+
+- **HR Call** <br />1401.10.25
+
+- **1st Technical Interview** <br />1401.10.27 At 5 PM
+
+- **2nd Technical Interview** <br />1401.11.03 At 3 PM
+
+- **Rejection Letter** <br />1401.11.05
+
+### Interview duration
+- **1st Technical Interview** <br>1 hour
+
+- **2nd Technical Interview** <br>1 hour & 30 minutes
+
+### Interview Platform
+Google Meet
 
 ### 1st Technical Interview
+
+<p dir="rtl">
+مصاحبه با یک نفر بود.
+</p>
 
 - Tell me about yourself.
 
 - You don't have any job experience?
 
-- What is difference between concurrency and parallelism?
+- Do you have on-site work conditions?
 
 - What is generic?
 
-- We have a scenario. we have two goroutine that traverse a slice. one is start from begining and other starts from end. how each goroutine can know other one is in the middle of slice? with cannels.
+- What is difference between concurrency and parallelism?
+
+- We have a scenario. We have two goroutine that traverse a slice. One is start from begining and other starts from end. How each goroutine can know other one is in the middle of slice? With cannels.
 
 - We have a scenario that we have a goroutine and this goroutine wait for other goroutine how you handle it? waitgroup.
 
 - What is interface?
+
+- Waht is method?
+
+- What is reciever function and when we use pass by reference (pointer) on it?
 
 - What is linked list?
 
@@ -48,8 +68,6 @@ jobinja
 - Are you familiar with queues and event-buses?
 
 - Do you know abstract factory design pattern?
-
-- What is reciever function and when we use pass by reference (pointer) on it?
 
 - What go freamwork you are familiar with?
 
@@ -65,8 +83,15 @@ jobinja
 
 ### 2nd Technical Interview
 #### Live code
-TODO
+
+<p dir="rtl">
+در این مصاحبه به جز من، دو نفر دیگه هم حضور داشتن (هر دو فنی).<br />
+مسئله این بود که سه تا endpoint داریم که دارای متودهای post, get و delete است و باید یه وب‌سرور کوچولو می‌نوشتم که این سه تا رو هندل می‌کرد. یه اسلایسی از استرینگ (یا همچین چیزی) رو باید با آیتم‌هاش بازی می‌کردم.<br />خوب عمل نکردم و بلند بلند هم فکر نکردم. خیلی سرچ می‌کردم و خب دیدن که طول می‌کشه، گفتن نیم ساعت بیشتر وقت می‌دیم برو بزن بفرست که این عملا یعنی ریجکت. البته واقعا مهم نبود چون یه جا دیگه ۸۰ درصد برام اوکی شده بود.
+</p>
 
 ### Score
 <h4><mark style="background-color:#54ca56">7/10</mark></h4>
-I got one offer and not so meaning this job and sholex kardam
+
+<p dir="rtl">
+مصاحبه خوبی بود.<br />ایزی بود برام با این که مرحله دوم رو تسلط نداشتم ولی نمی‌شد گفت سخت. برخورد و اینا هم چیز عجیبی ندیدم.
+</p>
