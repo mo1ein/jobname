@@ -23,7 +23,7 @@
 - [Snapp](./snapp/snapp.md)
     - [Snapp cab 1](./snapp/snapp_cab_1.md)
     - [Snapp cab 2](./snapp/snapp_cab_2.md)
-    - [Snapp Market](./snapp/snapp-supply.md)
+    - [Snapp Market Pro](./snapp/snapp_market_pro.md)
 - [Siz-tel](./siztel/siztel.md)
     - [Internship](./siztel/internship.md)
     - [Junior](./siztel/junior.md)

@@ -26,7 +26,7 @@
 </p>
 
 - [Digikala](./digikala/digikala.md)
-- [Snapp](./snapp/snapp.md)
+- [Snapp](./snapp/snapp_cab_2.md)
 - [Yektanet](./yektanet.md)
 - [Wallex](./wallex.md)
 - [Ozone - Golrang](./ozone.md)
@@ -43,6 +43,8 @@
 شرکت‌هایی که قبل از ۱۴۰۲ باهاشون مصاحبه داشتم:
 </p>
 
+- [Snapp](./snapp/snapp_cab_1.md)
+- [Snapp Market Pro](./snapp/snapp_market_pro.md)
 - [Sternx](./sternx.md)
 - [Dadeh Afzar Arman](./daa.md)
 - [Hamravesh](./hamravesh/hamravesh.md)
@@ -50,7 +52,6 @@
 - [MH holding](./mhholding.md)
 - [itoll](./itoll.md)
 - [Graph](./graph/graph.md)
-- [Snapp Market](./snapp/snapp-supply.md)
 - [phanous](./phanous/phanous.md)
 - [gharar](./gharar.md)
 - [sahmeto](./sahmeto.md)
