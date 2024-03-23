@@ -9,29 +9,29 @@ flowchart LR
     sr(Send resume) --> hr(HR call) --> ti1(1st Technical Interview) --> ti2(2nd Technical Interview) --> hri(HR Interview) --> o(Offer) --accepted :) --> r((" "))
 ```
 
-### Apply way
+### Apply Way
 Linkedin
 
-### Interview date
-- **Sent Resume** <br /> 1402.08.13
+### Interview Date
+- **Sent Resume** <br />1402.08.13
 
-- **HR Call**<br /> 1402.08.16
+- **HR Call**<br />1402.08.16
 
-- **1st Technical Interview** <br> 1402.08.20 AT 11:30 AM
+- **1st Technical Interview** <br>1402.08.20 AT 11:30 AM
 
-- **2nd Technical Interview** <br> 1402.12.09 AT 6 PM
+- **2nd Technical Interview** <br>1402.12.09 AT 6 PM
 
-- **HR Interview** <br> 1402.12.19 12 PM
+- **HR Interview** <br>1402.12.19 12 PM
 
-- **Offer** <br> 1402.12.26
+- **Offer** <br>1402.12.26
 
-### Interview duration
+### Interview Duration
 
-- **1st Technical Interview** <br> 1 hour
+- **1st Technical Interview** <br>1 hour
 
-- **2nd Technical Interview** <br> 30 minutes
+- **2nd Technical Interview** <br>30 minutes
 
-- **HR Interview** <br> 30 minuts
+- **HR Interview** <br>30 minuts
 
 ### 1st Technical Interview
 
