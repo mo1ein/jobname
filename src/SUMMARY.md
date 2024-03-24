@@ -1,6 +1,11 @@
 # Summary
 
-[Introduction](README.md)
+# Introduction
+
+- [Preface](README.md)
+- [Referral](referral.md)
+- [Red flags](redflags.md)
+- [Statistically](statistics.md)
 
 # Companies
 
