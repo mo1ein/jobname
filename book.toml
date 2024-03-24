@@ -16,3 +16,7 @@ git-repository-icon = "fa-github"
 # site-url = "/example-book/"
 # cname = "myproject.rs"
 additional-js = ["mermaid.min.js", "mermaid-init.js"]
+
+[output.html.fold]
+enable = true
+level = 0
