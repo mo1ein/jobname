@@ -77,6 +77,8 @@ Google Meet
 
 - What is EXPOSE in docker?
 
+- Can you build up a project with docker?
+
 - What is docker compose?
 
 - When you prefer use other packages or write your library?

@@ -7,6 +7,7 @@
     <li><a href="#companies">شرکت‌ها</a></li>
     <li><a href="statistics.md">نگاه آماری</a></li>
     <li><a href="referral.md">ریفر، میفر، مایکروفر</a></li>
+    <li><a href="redflags.md">پرچم‌های خونی</a></li>
 </ul>
 
 <h2 id="intro" dir="rtl"><a class="header" href="#intro">دیباچه</a></h2>
@@ -45,7 +46,7 @@
 
 - [Snapp](./snapp/snapp_cab_1.md)
 - [Snapp Market Pro](./snapp/snapp_market_pro.md)
-- [Sternx](./sternx.md)
+- [Sternx](./sternx/sternx.md)
 - [Dadeh Afzar Arman](./daa.md)
 - [Hamravesh](./hamravesh/hamravesh.md)
 - [Narvan - Invex](./narvan.md)
