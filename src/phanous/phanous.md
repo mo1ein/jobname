@@ -53,7 +53,7 @@ gharar.ir
 </ul>
 
 ### Technical Questions
-- What is REST?
+- What is REST? And stands for?
 
 - When type google.com what's happening?
 
@@ -61,7 +61,13 @@ gharar.ir
 
 - Someone tries to login our system with brute force approach. What's your solution to deal with this problem?
 
-- What is threads and parallel in cpp or python?
+- What is threads and parallel in cpp or python which libraries do you work with in?
+
+- What open source project is you like to contribute?
+
+- What is difference between tcp & udp?
+
+- Web2 by dafult is on tcp or udp?
 
 ### Task
 
