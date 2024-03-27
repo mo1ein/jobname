@@ -20,9 +20,9 @@ jobinja
 
 - **Technical Interview** <br>1402.03.24 AT 9 AM
 
-- **Rejection Email** <br />1402.03.27
+- **Rejection Letter** <br />1402.03.27
 
-	
+
 ### Interview duration
 1 hour and 30 minutes
 
@@ -87,16 +87,18 @@ This [link](https://go.dev/blog/slices-intro) is all about slice.
 
 - What is race condition and how can handle it?
 
-- Suppose we used other service that has error how can handle it? 
+- Suppose we used other service that has error how can handle it?
 
 - When we should use panic?
+
+- It is reliable recovering a panic?
 
 - Why try catch is bad idea and what is go approach for this?
 
 - We have service out of here that panics somewhere and we don't want panic here because here is more important imagine something like rocket system how can handle this?
 
 - Do you knwo busy waiting?
- 
+
 - What is defer?
 
 - What is your feedback?
@@ -154,7 +156,7 @@ And [this](https://yourbasic.org/golang/default-zero-value/).
 
 #### Problem 3
 We have a linked list. Write a function to create string with this linked list. First char is `A`.
-I can't remember the question is this or not. But sth like that. 
+I can't remember the question is this or not. But sth like that.
 ```go
 type MyString struct {
 	Char rune
@@ -172,7 +174,7 @@ myString := MyString{
 
 ```
 
-<p><span style="color:#2f8916"><b>My answer (It's not complete):</b></span>:</p>
+<p><span style="color:#2f8916"><b>My answer (It's not complete)</b></span>:</p>
 
 ```go
 func CreateString(s MyString) string {
@@ -186,7 +188,7 @@ func CreateString(s MyString) string {
 
 ```
 
-#### Problem 4 
+#### Problem 4
 Write a function to check if slice is nil, return error otherwise, change first value then return that.
 
 <p><span style="color:#2f8916"><b>My answer</b></span>:</p>
@@ -202,7 +204,7 @@ func changeArray(a []int) ([]int, error) {
 ```
 You can run it [here](https://go.dev/play/p/4D31coxb8Wh).<br />
 
-#### Problem 5 
+#### Problem 5
 
 Suppose we have these tables.
 

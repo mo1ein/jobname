@@ -198,7 +198,7 @@
 <p><strong>Technical Interview</strong> <br>1402.03.24 AT 9 AM</p>
 </li>
 <li>
-<p><strong>Rejection Email</strong> <br />1402.03.27</p>
+<p><strong>Rejection Letter</strong> <br />1402.03.27</p>
 </li>
 </ul>
 <h3 id="interview-duration"><a class="header" href="#interview-duration">Interview duration</a></h3>
@@ -293,6 +293,9 @@ This <a href="https://go.dev/blog/slices-intro">link</a> is all about slice.</p>
 <p>When we should use panic?</p>
 </li>
 <li>
+<p>It is reliable recovering a panic?</p>
+</li>
+<li>
 <p>Why try catch is bad idea and what is go approach for this?</p>
 </li>
 <li>
@@ -365,7 +368,7 @@ myString := MyString{
 }
 
 </code></pre>
-<p><span style="color:#2f8916"><b>My answer (It's not complete):</b></span>:</p>
+<p><span style="color:#2f8916"><b>My answer (It's not complete)</b></span>:</p>
 <pre><code class="language-go">func CreateString(s MyString) string {
 	result := string(s.char)
 	for s.next != nil {
