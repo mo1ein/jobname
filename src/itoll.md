@@ -17,45 +17,80 @@ E-mail (:
 
 - **HR Call**<br /> 1401.11.08
 
-- **Technical Interview** <br> 1401.11.09 4 PM
+- **Technical Interview** <br> 1401.11.09 AT 4 PM
 
 ### Interview duration
 - **Technical Interview** <br> About 45 minutes
 
 ## Technical interview
 
+<p dir="rtl">
+مصاحبه با یک نفر بود.
+</p>
+
+- Tell me about yourself.
+
 - You don't have any job experience?
 
-- What is hardest project you worked with?
-
-- What is SOLID?
-
-- What design pattern you wroked with?
-
-- Do you know OOP rules?
-
-- What is polymorphism?
-
-- How delete and insert work in linked list?
-
-- Difference between list & set? Which one is faster?
+- When you start programming?
 
 - What projects you worked with django & flask?
 
-- Are you familiar with git? Can you solve conflict?
+- Do you know OOP rules?
 
-- If you have a problem with someone, how do you solve it?
+- What is inheritance?
+
+- What is interface?
+
+- What is abstract class?
+
+- What is polymorphism?
+
+- What is method overriding in python?
+
+- What is design pattern?
+
+- What is SOLID?
+
+- Difference between list & set? Which one is faster?
+
+- What is linked list?
+
+- Which one is better? linked list or array?
+
+- How can delete an item in linked list?
+
+- For delete, which one is faster? array or linked list?
+
+- Are you familiar with database?
+
+- Scenario: We have some tables about students, courses and student course.
+	1. Write a query to show average of each student.
+	2. Write a query to show max average.
+	3. How can find second max average?
+	4. How can find item before min average?
 
 - What is Redis? Why it's fast?
 
-- We have a table contains student number and lessons. How can find avg of each lesson? and how can find max number and second max number?
+- Are you familiar with git? Can you solve conflict?
 
-- Are you a creative person? give me a sentence with these three words: TODO...
+- What is hardest project you worked with?
 
-TODO...
+- What does a good work environment look like?
+
+- If you have a problem with someone, how do you solve it?
+
+- Are you a creative person?
+
+- Give me a sentence with these three words: green hat, cat and wizard
+
+- Do you negotiating with other companies?
+
+- Any questions?
 
 ### Score
 <h4><mark style="background-color:#54ca56">6/10</mark></h4>
-<br />
+
 <p dir="rtl">
+این مصاحبه بعد از گرفتن آفر از جای دیگری بود و جنبه‌ی جاست فور فان داشت. گر چه به عنوان کارآموز، به نظرم نباید ریجکت می‌شد اما مهم هم نبود. بیشتر روی OOP فوکوس شده بود تا چیزهای دیگر. سوال‌های زرد و لوس از قبیل یه جمله بساز که سه تا کلمه بی‌ربط توش باشه هم رنک رو پایین میاره. در کل می‌شد که بهتر باشه. نمره ۶ برای این مصاحبه، نمره مناسبیه.
 </p>
