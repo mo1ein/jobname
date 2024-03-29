@@ -1,4 +1,4 @@
-<center><h1>Jobname | جاب‌نامه</h1></center>
+<h1 align="center">Jobname | جاب‌نامه</h1>
 
 <h2 id="toc" dir="rtl"><a class="header" href="#toc">فهرست</a></h2>
 <ul dir="rtl">
