@@ -15,7 +15,7 @@ Site & jobinja
 
 - **Send Resume** <br />IDK
 
-- **HR Call** <br />1401.09.25
+- **HR Call** <br />1401.08.25
 
 - **Sent Task** <br />1401.08.26
 

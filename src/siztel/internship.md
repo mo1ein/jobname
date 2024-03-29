@@ -23,5 +23,12 @@ Linkedin
 
 - Why go?
 
+- Do you written test in your company?
+
 ### Score
-<h4><mark style="background-color:#54ca56">7/10</mark></h4>
+
+<h4><mark style="background-color:#54ca56">6/10</mark></h4>
+
+<p dir="rtl">
+برای این پوزیشن باید سه ماه مفتی کار می‌کردی که خب من به همین دلیل ریجکت کردم وگرنه اوکی بود.
+</p>

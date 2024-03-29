@@ -1,5 +1,8 @@
 # [Quiz of Kings](https://quizofkings.com )
 
+### Status
+#### 📜📞🔧❌
+
 ## BackEnd Developer (Go)
 ### Interview process
 ```mermaid
@@ -57,7 +60,7 @@ Google Meet
 - We want to design url shortner system. How you design it?
 
 ### Score
-<h4><mark style="background-color:#54ca56">6/10</mark></h4>
+<h4><mark style="background-color:#54ca56">7/10</mark></h4>
 
 <p dir="rtl">
 این از اون مصاحبه‌هایی بود که به قول خارجیا I bombed it. بعضی از سوالا جوری بود که افتادم گوشه رینگ، خیلی سناریومحور بود. اگه از نیومدن ایمیل ریجکتی‌شون و پیگیری برای دونستن نتیجه که دنبال ایمیل ریجکتی بودم و آخر فرستادن بگذریم، اتفاق عجیبی رخ نداد.
