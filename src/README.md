@@ -26,36 +26,41 @@
 شرکت‌هایی که در سال ۱۴۰۲ باهاشون مصاحبه داشتم (داغ داغ):
 </p>
 
-- [Digikala](./digikala/digikala.md)
-- [Snapp](./snapp/snapp_cab_2.md)
-- [Yektanet](./yektanet.md)
-- [Wallex](./wallex.md)
 - [Ozone - Golrang](./ozone.md)
-- [exa](./exalab.md)
-- [Hamkaran system](./hamkaran-system.md)
+- [Exa](./exalab.md)
+- [Snapp](./snapp/snapp_cab_2.md)
+- [cpol](./cpol.md)
 - [Hermes](./hermes.md)
 - [Quiz of Kings](./QuizOfKings.md)
+- [Yektanet](./yektanet.md)
+- [Wallex](./wallex.md)
+- [Digikala](./digikala/digikala.md)
+- [Karnameh](./karnameh.md)
 - [siztel](./siztel/siztel.md)
-- [cpol](./cpol.md)
-- [autoshenas](./autoshenas.md)
+- [Hamkaran system](./hamkaran-system.md)
 - [bitex](./bitex/bitex.md)
+- [autoshenas](./autoshenas.md)
 
 <p dir="rtl">
 شرکت‌هایی که قبل از ۱۴۰۲ باهاشون مصاحبه داشتم:
 </p>
 
-- [Snapp](./snapp/snapp_cab_1.md)
-- [Snapp Market Pro](./snapp/snapp_market_pro.md)
-- [Sternx](./sternx/sternx.md)
-- [Dadeh Afzar Arman](./daa.md)
-- [Hamravesh](./hamravesh/hamravesh.md)
-- [Narvan - Invex](./narvan.md)
 - [MH holding](./mhholding.md)
 - [itoll](./itoll.md)
-- [Graph](./graph/graph.md)
+- [Narvan - Invex](./narvan.md)
+- [Sahmeto](./sahmeto.md)
+- [Snapp Market Pro](./snapp/snapp_market_pro.md)
+- [Dadeh Afzar Arman](./daa.md)
+- [Hamravesh](./hamravesh/hamravesh.md)
+- [Sternx](./sternx/sternx.md)
+- [Snapp](./snapp/snapp_cab_1.md)
 - [phanous](./phanous/phanous.md)
+- [Graph](./graph/graph.md)
 - [gharar](./gharar.md)
-- [sahmeto](./sahmeto.md)
+
+<p dir="rtl">
+مصاحبه‌ها بر اساس ترتیب زمانی از جدید به قدیم مرتب شده‌اند.
+</p>
 
 <br />
 <br />
