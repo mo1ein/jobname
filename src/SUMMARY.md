@@ -40,3 +40,7 @@
 - [phanous](./phanous/phanous.md)
 - [Graph](./graph/graph.md)
 - [Gharar](./gharar.md)
+
+---
+
+[Contributors](contributors.md)
