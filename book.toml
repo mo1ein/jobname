@@ -1,7 +1,6 @@
 [book]
 authors = ["Moein Halvaei"]
 language = "en"
-multilingual = true
 src = "src"
 title = "jobname"
 
@@ -9,6 +8,7 @@ title = "jobname"
 command = "./bin/mdbook-mermaid"
 
 [output.html]
+theme = "src/theme"
 default-theme = "rust"
 git-repository-url = "https://github.com/mo1ein/jobname"
 git-repository-icon = "fa-github"
