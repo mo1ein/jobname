@@ -3,7 +3,7 @@
 ### Status
 #### 📜📞🔧🔧👱🏻‍♀️✅
 ## Go developer
-### Interview process
+### Interview Process
 ```mermaid
 flowchart LR
     sr(Send resume) --> hr(HR call) --> ti1(1st Technical Interview) --> ti2(2nd Technical Interview) --> hri(HR Interview) --> o(Offer) --accepted :) --> r((" "))
@@ -35,21 +35,29 @@ Linkedin
 
 ### 1st Technical Interview
 
+<p dir="rtl">
+یک بار تایم مصاحبه رو عوض کردم که خیلی حرفه‌ای برخورد کردن. مصاحبه خوبی بود و خودم از خودم راضی بودم و وقتی لایوکدو زدم دیگه گفتم تمومه کار.
+</p>
+
 - Tell me about yourself.
 
-- How does Golang handle memory management?
+- How much experience do you have with Go?
 
-- Golang is OOP? have inheritance?
+- Golang is OOP language? 
+
+- Go has inheritance concept?
 
 - What is Mutex?
 
-- Suppose we have send a request to a service and some action failed. how can handle to break after process or other works?
+- Suppose we have sent a request to a service and an action failed. How can we handle other processes to know that the action has failed and handle them accordingly?
 
 - What is channel?
 
 - What is waitgroup?
 
 - Have you experience with RabbitMQ?
+
+- Any questions?
 
 #### Live code
 
@@ -64,6 +72,10 @@ Linkedin
 
 
 ### 2nd Technical Interview
+
+<p dir="rtl">
+این مصاحبه با VP of engineering بود. خیلی مصاحبه خوبی بود و سوالات مهندس نرم‌افزاری پرسیده شد که در مورد نوع نگرش به مسائل بود. مصاحبه‌کننده بسیار خوش‌برخورد، مودب و کول بود. یک بار جلسه رو کنسل کرده بود و بابت اون عذرخواهی کرد. در مورد رزومه‌م گفت من رزومه رو کلی دیدم فقط یه جا کار کرده بودی که این دلیل بر کم بودن توانایی‌هات نیست... حرفه‌ای بود.
+</p>
 
 - I know a brief of your background. Tell me more about it.
 
@@ -81,9 +93,9 @@ Linkedin
 
 - If you want to write test, how you start? Starting with easy part, important part or hard part?
 
-- Do you know REDIS? What did you do with it?
+- Do you know redis? What did you do with it?
 
-- Are you single or married?
+- Do you living alone? Sorry this is personal question: Are you single or married?
 
 - What is your plan for new year?
 
@@ -93,8 +105,9 @@ Linkedin
 
 ### HR Interview
 
-<p dir="rtl">کاملا جلسه اوکی و روالی بود، سوالا رو بارها شنیده بودم، جوابای خوبی داشتم و اساسی می‌تونستم تفت بدم.</p>
-تودو قطع و وصلی
+<p dir="rtl">
+کاملا جلسه اوکی و روالی بود، سوالا رو بارها شنیده بودم، جوابای خوبی داشتم و اساسی تونستم تفت بدم. قطع و وصلی زیاد داشتیم هم از سمت من هم از سمت مصاحبه‌کننده نت افتضاح بود ولی خب گذروندیم.
+</p>
 <ul dir="rtl">
     <li>خودتو معرفی کن.</li>
     <li>از کجا با ما آشنا شدی؟</li>
@@ -111,9 +124,9 @@ Linkedin
     <li>سوالی داری؟</li>
 </ul>
 
-
 ### Score
 <h4><mark style="background-color:#54ca56">8/10</mark></h4>
 
-
-TODO: I rejected in first one
+<p dir="rtl">
+مصاحبه‌ها خوب بود به ویژه فنی‌ها که اندازه و درست بود. یک بار بعد مصاحبه اول گفتن حضوری برم برای مصاحبه که من تا حدودی فهمیدم اوکیه قضیه (طبق تجربه بعد یه مصاحبه می‌گن حضوری بیا یعنی ۸۰ درصد اوکیه) اما اون تایم شرایطم جوری بود که نمی‌تونستم حضوری فول‌تایم باشم و به همین دلیل بهشون اطلاع دادم که نمی‌تونم (برای همینه تایم مصاحبه‌ها انقد فاصله داره و جدای اون دو مورد کنسلی هم بود). بعد از حدود ۴ ماه،  دوباره تو لینکدین پیام دادم (میزان پاسخ‌گویی‌شون تو لینکدین ۱۰/۱۰ بود واقعا) که اگه اوکی هستین من شرایطم اوکیه و خب جلسه ست کردن و فوقع ما وقع. (: تا حدی من سیگنال سبز رو گرفته بودم، هم اون اول هم بعد بازگشت دوباره که خب باحال بود این روند.
+</p>
