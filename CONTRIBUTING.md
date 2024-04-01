@@ -17,8 +17,8 @@ src/snapp
 You can add your name (if you like) after the company name like: `snapp_moein.md` and that's good to write it in the file otherwise, write `unknown`.
 
 ## Install
-You need to install mdbook. Just install binaries if you are not familiar with `rust` and `cargo`.
-<br/ >Watch this [link](https://github.com/rust-lang/mdBook/releases) for releases.
+You need to install mdbook. Just install binaries if you are not familiar with `rust` and `cargo`. <br />
+Watch this [link](https://github.com/rust-lang/mdBook/releases) for releases.
 
 ## Build
 For building after your changes in the root dir of project:
