@@ -24,12 +24,10 @@ You need to install mdbook. Just install binaries if you are not familiar with `
 For building after your changes in the root dir of project:
 ```
 mdbook build .
-
 ```
 
 Or you can build and serve to watch your changes:
 
 ```
 mdbook serve --open
-
 ```
