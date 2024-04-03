@@ -38,6 +38,10 @@ Google Meet
 
 ### Technical Interview
 
+<p dir="rtl">
+مصاحبه با یک نفر بود که CTO شرکت بود. لابه‌لای سوالات فنی، سوالات شخصی پرسیده می‌شد و خیلی سریع هم در حال یادداشت بود این سرعت استرس می‌داد. بعدا که رفتم شرکت دیدم مثلا تو یه روز با ده نفر مصاحبه می‌کنه و دلیلش اونه.
+</p>
+
 - Tell me about yourself.
 
 - What is systemD?
@@ -130,4 +134,8 @@ Google Meet
 </p>
 
 ### Score
-<p><mark style="background-color:#54ca56; font-size:16 px;"><b>7.5/10</b></mark></p>
+<p><mark style="background-color:#54ca56; font-size:16 px;"><b>8/10</b></mark></p>
+
+<p dir="rtl">
+شرکت خوبیه فرهنگ خوبی داره برای شروع خوبه.
+</p>
