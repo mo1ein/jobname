@@ -25,6 +25,8 @@ Linkedin
 
 - Do you written test in your company?
 
+TODO
+
 ### Score
 
 <h4><mark style="background-color:#54ca56">6/10</mark></h4>
