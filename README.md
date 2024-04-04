@@ -6,6 +6,7 @@
     <li><a href="#companies">شرکت‌ها</a></li>
     <li><a href="src/referral.md">ریفر، میفر، مایکروفر</a></li>
     <li><a href="src/redflags.md">پرچم‌های خونی</a></li>
+    <li><a href="src/rejection.md">ریجکت، ریجکت، ریجکت...</a></li>
     <li><a href="src/statistics.md">نگاه آماری</a></li>
 </ul>
 

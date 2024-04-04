@@ -5,6 +5,7 @@
 - [Preface](README.md)
 - [Referral](referral.md)
 - [Red flags](redflags.md)
+- [Rejection](rejection.md)
 - [Statistically](statistics.md)
 
 # Companies
