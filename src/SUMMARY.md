@@ -7,6 +7,7 @@
 - [Red flags](redflags.md)
 - [Rejection](rejection.md)
 - [Statistically](statistics.md)
+- [Clarifying](clarifying.md)
 
 # Companies
 
