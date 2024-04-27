@@ -39,7 +39,7 @@
 - [Dadeh Afzar Arman](./daa.md)
 - [Hamravesh](./hamravesh/hamravesh.md)
 - [Sternx](./sternx/sternx.md)
-- [phanous](./phanous/phanous.md)
+- [Phanous](./phanous/phanous.md)
 - [Graph](./graph/graph.md)
 - [Gharar](./gharar.md)
 

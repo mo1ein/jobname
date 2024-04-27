@@ -31,24 +31,24 @@
 - [Ozone - Golrang](./ozone.md)
 - [Exa](./exalab.md)
 - [Snapp](./snapp/snapp_cab_2.md)
-- [cpol](./cpol.md)
+- [Cpol](./cpol.md)
 - [Hermes](./hermes.md)
 - [Quiz of Kings](./QuizOfKings.md)
 - [Yektanet](./yektanet.md)
 - [Wallex](./wallex.md)
 - [Digikala](./digikala/digikala.md)
 - [Karnameh](./karnameh.md)
-- [siztel](./siztel/siztel.md)
+- [Siztel](./siztel/siztel.md)
 - [Hamkaran system](./hamkaran-system.md)
-- [bitex](./bitex/bitex.md)
-- [autoshenas](./autoshenas.md)
+- [Bitex](./bitex/bitex.md)
+- [Autoshenas](./autoshenas.md)
 
 <p dir="rtl">
 شرکت‌هایی که قبل از ۱۴۰۲ باهاشون مصاحبه داشتم:
 </p>
 
 - [MH holding](./mhholding.md)
-- [itoll](./itoll.md)
+- [Itoll](./itoll.md)
 - [Narvan - Invex](./narvan.md)
 - [Sahmeto](./sahmeto.md)
 - [Snapp Market Pro](./snapp/snapp_market_pro.md)
@@ -56,9 +56,9 @@
 - [Hamravesh](./hamravesh/hamravesh.md)
 - [Sternx](./sternx/sternx.md)
 - [Snapp](./snapp/snapp_cab_1.md)
-- [phanous](./phanous/phanous.md)
+- [Phanous](./phanous/phanous.md)
 - [Graph](./graph/graph.md)
-- [gharar](./gharar.md)
+- [Gharar](./gharar.md)
 
 <p dir="rtl">
 مصاحبه‌ها بر اساس ترتیب زمانی از جدید به قدیم مرتب شده‌اند.
