@@ -32,6 +32,7 @@ gharar
 <p dir = "rtl"></p>
 
 - Tell us about yourself.
+// TODO
 
 ## Score
 <h4><mark style="background-color:#54ca56">7/10</mark></h4>

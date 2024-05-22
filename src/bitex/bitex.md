@@ -29,7 +29,7 @@ Linkedin
     تسک (یا
     <a href="https://hackmd.io/Rr9Uxz7KSvKV1m-3bhCPYg?view">این‌جا</a>
     ) و
-    <a href="./TODO">جواب</a>
+    <a href="https://github.com/mo1ein/Bitex">جواب</a>
     من.
 </p>
 

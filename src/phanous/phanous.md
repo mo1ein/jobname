@@ -74,7 +74,6 @@ gharar.ir
 <p dir="rtl">
 <a href="./Phanous Software Engineer task.pdf">تسک</a>
  ساده‌ای بود و ۴ روزه زدم. به خوبی نیازمندی‌های خواسته شده رو پوشش می‌داد.
-<a href="">لینکش</a>.
 </p>
 
 ### Task Review & Live code
