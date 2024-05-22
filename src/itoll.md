@@ -72,9 +72,9 @@ E-mail (:
 
 - What is Redis? Why it's fast?
 
-- Are you familiar with git? Can you solve conflict?
+- Are you familiar with git? Can you resolve conflicts?
 
-- What is hardest project you worked with?
+- What is the hardest project you have worked on?
 
 - What does a good work environment look like?
 

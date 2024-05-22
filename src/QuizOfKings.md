@@ -41,7 +41,7 @@ Google Meet
 
 - What is race condition?
 
-- What is difference concurrency in python and go?
+- What is the difference between concurrency in python and go?
 
 - Waht is event driven architecture?
 
@@ -51,7 +51,7 @@ Google Meet
 
 - We have a system and each time we get an API, imagine a user get info, in the result are more data. How cache it?
 
-- How database index columns?
+- How do database index columns work?
 
 - If you want to design a database, how do you determine which technologies or approaches to use?
 

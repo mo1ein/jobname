@@ -50,7 +50,7 @@ Google Meet
 
 - What is your OS?
 
-- How much you experienced with django?
+- How much experience do you have with Django?
 
 - What is middleware in django?
 
@@ -72,11 +72,11 @@ Google Meet
 
 - What are differences between python async and go concurrency?
 
-- What databases do you work?
+- What databases have you worked with?
 
 - What is NoSql?
 
-- mongoDB is NoSql?
+- mongoDB is a NoSql?
 
 - Can you write query?
 

@@ -45,11 +45,11 @@ Google Meet
 
 - What is generic?
 
-- What is difference between concurrency and parallelism?
+- What is the difference between concurrency and parallelism?
 
 - We have a scenario. We have two goroutine that traverse a slice. One is start from begining and other starts from end. How each goroutine can know other one is in the middle of slice? With cannels.
 
-- We have a scenario that we have a goroutine and this goroutine wait for other goroutine how you handle it? waitgroup.
+- We have a scenario that we have a goroutine and this goroutine wait for other goroutine how do you handle it? waitgroup.
 
 - What is interface?
 
@@ -71,7 +71,7 @@ Google Meet
 
 - What go freamwork you are familiar with?
 
-- When you recieve a request, how you read data? How you unmarshal it?
+- When you receive a request, how do you read data? How do you unmarshal it?
 
 - What is middleware?
 
@@ -79,7 +79,7 @@ Google Meet
 
 - What is init function?
 
-- What databases you worked with?
+- What databases have you worked with?
 
 - What is your salary expectation? Write the number in chat.
 

@@ -24,7 +24,7 @@ jobinja
 
 - Tell me about yourself.
 
-- Are you student?
+- Are you graduated?
 
 - Do you have any job experience or have you made any money from programming?
 

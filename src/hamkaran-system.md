@@ -97,7 +97,7 @@ This [link](https://go.dev/blog/slices-intro) is all about slice.
 
 - We have service out of here that panics somewhere and we don't want panic here because here is more important imagine something like rocket system how can handle this?
 
-- Do you knwo busy waiting?
+- Do you know busy waiting?
 
 - What is defer?
 
