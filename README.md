@@ -8,7 +8,7 @@
     <li><a href="src/redflags.md">پرچم‌های خونی</a></li>
     <li><a href="src/rejection.md">ریجکت، ریجکت، ریجکت...</a></li>
     <li><a href="src/statistics.md">نگاه آماری</a></li>
-    <li><a href="clarifying.md">شفاف<200c>سازی</a></li>
+    <li><a href="clarifying.md">شفاف‌‌سازی</a></li>
 </ul>
 
 <h2 id="intro" dir="rtl"><a class="header" href="#intro">دیباچه</a></h2>
