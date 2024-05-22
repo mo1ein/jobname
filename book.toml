@@ -16,7 +16,12 @@ git-repository-icon = "fa-github"
 # cname = "myproject.rs"
 additional-js = ["mermaid.min.js", "mermaid-init.js"]
 additional-css = ["src/theme/css/general.css"]
+copy-fonts = true
 
 [output.html.fold]
 enable = true
 level = 0
+
+[output.html.font]
+enable = true
+woff = true

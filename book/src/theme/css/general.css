@@ -1,20 +1,78 @@
 
 /* vazir font */
+
 @font-face {
-  font-family: Vazir;
-  src: url("moz-extension://f67a8e28-4334-498a-a9ac-6d778ced5dc3/fonts/file/Vazirmatn-Regular.woff2")
-    format("woff2");
-  font-weight: normal;
+  font-family: Vazirmatn;
+  src: url('../fonts/Vazirmatn-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: Vazir;
-  src: url("moz-extension://f67a8e28-4334-498a-a9ac-6d778ced5dc3/fonts/file/Vazirmatn-Bold.woff2")
-    format("woff2");
-  font-weight: bold;
+  font-family: Vazirmatn;
+  src: url('../fonts/Vazirmatn-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url('../fonts/Vazirmatn-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url('../fonts/Vazirmatn-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url('../fonts/Vazirmatn-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url('../fonts/Vazirmatn-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url('../fonts/Vazirmatn-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url('../fonts/Vazirmatn-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url('../fonts/Vazirmatn-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 
 /* Base styles and content styles */
@@ -37,7 +95,7 @@ html {
 
 /* change persian language font*/
 p[dir="rtl"], ul[dir="rtl"], h2[dir="rtl"], h2[dir="rtl"] {
-    font-family: "Vazir", sans-serif;
+    font-family: "Vazirmatn", sans-serif;
 }
 
 h1 span {
