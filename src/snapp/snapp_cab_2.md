@@ -39,19 +39,19 @@ Skype
 
 - What is SOLID? tell us about 2 of them.
 
-- What is CI/CD? and differences?
+- What is CI and CD? and the differences?
 
 - Difference between virtual machine and docker?
 
 - Have you ever Dockerized a golang project?
 
-- How we can optimize docker image size? what parameters depends it?
+- How we can optimize docker image size? What parameters its depends on?
 
-- Which command use to if container is up or not do sth? idk i think docker ps
+- Which docker command do we use to know if container is up or down? idk i think docker ps
 
-- Have you experienced with Kuber?
+- Do you have any experience with Kuber?
 
-- What is index in database? i said if don't know it or overuse is bad.
+- What is index in database? Answer: I said if don't know it or overuse is, is bad.
 
 - When indexing is bad?
 
@@ -63,7 +63,7 @@ Skype
 
 - What is CAP theory?
 
-- We have an API and we want to add new features on it. How can handle compatibality with older version? v1 v2
+- We have an API and we want to add new features on it. How can we handle compatibality with older version? v1 v2
 
 - Difference between multiprocess and multithread?
 
@@ -71,11 +71,11 @@ Skype
 
 - Why are we able to change python tuple values even though they are immutable?
 
-- How you optimize a query? what's your approach to better a query? and i said my answer is correct? not an exact answer u can use explain...
+- How you ever optimized a query? What's your approach to improve a query? and i said my answer is correct? not an exact answer u can use explain...
 
 - Do you know what is memory leak? How golang handle it?
 
-- What is defer? and give me an example of usage.
+- What is defer? and give me an example of its usage.
 
 ### Score
 <h4><mark style="background-color:#54ca56">8/10</mark></h4>

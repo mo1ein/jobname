@@ -45,21 +45,21 @@ Skype
 
 - Tell me about yourself.
 
-- When your study finished?
+- When will you be graduatd?
 
 - What is your plan after you finished university?
 
-- HR said we have live coding or not? no.
+- HR asked weather we're having a live coding or not? no.
 
-- Why you choosed go?
+- Why did you choose go?
 
 - After the interview, what position do you think you want?
 
 - Microservices vs monolotic
 
-- How fix latency in microservices?
+- How do you fix latency in microservices?
 
-- What lesson did you like in college?
+- What subject did you like in college?
 
 - What angle do the clock hands make at 3:15?
 

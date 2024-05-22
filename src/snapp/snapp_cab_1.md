@@ -33,7 +33,7 @@ Site
 
 - Compare python with C++.
 
-- What is OOP? What is benifits and concept.
+- What is OOP? What are the benifits and concept.
 
 - What is access modifiers?
 
@@ -49,7 +49,7 @@ Site
 
 - What is OSI model? Say name of 7 layers.
 
-- What is fastest sorting algorithm? And what's that time complexity?
+- What is fastest sorting algorithm? And what's its time complexity?
 
 - Any questions?
 

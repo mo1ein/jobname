@@ -43,7 +43,7 @@ Linkedin
 
 - How much experience do you have with Go?
 
-- Golang is OOP language? 
+- Is Golang an OOP language?
 
 - Go has inheritance concept?
 
@@ -55,7 +55,7 @@ Linkedin
 
 - What is waitgroup?
 
-- Have you experience with RabbitMQ?
+- Do you have you experience with RabbitMQ?
 
 - Any questions?
 
@@ -77,19 +77,19 @@ Linkedin
 این مصاحبه با VP of engineering بود. خیلی مصاحبه خوبی بود و سوالات مهندس نرم‌افزاری پرسیده شد که در مورد نوع نگرش به مسائل بود. مصاحبه‌کننده بسیار خوش‌برخورد، مودب و کول بود. یک بار جلسه رو کنسل کرده بود و بابت اون عذرخواهی کرد. در مورد رزومه‌م گفت من رزومه رو کلی دیدم فقط یه جا کار کرده بودی که این دلیل بر کم بودن توانایی‌هات نیست... حرفه‌ای بود.
 </p>
 
-- I know a brief of your background. Tell me more about it.
+- I know your background briefly. Tell me more about it.
 
 - How long were you there (last company)?
 
 - What is your uni major?
 
-- We have 2 mindsets in software engineering. One is "tools, languages and stack is not important, you should solve problems regardless of tools." and the other one is "tools is important and everyone have to solve problems with tools that know them". Which mindset you prefer?
+- We have 2 mindsets in software engineering. One is "tools, languages and stack is not important, you should solve problems regardless of tools." and the other one is "tools is important and everyone have to solve problems with tools that know them". Which mindset do you prefer?
 
-- If a task is hard or you r not familliar with it (language, tool and etc.), what is your approach? Are you face it with it? or not?
+- If a task is difficult or not familliar with it (language, tool and etc.), what whould be your approach? Would you face it or not?
 
-- Where is of codebase you write unit test for it?
+- Which part of the codebase do you write unit test for it?
 
-- How you found a bug in system. How you write test?
+- How do you found a bug in system. How you write test?
 
 - If you want to write test, how you start? Starting with easy part, important part or hard part?
 

@@ -35,7 +35,7 @@ Google Meet
 
 - Tell me about yourself.
 
-- What is python data types? and how grouping them?
+- What is python data types? and how do you grouping them?
 
 - What is mutable and immutable and why? give me an example for each.
 
@@ -43,39 +43,39 @@ Google Meet
 
 - What is references relationship with mutable and immutable? have relationship between this?
 
-- What is decorator? and where you used it? do you write decorator?
+- What is decorator? and where do you use it? do you write decorator?
 
-- What is difference between multithread and multiprocess?
+- What is the difference between multithread and multiprocess?
 
 - What is coroutine?
 
-- What is difference between gRPC and REST?
+- What is the difference between gRPC and REST?
 
-- What is difference between set and list?
+- What is the difference between set and list?
 
-- What is generator? when they used? do you use it?
+- What is generator? when do we use them? do you use them?
 
-- What is difference between SQL and NoSQL?
+- What is the difference between SQL and NoSQL?
 
-- When you used kafka?
+- When do you use kafka?
 
 - What is design patterns and where you used it?
 
-- Where you used REDIS?
+- Where do you used REDIS?
 
 - What is partition in kafka?
 
 - Do you have any experience with pure SQL coding?
 
-- What is difference between WHERE and HAVING in SQL?
+- What is the difference between WHERE and HAVING in SQL?
 
 - Have you experienced with mysql?
 
-- Have you experienced with mongoDB?
+- Have you had any experience with mongoDB?
 
 - How you implemented gRPC in past company?
 
-- Have you experienced about scraping?
+- Have you had any experience about scraping?
 
 - Are you familiar with these technologies?
     - docker
