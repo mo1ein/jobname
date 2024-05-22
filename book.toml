@@ -5,7 +5,7 @@ src = "src"
 title = "jobname"
 
 [preprocessor.mermaid]
-command = "./bin/mdbook-mermaid"
+command = "mdbook-mermaid"
 
 [output.html]
 default-theme = "rust"
