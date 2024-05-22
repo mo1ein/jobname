@@ -41,7 +41,7 @@ Skype
 
 - What is CI and CD? and the differences?
 
-- Difference between virtual machine and docker?
+- What is the difference between virtual machine and docker?
 
 - Have you ever Dockerized a golang project?
 
