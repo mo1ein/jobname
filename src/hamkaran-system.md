@@ -43,7 +43,7 @@ Skyroom
 
 - Your knowledge about database is the level of a database administrator?
 
-- If our query is slow, How you optimize it? What's your solution for this problem?
+- If our query is slow, how would you optimize it? What is your solution for this problem?
 
 - Do you have an interest in frontend development?!
 
@@ -51,13 +51,13 @@ Skyroom
 از این سوال مشخصه می‌خوان مثل برده از نیرو کار بکشن.<br>فرانت بزن بک بزن دواپسم بزن و از یک نیرو به اندازه چندتا نیرو کار بکشن.
 </p>
 
-- What is slice & difference with array?
+- What is a slice, and what is the difference between a slice and an array?
 
 - What is memory complexity when go tries to put our slice to another (big one)? <br />
 Answer: use tahlil sarshekan
 This [link](https://go.dev/blog/slices-intro) is all about slice.
 
-- What is difference string between go & C?
+- What is the difference between strings in Go and C?
 
 - What is rune and size?
 
@@ -71,25 +71,25 @@ This [link](https://go.dev/blog/slices-intro) is all about slice.
 
 - What is OOP concepts that go don't have it?
 
-- How we use encapsulation concept in go?
+- How do we use the encapsulation concept in Go?
 
 - What is garbage collector?
 
 - Waht is stack and differences between heap?
 
-- Have you experience with async or paralellism stuffs?
+- Do you have experience with asynchronous or parallelism concepts?
 
-- What is difference between concurrency & parallelism?
+- What is the difference between concurrency & parallelism?
 
 - How can send data between processes?
 
 - Explain call by reference & call by value.
 
-- What is race condition and how can handle it?
+- What is a race condition, and how can it be handled?
 
 - Suppose we used other service that has error how can handle it?
 
-- When we should use panic?
+- When should we use panic?
 
 - It is reliable recovering a panic?
 

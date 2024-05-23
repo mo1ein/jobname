@@ -33,7 +33,7 @@ Google Meet
 
 - Tell us about yourself.
 
-- Can u tell software layer when request come from to our code and where go?
+- Can you tell me the software layers that a request goes through in our code, and where it ends up?
 
 - What is ORM?
 
@@ -43,11 +43,11 @@ Google Meet
 
 - When we want to know a user authenticated or not for some action, how know that and how we handle that?
 
-- Can u example of some tables with one-to-one one-to-many many-to-many many-to-one?
+- Can you example of some tables with one-to-one one-to-many many-to-many many-to-one?
 
-- Consider we have some tables and we have fk in each...
+- Consider we have some tables and we have fk in each... // TODO
 
-- What is design pattern? why is good?
+- What is design pattern? Why is it good?
 
 - What is SOLID?
 
@@ -57,21 +57,21 @@ Google Meet
 
 - Example dependency inversion in code. interface go ro gofram
 
-- When you use cache?
+- When do you use a cache?
 
-- TDD is OK? If I say don't need to write test, what's your reaction in a team?
+- Is TDD OK? If I say we don't need to write tests, what's your reaction in a team?
 
-- Have you ever have experienced about test you written and that fixes bug and cause make you happy?
+- Have you ever experienced the joy of writing a test that fixes a bug and makes you happy?
 
 - What languages Are you familiar with?
 
 - Are you OK with php? Our stack is php.
 
-- What is disturb you in work?
+- What disturbs you at work?
 
-- Why you want to out or why you want to find job in a new company?
+- What are your main reasons for wanting to work at a different company?
 
-- What is your git flow in past company? Why not rebase instead of merged master branch with your task branch?
+- What was your git flow at your previous company? Why did you not choose to rebase instead of merging the master branch with your task branch
 
 - Any question? what is your team structure
 

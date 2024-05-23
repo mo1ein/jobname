@@ -49,7 +49,7 @@ Google Meet
 
 - Suppose we have a queue and a redis and more requests sent to our web server how can handle to redis. redis can handle just a few requests. What's your approach to handle scale?
 
-- We have a system and each time we get an API, imagine a user get info, in the result are more data. How cache it?
+- We have a system, and each time we receive an API request, imagine a user gets information. In the result, there are more data. How would you cache that?
 
 - How do database index columns work?
 
@@ -57,7 +57,7 @@ Google Meet
 
 - What is docker & kober?
 
-- We want to design url shortner system. How you design it?
+- We want to design a URL shortener system. How would you design it?
 
 ### Score
 <h4><mark style="background-color:#54ca56">7/10</mark></h4>
