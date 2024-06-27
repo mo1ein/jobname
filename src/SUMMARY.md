@@ -42,7 +42,7 @@
 - [Phanous](./phanous/phanous.md)
 - [Graph](./graph/graph.md)
 - [Gharar](./gharar.md)
-- [ToomanPay](src/TomanPay/senior_backend_position.md)
+- [Tooman Pay](src/TomanPay/senior_backend_position.md)
 
 ---
 

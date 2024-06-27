@@ -67,5 +67,5 @@
 مصاحبه‌های دیگران:
 </p>
 
-- [ToomanPay](src/TomanPay/senior_backend_position.md)
+- [Tooman Pay](src/TomanPay/senior_backend_position.md)
 
