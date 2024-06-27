@@ -17,7 +17,7 @@ Refer
 
 - **Technical Interview** <br> 1403.03.30
 
-- **Rejection Email** <br /> 1400.07.26
+- **Rejection Email** <br /> 1400.04.02
 
 ### Interview Duration
 - **Technical Interview** <br> 1 Hour and 30 minutes
