@@ -116,7 +116,7 @@ Find the most repeated item in this array `[1,4,7,4,3,8,4]`. return `item` and `
 
 ```go
 func getMostRepeatedNum(nums []int) (int, int) {
-	numMap := make(map[int]int, len(nums uh))
+	numMap := make(map[int]int, len(nums))
 	maxCount, maxNum := 0, 0
 	for _, i := range nums {
     		numMap[i]++
