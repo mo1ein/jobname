@@ -11,6 +11,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  pull-requests: write
 
 jobs:
   deploy:
@@ -20,7 +21,7 @@ jobs:
       pages: write  # To push to a GitHub Pages site
       id-token: write # To update the deployment status
       pages: write
-      pull-requests: write    
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
         with:
