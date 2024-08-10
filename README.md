@@ -41,6 +41,10 @@
 - [Hamkaran system](src/hamkaran-system.md)
 - [Bitex](src/bitex/bitex.md)
 - [Autoshenas](src/autoshenas.md)
+- [Dotin](src/autoshenas.md)
+- [Zibal](src/autoshenas.md)
+- [TahaGasht](src/autoshenas.md)
+- [NamaAva](src/autoshenas.md)
 
 <p dir="rtl">
 شرکت‌هایی که قبل از ۱۴۰۲ باهاشون مصاحبه داشتم:
