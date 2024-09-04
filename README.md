@@ -4,6 +4,7 @@
 <ul dir="rtl">
     <li><a href="#intro">دیباچه</a></li>
     <li><a href="#companies">شرکت‌ها</a></li>
+    <li><a href="src/FAQ.md">سوالات پرتکرار</a></li>
     <li><a href="src/referral.md">ریفر، میفر، مایکروفر</a></li>
     <li><a href="src/redflags.md">پرچم‌های خونی</a></li>
     <li><a href="src/rejection.md">ریجکت، ریجکت، ریجکت...</a></li>
@@ -68,4 +69,3 @@
 </p>
 
 - [Toman Pay](src/tomanpay/senior_backend_position.md)
-

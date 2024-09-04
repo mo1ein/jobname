@@ -5,6 +5,7 @@
 <ul dir="rtl">
     <li><a href="#intro">دیباچه</a></li>
     <li><a href="#companies">شرکت‌ها</a></li>
+    <li><a href="FAQ.md">سوالات پرتکرار</a></li>
     <li><a href="referral.md">ریفر، میفر، مایکروفر</a></li>
     <li><a href="redflags.md">پرچم‌های خونی</a></li>
     <li><a href="rejection.md">ریجکت، ریجکت، ریجکت...</a></li>

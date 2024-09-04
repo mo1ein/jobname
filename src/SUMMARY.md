@@ -8,6 +8,7 @@
 - [Rejection](rejection.md)
 - [Statistically](statistics.md)
 - [Clarifying](clarifying.md)
+- [FAQ](FAQ.md)
 
 # Companies
 
