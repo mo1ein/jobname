@@ -11,13 +11,14 @@
 - [FAQ](FAQ.md)
 
 # Companies
-
+- [Snappshop](./snapp/snappshop.md)
 - [Ozone - Golrang](./ozone.md)
 - [Exa](./exalab.md)
 - [Snapp](./snapp/snapp.md)
     - [Snapp cab 1](./snapp/snapp_cab_1.md)
     - [Snapp cab 2](./snapp/snapp_cab_2.md)
     - [Snapp Market Pro](./snapp/snapp_market_pro.md)
+    - [Snapp shop](./snapp/snappshop.md)
 - [Cpol](./cpol.md)
 - [Hermes](./hermes.md)
 - [Quiz of Kings](./QuizOfKings.md)
