@@ -342,7 +342,7 @@ Skype
       <img src="https://bennadel-cdn.com/resources/uploads/2018/database-index-design-index-basics2.png" alt="composite index" style="max-width: 70%; height: auto;" />
   </div>
 
-- We have two consumers, and there are a hundred messages in the queue. The first one takes all of them. What should we do so that the second one also receives some?
+- We have two consumers and there are a hundred messages in the queue. The first one takes all of them. What should we do so that the second one also receives some?
 
   <div style="text-align: center;">
     <img src="https://codeopinion.com/wp-content/uploads/2023/07/7-2-1024x271.png" alt="rabbitmq consumers  " style="max-width: 70%; height: auto;" />
