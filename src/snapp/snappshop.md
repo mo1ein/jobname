@@ -334,7 +334,7 @@ Skype
 
   [rabbitmq](https://www.rabbitmq.com/docs/channels#:~:text=Some%20applications%20need,channels%20between%20them.)
 
-- We have a table with three fields: start time, end time, and one ID. This is too slow. How do you try to speed it up?
+- We have a table with three fields: start time, end time and ID. This is too slow. How do you try to speed it up?
 
   [bennadel](https://www.bennadel.com/blog/3467-the-not-so-dark-art-of-designing-database-indexes-reflections-from-an-average-software-engineer.htm#:~:text=An%20index%20can,index%20provides%20them.)
 
