@@ -99,12 +99,12 @@ todo
 **_Say some redis data structures._**
 
 **_What is indexing? How database index columns?_** <br />
-**_(3 times - [snappshop](), [snapp](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#1st-technical-interview:~:text=What%20is%20index,indexing%20is%20bad%3F), [karnameh](https://mo1ein.github.io/jobname/karnameh.html#technical-interview:~:text=What%20is%20indexing%3F%20and%20why%20is%20bad%20when%20use%20a%20lot%3F), [quiz of kings](https://mo1ein.github.io/jobname/QuizOfKings.html#technical-interview:~:text=How%20do%20database%20index%20columns%20work%3F))_**
+**_(3 times - [snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=What%20is%20index%20in%20database%3F), [snapp](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#1st-technical-interview:~:text=What%20is%20index,indexing%20is%20bad%3F), [karnameh](https://mo1ein.github.io/jobname/karnameh.html#technical-interview:~:text=What%20is%20indexing%3F%20and%20why%20is%20bad%20when%20use%20a%20lot%3F), [quiz of kings](https://mo1ein.github.io/jobname/QuizOfKings.html#technical-interview:~:text=How%20do%20database%20index%20columns%20work%3F))_**
 
 - [atlassian](https://www.atlassian.com/data/databases/how-does-indexing-work)
 
 **_Why use indexing a lot, is a bad thing?_** <br />
-**_(3 times - [snappshop](), [snapp](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#1st-technical-interview:~:text=What%20is%20index,indexing%20is%20bad%3F), [karnameh](https://mo1ein.github.io/jobname/karnameh.html#technical-interview:~:text=What%20is%20indexing%3F%20and%20why%20is%20bad%20when%20use%20a%20lot%3F))_**
+**_(3 times - [snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=Why%20shouldn%27t%20we%20index%20all%20columns%3F%20Doesn%27t%20it%20become%20faster%3F), [snapp](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#1st-technical-interview:~:text=What%20is%20index,indexing%20is%20bad%3F), [karnameh](https://mo1ein.github.io/jobname/karnameh.html#technical-interview:~:text=What%20is%20indexing%3F%20and%20why%20is%20bad%20when%20use%20a%20lot%3F))_**
 
 1. Increased Storage Requirements <br />
 While having more space might seem beneficial, each index consumes additional disk space. For large databases, this can lead to significant storage overhead, especially if many indexes are created on various columns that may not be frequently queried.
@@ -130,7 +130,7 @@ Some queries may not benefit from additional indexes, particularly those that in
 - [wikipedia](https://en.wikipedia.org/wiki/Isolation_(database_systems))
 
 **_We have a query that is too slow, how you try to fast it?_** <br />
-**_(2 times, [snappshop](), [hamkaran system](https://mo1ein.github.io/jobname/hamkaran-system.html#live-code:~:text=If%20our%20query%20is%20slow%2C%20how%20would%20you%20optimize%20it%3F%20What%20is%20your%20solution%20for%20this%20problem%3F))_**
+**_(2 times, [snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=We%20have%20a%20query%20that%20is%20too%20slow%2C%20how%20you%20try%20to%20fast%20it%3F), [hamkaran system](https://mo1ein.github.io/jobname/hamkaran-system.html#live-code:~:text=If%20our%20query%20is%20slow%2C%20how%20would%20you%20optimize%20it%3F%20What%20is%20your%20solution%20for%20this%20problem%3F))_**
 
 1. Analyze the Query Execution Plan <br />
 Use `EXPLAIN`: Run the query with the `EXPLAIN` command (or `EXPLAIN ANALYZE` for more detailed output) to understand how the database engine executes the query. This will provide insights into which indexes are being used, join methods, and where potential bottlenecks lie.
@@ -172,16 +172,16 @@ Optimize Application Code: Sometimes, the issue may not be with the query itself
 
 ### Git
 **_Merge vs Rebase... explain differneces and pros and cons._** <br />
-**_(3 times - [snappshop](), [wallex](https://mo1ein.github.io/jobname/wallex.html#wallex:~:text=Why%20did%20you%20not%20choose%20to%20rebase%20instead), [sternx](https://mo1ein.github.io/jobname/sternx/sternx.html#1st-technical-interview:~:text=know%20about%20git%3F-,What%20is%20git%20rebase%3F,-What%27s%20your%20salary))_**
+**_(3 times - [snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=What%20is%20difference%20between%20git%20Merge%20and%20Rebase%3F), [wallex](https://mo1ein.github.io/jobname/wallex.html#wallex:~:text=Why%20did%20you%20not%20choose%20to%20rebase%20instead), [sternx](https://mo1ein.github.io/jobname/sternx/sternx.html#1st-technical-interview:~:text=know%20about%20git%3F-,What%20is%20git%20rebase%3F,-What%27s%20your%20salary))_**
 - [coderefinery](https://coderefinery.github.io/git-branch-design/01-rebase/)
 - [codeparrot](https://codeparrot.ai/blogs/git-merge-vs-rebase)
 - [geeksforgeeks](https://www.geeksforgeeks.org/git-difference-between-merging-and-rebasing/)
 
 **_What was your git flow at your previous company?_** <br />
-**_(2 times - [snappshop](./snapp/snappshop.md), [wallex](https://mo1ein.github.io/jobname/wallex.html?highlight=walle#wallex:~:text=What%20was%20your%20git%20flow%20at%20your%20previous%20company%3F))_**
+**_(3 times - [snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=What%20was%20your%20git%20flow%20at%20your%20previous%20company%3F), [wallex](https://mo1ein.github.io/jobname/wallex.html?highlight=walle#wallex:~:text=What%20was%20your%20git%20flow%20at%20your%20previous%20company%3F), [digikala](https://mo1ein.github.io/jobname/digikala/digikala.html#:~:text=What%20was%20your%20Git%20workflow%20in%20the%20last%20company%3F))_**
 
 **_What is fast-forward?_** <br />
-**_(1 times - [snappshop](./snapp/snappshop.md))_**
+**_(1 times - [snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=What%20is%20fast%2Dforward%3F))_**
 - [graphite](https://graphite.dev/guides/git-fast-forward-merge)
 - [atlassian](https://www.atlassian.com/git/tutorials/using-branches/git-merge#:~:text=A%20fast%2Dforward%20merge%20can,look%20something%20like%20the%20following%3A)
 
