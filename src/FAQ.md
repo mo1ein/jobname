@@ -178,10 +178,10 @@ Optimize Application Code: Sometimes, the issue may not be with the query itself
 - [geeksforgeeks](https://www.geeksforgeeks.org/git-difference-between-merging-and-rebasing/)
 
 **_What was your git flow at your previous company?_** <br />
-**_(2 times - [snappshop](), [wallex](https://mo1ein.github.io/jobname/wallex.html?highlight=walle#wallex:~:text=What%20was%20your%20git%20flow%20at%20your%20previous%20company%3F))_**
+**_(2 times - [snappshop](./snapp/snappshop.md), [wallex](https://mo1ein.github.io/jobname/wallex.html?highlight=walle#wallex:~:text=What%20was%20your%20git%20flow%20at%20your%20previous%20company%3F))_**
 
 **_What is fast-forward?_** <br />
-**_(1 times - [snappshop]())_**
+**_(1 times - [snappshop](./snapp/snappshop.md))_**
 - [graphite](https://graphite.dev/guides/git-fast-forward-merge)
 - [atlassian](https://www.atlassian.com/git/tutorials/using-branches/git-merge#:~:text=A%20fast%2Dforward%20merge%20can,look%20something%20like%20the%20following%3A)
 
