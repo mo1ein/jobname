@@ -28,6 +28,7 @@
 شرکت‌هایی که در سال ۱۴۰۳ باهاشون مصاحبه داشتم (داغ داغ):
 </p>
 
+- [Wallex](./wallex/wallex1403.md)
 - [Snappshop](./snapp/snappshop.md)
 
 <p dir="rtl">
@@ -41,7 +42,7 @@
 - [Hermes](src/hermes.md)
 - [Quiz of Kings](src/QuizOfKings.md)
 - [Yektanet](src/yektanet.md)
-- [Wallex](src/wallex.md)
+- [Wallex](src/wallex/wallex1402.md)
 - [Digikala](src/digikala/digikala.md)
 - [Karnameh](src/karnameh.md)
 - [Siztel](src/siztel/siztel.md)

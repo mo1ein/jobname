@@ -11,6 +11,7 @@
 - [FAQ](FAQ.md)
 
 # Companies
+- [Wallex](./wallex/wallex1403.md)
 - [Snappshop](./snapp/snappshop.md)
 - [Ozone - Golrang](./ozone.md)
 - [Exa](./exalab.md)
@@ -23,7 +24,7 @@
 - [Hermes](./hermes.md)
 - [Quiz of Kings](./QuizOfKings.md)
 - [Yektanet](./yektanet.md)
-- [Wallex](./wallex.md)
+- [Wallex](./wallex/wallex1402.md)
 - [Digikala](./digikala/digikala.md)
 - [Karnameh](./karnameh.md)
 - [Siz-tel](./siztel/siztel.md)
