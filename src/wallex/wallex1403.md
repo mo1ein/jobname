@@ -93,7 +93,7 @@ Google Meet
     ```
     (volume amount is not important here)
 
-- Math question: The market has reached a state where it has fallen 5 units, then after a while, it rises 1 unit, and this pattern has repeated. How can we predict the market for some time ahead (for example, a month)? How can we assess its probability? Do you have a solution?"
+- Math question: The market has reached a state where it has fallen 5 units, then after a while, it rises 1 unit, and this pattern has repeated. How can we predict the market for some time ahead (for example, a month)? How can we assess its probability? Do you have a solution?
 
     Analyze historical data. Calculate the frequency of these events in your dataset to estimate initial probabilities.
     And you can use calculate probabilities.
