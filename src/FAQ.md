@@ -172,13 +172,13 @@ Optimize Application Code: Sometimes, the issue may not be with the query itself
 
 ### Git
 **_Merge vs Rebase... explain differneces and pros and cons._** <br />
-**_(3 times - [snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=What%20is%20difference%20between%20git%20Merge%20and%20Rebase%3F), [wallex](https://mo1ein.github.io/jobname/wallex1402.html#wallex:~:text=Why%20did%20you%20not%20choose%20to%20rebase%20instead), [sternx](https://mo1ein.github.io/jobname/sternx/sternx.html#1st-technical-interview:~:text=know%20about%20git%3F-,What%20is%20git%20rebase%3F,-What%27s%20your%20salary))_**
+**_(3 times - [snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=What%20is%20difference%20between%20git%20Merge%20and%20Rebase%3F), [wallex](https://mo1ein.github.io/jobname/wallex/wallex1402.html#:~:text=What%20was%20your%20git%20flow%20at%20your%20previous%20company%3F%20Why%20did%20you%20not%20choose%20to%20rebase%20instead%20of%20merging%20the%20master%20branch%20with%20your%20task%20branch), [sternx](https://mo1ein.github.io/jobname/sternx/sternx.html#1st-technical-interview:~:text=know%20about%20git%3F-,What%20is%20git%20rebase%3F,-What%27s%20your%20salary))_**
 - [coderefinery](https://coderefinery.github.io/git-branch-design/01-rebase/)
 - [codeparrot](https://codeparrot.ai/blogs/git-merge-vs-rebase)
 - [geeksforgeeks](https://www.geeksforgeeks.org/git-difference-between-merging-and-rebasing/)
 
 **_What was your git flow at your previous company?_** <br />
-**_(3 times - [snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=What%20was%20your%20git%20flow%20at%20your%20previous%20company%3F), [wallex](https://mo1ein.github.io/jobname/wallex1402.html?highlight=walle#wallex:~:text=What%20was%20your%20git%20flow%20at%20your%20previous%20company%3F), [digikala](https://mo1ein.github.io/jobname/digikala/digikala.html#:~:text=What%20was%20your%20Git%20workflow%20in%20the%20last%20company%3F))_**
+**_(3 times - [snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=What%20was%20your%20git%20flow%20at%20your%20previous%20company%3F), [wallex](https://mo1ein.github.io/jobname/wallex/wallex1402.html#:~:text=What%20was%20your%20git%20flow%20at%20your%20previous%20company%3F), [digikala](https://mo1ein.github.io/jobname/digikala/digikala.html#:~:text=What%20was%20your%20Git%20workflow%20in%20the%20last%20company%3F))_**
 
 **_What is fast-forward?_** <br />
 **_(1 times - [snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=What%20is%20fast%2Dforward%3F))_**
@@ -188,5 +188,5 @@ Optimize Application Code: Sometimes, the issue may not be with the query itself
 ### Design Pattern
 
 **_What is SOLID?_** <br />
-**_(4 times - [snapp](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=What%20is%20SOLID%3F%20tell%20us%20about%202%20of%20them.), [wallex](https://mo1ein.github.io/jobname/wallex1402.html#:~:text=is%20it%20good%3F-,What%20is%20SOLID%3F,-What%20is%20dependency), [digikala](https://mo1ein.github.io/jobname/digikala/digikala.html#:~:text=us%20about%20yourself.-,What%20is%20SOLID%3F,-What%20is%20DI), [itoll](https://mo1ein.github.io/jobname/itoll.html#:~:text=is%20design%20pattern%3F-,What%20is%20SOLID%3F,-Difference%20between%20list))_**
+**_(4 times - [snapp](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=What%20is%20SOLID%3F%20tell%20us%20about%202%20of%20them.), [wallex](https://mo1ein.github.io/jobname/wallex/wallex1402.html#:~:text=is%20it%20good%3F-,What%20is%20SOLID%3F,-What%20is%20dependency), [digikala](https://mo1ein.github.io/jobname/digikala/digikala.html#:~:text=us%20about%20yourself.-,What%20is%20SOLID%3F,-What%20is%20DI), [itoll](https://mo1ein.github.io/jobname/itoll.html#:~:text=is%20design%20pattern%3F-,What%20is%20SOLID%3F,-Difference%20between%20list))_**
 - [wikipedia](https://en.wikipedia.org/wiki/SOLID)
