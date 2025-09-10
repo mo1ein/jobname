@@ -9,10 +9,10 @@
 - [Statistically](statistics.md)
 - [Clarifying](clarifying.md)
 - [FAQ](FAQ.md)
+- [md generator](./mdgen.html)
 
 # Companies
 - [Wallex](./wallex/wallex1403.md)
-- [Snappshop](./snapp/snappshop.md)
 - [Ozone - Golrang](./ozone.md)
 - [Exa](./exalab.md)
 - [Snapp](./snapp/snapp.md)
