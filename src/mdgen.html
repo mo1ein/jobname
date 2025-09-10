@@ -449,6 +449,55 @@
         .air-date-input {
             position: relative;
         }
+        
+        /* New styles for email fields */
+        .email-field-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .email-field-group .form-group {
+            flex: 1;
+            position: relative;
+        }
+        
+        .email-field-group .form-group::after {
+            content: "OR";
+            position: absolute;
+            top: 50%;
+            right: -25px;
+            transform: translateY(-50%);
+            background: var(--light);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: var(--gray);
+            z-index: 1;
+        }
+        
+        .email-field-group .form-group:last-child::after {
+            display: none;
+        }
+        
+        .email-status-label {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        
+        .rejection-status {
+            background-color: #ffe6e6;
+            color: #d32f2f;
+        }
+        
+        .offer-status {
+            background-color: #e6f7e6;
+            color: #2e7d32;
+        }
     </style>
 </head>
 <body>
@@ -548,10 +597,22 @@
                             <label for="technicalInterview"><i class="fas fa-laptop-code"></i> Technical Interview</label>
                             <input type="text" id="technicalInterview" class="air-date-input" value="2023-11-12" placeholder="yyyy/mm/dd">
                         </div>
+                    </div>
+                    
+                    <!-- Email fields grouped together with OR indicator -->
+                    <div class="email-field-group">
+                        <div class="form-group">
+                            <label for="rejectionEmail"><i class="fas fa-envelope"></i> Rejection Email 
+                                <span class="email-status-label rejection-status">Rejected</span>
+                            </label>
+                            <input type="text" id="rejectionEmail" class="air-date-input" placeholder="yyyy/mm/dd">
+                        </div>
                         
                         <div class="form-group">
-                            <label for="rejectionEmail"><i class="fas fa-envelope"></i> Rejection Email</label>
-                            <input type="text" id="rejectionEmail" class="air-date-input" value="2023-12-02" placeholder="yyyy/mm/dd">
+                            <label for="offerEmail"><i class="fas fa-envelope"></i> Offer Email 
+                                <span class="email-status-label offer-status">Offer</span>
+                            </label>
+                            <input type="text" id="offerEmail" class="air-date-input" placeholder="yyyy/mm/dd">
                         </div>
                     </div>
                     
@@ -780,6 +841,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const notification = document.getElementById('notification');
     const mermaidContainer = document.querySelector('.mermaid-preview');
     const mermaidTextarea = document.getElementById('interviewProcess');
+    const rejectionEmailInput = document.getElementById('rejectionEmail');
+    const offerEmailInput = document.getElementById('offerEmail');
 
     // Debounced mermaid renderer
     const debouncedRenderMermaid = debounce((text) => renderMermaidTo(mermaidContainer, text), 200);
@@ -854,7 +917,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Initialize Air Datepicker on specific inputs and ensure format yyyy/MM/dd (note uppercase MM)
-    const dateIds = ['sentResume', 'hrCall', 'technicalInterview', 'rejectionEmail'];
+    const dateIds = ['sentResume', 'hrCall', 'technicalInterview', 'rejectionEmail', 'offerEmail'];
 
     // Explicit English locale (forces English regardless of browser locale)
     const enLocale = {
@@ -991,6 +1054,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const hrCall = document.getElementById('hrCall').value;
         const technicalInterview = document.getElementById('technicalInterview').value;
         const rejectionEmail = document.getElementById('rejectionEmail').value;
+        const offerEmail = document.getElementById('offerEmail').value;
         const hours = document.getElementById('hours').value;
         const minutes = document.getElementById('minutes').value;
         const interviewPlatform = interviewPlatformSelect.value;
@@ -999,6 +1063,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Format duration correctly
         const duration = formatDuration(hours, minutes);
+
+        // Determine which email date to show (rejection takes priority)
+        let emailLine = '';
+        if (rejectionEmail) {
+            emailLine = `- **Rejection Email**<br />${formatDate(rejectionEmail)}`;
+        } else if (offerEmail) {
+            emailLine = `- **Offer Email**<br />${formatDate(offerEmail)}`;
+        } else {
+            emailLine = `- **Response Email**<br />Date not set`;
+        }
 
         return `# [${companyName}](${companySite})
 
@@ -1019,7 +1093,7 @@ ${applyWayValues}
 - **Sent Resume**<br />${formatDate(sentResume)}
 - **HR Call**<br />${formatDate(hrCall)}
 - **Technical Interview**<br />${formatDate(technicalInterview)}
-- **Rejection Email**<br />${formatDate(rejectionEmail)}
+${emailLine}
 
 ### Interview Duration
 - **Technical Interview**<br />${duration}
@@ -1080,4 +1154,3 @@ ${interviewNotes}
 
 </body>
 </html>
-
