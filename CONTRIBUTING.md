@@ -3,14 +3,15 @@
 First of all, thank you for reading here to contribute! I really appriciate that. <br />
 
 ## Share experience
-If you want to share your interview experience, create a directory with company name (if not exist) and put your `md` file in it.
-Then for compile, you need to add your `md` file path to `SUMMARY.md`.
+If you want to share your interview experience, use [md generator](https://mo1ein.github.io/jobname/mdgen.html) then download `.md` file. <br />
+Create a directory with company name (if not exist) and put your `md` file in it.
 Just like this:
 ```
 src/snapp
 ├── snapp_cab_1.md
 └── snapp_cab_2.md
 ```
+Then for compile, you need to add your `md` file path to `SUMMARY.md`.
 You can add your name (if you like) after the company name like: `snapp_moein.md` and that's good to write it in the file otherwise, write `unknown`.
 
 ## Install
