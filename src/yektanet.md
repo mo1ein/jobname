@@ -66,7 +66,7 @@ def check_buzz(n: int) -> str | None:
 
 - [two sum](https://leetcode.com/problems/two-sum/)
 
-my first answer with o(n ^ 2)
+My first answer with o(n ^ 2)
 
 ```python
 def check_2sum(nums: list, k: int) -> tuple:
@@ -78,7 +78,7 @@ def check_2sum(nums: list, k: int) -> tuple:
         index +=1
 ```
 
-my second answer with O(n)
+My second answer with O(n)
 
 ```python
 def check_2sum(nums: list, k: int) -> tuple:
@@ -90,6 +90,16 @@ def check_2sum(nums: list, k: int) -> tuple:
         target = k - nums[i]
         if target in map_ and map_[target] != i:
             return nums[i], nums[map_[target]]
+```
+Best answer (one loop)
+```python
+def twosum(nums: list[int], target: int) -> list[int]:
+    num_map = {}  # Hash table to store number and its index
+    for i, num in enumerate(nums):
+        complement = target - num  # Find the complement
+        if complement in num_map:
+            return [num_map[complement], i]  # Return indices of complement and current number
+        num_map[num] = i  # Store the number with its index
 ```
 <p dir="rtl">
 قسمت <code>return</code> رو فکر کنم اشتباه نوشتم به نظرم <code>i</code> نوشته بودم جای <code>nums[i]</code>. حالا خیلی مهم نیس منطق و روش درسته و خودشونم گفته بودن syntax مهم نیست.
