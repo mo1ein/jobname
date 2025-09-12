@@ -28,7 +28,8 @@
 شرکت‌هایی که در سال ۱۴۰۴ باهاشون مصاحبه داشتم (داغ داغ):
 </p>
 
-- [hamkaran system](./hamkaransystem/1404.md)
+- [Hamkaran system](./hamkaransystem/1404.md)
+- [Malltina](./malltina.md)
 
 <p dir="rtl">
 شرکت‌هایی که در سال ۱۴۰۳ باهاشون مصاحبه داشتم:
