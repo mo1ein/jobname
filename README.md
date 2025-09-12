@@ -25,14 +25,20 @@
 <h2 id="companies" dir="rtl"><a class="header" href="#companies">شرکت‌ها</a></h2>
 
 <p dir="rtl">
-شرکت‌هایی که در سال ۱۴۰۳ باهاشون مصاحبه داشتم (داغ داغ):
+شرکت‌هایی که در سال ۱۴۰۴ باهاشون مصاحبه داشتم (داغ داغ):
+</p>
+
+- [hamkaran system](./hamkaransystem/1404.md)
+
+<p dir="rtl">
+شرکت‌هایی که در سال ۱۴۰۳ باهاشون مصاحبه داشتم:
 </p>
 
 - [Wallex](./wallex/wallex1403.md)
 - [Snappshop](./snapp/snappshop.md)
 
 <p dir="rtl">
-شرکت‌هایی که در سال ۱۴۰۲ باهاشون مصاحبه داشتم (داغ داغ):
+شرکت‌هایی که در سال ۱۴۰۲ باهاشون مصاحبه داشتم:
 </p>
 
 - [Ozone - Golrang](src/ozone.md)
