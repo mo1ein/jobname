@@ -12,6 +12,7 @@
 - [md generator](./mdgen.html)
 
 # Companies
+- [Hamkaran system](./hamkaransystem/1404.md)
 - [Wallex](./wallex/wallex1403.md)
 - [Ozone - Golrang](./ozone.md)
 - [Exa](./exalab.md)
@@ -30,7 +31,7 @@
 - [Siz-tel](./siztel/siztel.md)
     - [Internship](./siztel/internship.md)
     - [Junior](./siztel/junior.md)
-- [Hamkaran system](./hamkaran-system.md)
+- [Hamkaran system](./hamkaransystem/1402.md)
 - [Bitex](./bitex/bitex.md)
     - [Task](./bitex/bitex_task.md)
 - [Autoshenas](./autoshenas.md)
