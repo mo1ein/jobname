@@ -33,8 +33,10 @@ Google Meet
 #### Live code
 
 Write a function to calculate `pow(x, n)`.
+<details>
+<summary style="font-size:14px"><b><em>My answer</em></b></summary>
+<div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
 
-My answer:
 ```python
 import sys
 
@@ -53,8 +55,9 @@ x = 10000
 n = 20000
 ans = pow(x, n)
 print(ans)
-
 ```
+</div>
+</details>
 
 ## Score
 <h4><mark style="background-color:#ffd700">6/10</mark></h4>
