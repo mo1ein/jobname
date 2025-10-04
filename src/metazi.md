@@ -16,8 +16,11 @@ Jobvision
 
 ### Interview Date
 - **Sent Resume**<br />1404/07/01
+
 - **HR Call**<br />1404/07/06
+
 - **Technical Interview**<br />1404/07/07
+
 - **Rejection Email**<br />1404/07/08
 
 ### Interview Duration

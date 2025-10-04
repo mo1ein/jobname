@@ -16,9 +16,13 @@ flowchart LR
 Jobinja
 
 ### Interview Date
+
 - **Sent Resume**<br />1404.05.12
+
 - **HR Call**<br />1404.05.21
+
 - **Technical Interview**<br />1404.05.22
+
 - **Response Email**<br /> not get any rejection Email
 
 ### Interview Duration
