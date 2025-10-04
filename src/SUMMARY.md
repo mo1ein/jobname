@@ -12,6 +12,7 @@
 - [md generator](./mdgen.html)
 
 # Companies
+- [Metazi](./metazi.md)
 - [Hamkaran system](./hamkaransystem/1404.md)
 - [Malltina](./malltina.md)
 - [Wallex](./wallex/wallex1403.md)
