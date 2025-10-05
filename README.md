@@ -28,16 +28,16 @@
 شرکت‌هایی که در سال ۱۴۰۴ باهاشون مصاحبه داشتم (داغ داغ):
 </p>
 
-- [Metazi](./metazi.md)
-- [Hamkaran system](./hamkaransystem/1404.md)
-- [Malltina](./malltina.md)
+- [Metazi](src/metazi.md)
+- [Hamkaran system](src/hamkaransystem/1404.md)
+- [Malltina](src/malltina.md)
 
 <p dir="rtl">
 شرکت‌هایی که در سال ۱۴۰۳ باهاشون مصاحبه داشتم:
 </p>
 
-- [Wallex](./wallex/wallex1403.md)
-- [Snappshop](./snapp/snappshop.md)
+- [Wallex](src/wallex/wallex1403.md)
+- [Snappshop](src/snapp/snappshop.md)
 
 <p dir="rtl">
 شرکت‌هایی که در سال ۱۴۰۲ باهاشون مصاحبه داشتم:
