@@ -59,7 +59,7 @@ In-person
 
 - What do you know about Git workflow?
 
-## Score
+### Score
 <h4><mark style="background-color:#f44336; color:#ffffff; padding:4px 8px; border-radius:4px">4/10</mark></h4>
 
 <p dir="rtl">
