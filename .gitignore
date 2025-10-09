@@ -2,9 +2,11 @@ bin/
 book/
 todo.md
 gh-md-toc
+.DS_Store
 
 # Ignore Jetbrains specific files.
 .idea/
+
 
 # Ignore Vim temporary and swap files.
 *.sw?
