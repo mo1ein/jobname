@@ -330,7 +330,7 @@ In-person
     <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
 
     ```python
-    def candy(self, ratings):
+    def candy(ratings):
         n = len(ratings)
         cnt = 0
         candies = [1] * n
