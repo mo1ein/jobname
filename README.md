@@ -28,6 +28,7 @@
 شرکت‌هایی که در سال ۱۴۰۴ باهاشون مصاحبه داشتم (داغ داغ):
 </p>
 
+- [Bitpin](src/bitpin/bitpin.md)
 - [Metazi](src/metazi.md)
 - [Hamkaran system](src/hamkaransystem/1404.md)
 - [Malltina](src/malltina.md)
