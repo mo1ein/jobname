@@ -58,6 +58,7 @@
 - [Hamkaran system](src/hamkaran-system.md)
 - [Bitex](src/bitex/bitex.md)
 - [Autoshenas](src/autoshenas.md)
+- [NamaAva](src/namaava.md)
 
 <p dir="rtl">
 شرکت‌هایی که قبل از ۱۴۰۲ باهاشون مصاحبه داشتم:
