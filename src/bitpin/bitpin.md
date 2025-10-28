@@ -1,7 +1,7 @@
 # [BitPin](https://bitpin.ir/)
 
 ### Status
-#### 📜📞🔧❌📝
+#### 📜📞📝🔧🔧❌
 
 ## Software Engineer - Backend
 

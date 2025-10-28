@@ -13,6 +13,7 @@
 
 
 # Companies
+- [Wallgold](./wallex/wallgold.md)
 - [Bitpin](./bitpin/bitpin.md)
 - [Metazi](./metazi.md)
 - [Hamkaran system](./hamkaransystem/1404.md)
