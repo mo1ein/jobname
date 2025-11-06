@@ -36,6 +36,7 @@
 شرکت‌هایی که در سال ۱۴۰۴ باهاشون مصاحبه داشتم (داغ داغ):
 </p>
 
+- [Saraf](./saraf.md)
 - [Wallgold](./wallex/wallgold.md)
 - [Bitpin](./bitpin/bitpin.md)
 - [Metazi](./metazi.md)
