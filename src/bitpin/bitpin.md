@@ -349,7 +349,7 @@ In-person
     </details>
 
 
-## Score
+### Score
 <h4><mark style="background-color:#ff9800; color:#ffffff; padding:4px 8px; border-radius:4px">7.5/10</mark></h4>
 
 <p dir="rtl">
