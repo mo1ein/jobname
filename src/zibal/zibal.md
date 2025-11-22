@@ -44,6 +44,7 @@ Google Meet
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
     <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+
     The `is` operator checks for **identity**. <br>
     The `==` operator checks for **equality**.
 
@@ -84,7 +85,7 @@ Google Meet
     <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
 
     Use a single leading underscore `_method` to indicate ‘internal’ use (convention). Use double leading underscores `__method` for name-mangling to reduce accidental access from subclasses; note that nothing is truly private. <br />
-    <a href="" target="_blank" rel="noopener noreferrer">https://www.datacamp.com/tutorial/python-private-methods-explained</a><br />
+    <a href="https://www.datacamp.com/tutorial/python-private-methods-explained" target="_blank" rel="noopener noreferrer">https://www.datacamp.com/tutorial/python-private-methods-explained</a>
     </div>
     </details><br />
 
@@ -194,7 +195,6 @@ Google Meet
     A race condition happens when concurrent operations interleave and produce incorrect state. Solve it
     with mutual exclusion (mutexes) for in-process protection, transactions, locks (pessimistic or optimistic), atomic DB operations, idempotency, or by
     redesigning to avoid shared mutable state.
-    <a href="https://realpython.com/instance-class-and-static-methods-demystified/#:~:text=You%20use%20a%20class%20method,class%20instances%20with%20specific%20configurations." target="_blank" rel="noopener noreferrer">realpython</a><br />
     </div>
     </details><br />
 
