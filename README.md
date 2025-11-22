@@ -28,6 +28,7 @@
 شرکت‌هایی که در سال ۱۴۰۴ باهاشون مصاحبه داشتم (داغ داغ):
 </p>
 
+- [Zibal](src/zibal/zibal.md)
 - [Saraf](src/saraf.md)
 - [Wallgold](src/Wallex/wallgold.md)
 - [Bitpin](src/bitpin/bitpin.md)
