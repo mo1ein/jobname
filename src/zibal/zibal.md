@@ -247,7 +247,7 @@ Google Meet
 
 <p dir="rtl">
 پس از مصاحبه فنی تسکی فرستادند که می‌تونید از
-<a href="./zibal_backend_project">این‌جا</a>
+<a href="./zibal_backend_project.pdf">این‌جا</a>
 ببینید. و همین‌طور 
 <a href="https://github.com/mo1ein/zibal">جواب</a>
 من رو.
