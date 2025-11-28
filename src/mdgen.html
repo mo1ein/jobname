@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,6 +25,8 @@
             --border: #dee2e6;
             --card-bg: #ffffff;
             --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --btn-shadow: 0 6px 12px rgba(16,24,40,0.06);
+            --btn-hover-shadow: 0 8px 15px rgba(16,24,40,0.08);
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -82,7 +85,7 @@
         .required { color:var(--warning); }
 
         button { padding:14px 24px; background:linear-gradient(135deg,var(--primary) 0%,var(--secondary) 100%); color:white; border:none; border-radius:8px; cursor:pointer; font-size:16px; font-weight:600; transition:all .3s; display:inline-flex; align-items:center; justify-content:center; gap:10px; box-shadow:var(--shadow); }
-        button:hover { transform:translateY(-2px); box-shadow:0 6px 12px rgba(0,0,0,0.15); }
+        button:hover { transform:translateY(-2px); box-shadow:var(--btn-hover-shadow); }
         button.secondary { background:var(--light); color:var(--dark); border:1px solid var(--border); }
         button.secondary:hover { background:#e2e6ea; }
 
@@ -117,7 +120,6 @@
             gap: 8px;
         }
 
-        /* Q&A editor styles */
         .qa-editor { display:flex; flex-direction:column; gap:12px; }
 
         .qa-controls { display:flex; justify-content:space-between; align-items:center; gap:12px; }
@@ -126,30 +128,52 @@
 
         .qa-list { display:flex; flex-direction:column; gap:12px; }
 
-        /* make question and answer columns equal-height and the boxes equal size */
-        .qa-item {
-            display: grid;
-            grid-template-columns: 1fr 1fr auto;
-            gap: 12px;
-            align-items: stretch; /* ensure both Q + A match height */
+        /* Redesigned QA Card styles (kept scoped) */
+        .qa-card {
+            background: linear-gradient(180deg,#ffffff,#fbfdff);
+            border:1px solid rgba(15,23,42,0.04);
+            border-radius:10px;
+            padding:12px;
+            box-shadow: 0 6px 18px rgba(16,24,40,0.03);
+            transition: transform .08s ease, box-shadow .08s ease;
+            cursor: grab;
         }
+        .qa-card:active { cursor: grabbing; }
 
-        .qa-item .question-input,
-        .qa-item .answer-input {
-            min-height: 120px;    /* same minimum height */
-            resize: vertical;
-            width: 100%;
-            box-sizing: border-box;
+        .qa-card.dragging { opacity: 0.45; transform: scale(0.995); }
+        .qa-card.drag-over { outline: 2px dashed var(--primary); transform: translateY(6px); }
+
+        .qa-header { display:flex; align-items:center; justify-content:space-between; gap:8px; padding-bottom:8px; border-bottom:1px dashed rgba(0,0,0,0.04); }
+        .qa-badge { background:var(--primary); color:#fff; padding:6px 10px; border-radius:8px; font-weight:700; font-size:13px; }
+        .qa-title { font-weight:700; font-size:14px; min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+        .qa-controls-inline { display:flex; gap:8px; align-items:center; }
+
+        .qa-body { padding-top:12px; display:flex; flex-direction:column; gap:8px; }
+        .compact-row { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+
+        /* Delete button (small-btn) */
+        .small-btn {
+          background:#eef4ff;
+          color:var(--primary);
+          border:1px solid rgba(67,97,238,0.08);
+          padding:8px 10px;
+          border-radius:8px;
+          cursor:pointer;
+          font-weight:700;
+          display:inline-flex;
+          align-items:center;
+          height:38px;
+          box-shadow: var(--btn-shadow);
+          transition: transform .12s ease, box-shadow .12s ease;
         }
+        .small-btn[disabled] { opacity:0.45; cursor:not-allowed; }
+        .small-btn:hover { transform: translateY(-2px); box-shadow: var(--btn-hover-shadow); }
+        .danger { background:#fff4f4; border:1px solid rgba(198,40,40,0.08); color:#c62828; }
 
-        .qa-item .qa-actions { display:flex; flex-direction:column; gap:8px; }
-        .qa-item .remove-qa-btn { padding:8px 10px; border-radius:8px; background:#ffe6e6; border:1px solid #f5c2c2; color:#c62828; cursor:pointer; }
-        .qa-item .move-qa-btn { padding:8px 10px; border-radius:8px; background:#e6f7e6; border:1px solid #cfe9cf; color:#2e7d32; cursor:pointer; }
+        .muted { color:var(--gray); font-size:13px; }
 
-        /* Small tweak for the date inputs when using Air Datepicker */
         .air-date-input { position:relative; }
 
-        /* New styles for email fields */
         .email-field-group { display:flex; gap:15px; margin-bottom:15px; }
         .email-field-group .form-group { flex:1; position:relative; }
         .email-field-group .form-group::after {
@@ -161,6 +185,42 @@
         .email-status-label { display:inline-block; padding:4px 8px; border-radius:4px; font-size:12px; margin-left:5px; }
         .rejection-status { background-color:#ffe6e6; color:#d32f2f; }
         .offer-status { background-color:#e6f7e6; color:#2e7d32; }
+
+        /* New answer-pill style (now matches delete button exactly) */
+        .answer-pill {
+          display:inline-flex;
+          align-items:center;
+          justify-content:center;
+          gap:8px;
+          padding:8px 10px;
+          border-radius:8px;
+          border:1px solid rgba(198,40,40,0.08);
+          background:#fff4f4;
+          color:#c62828;
+          font-weight:700;
+          cursor:pointer;
+          user-select:none;
+          height:38px;
+          box-shadow: var(--btn-shadow);
+          transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+          vertical-align: middle;
+        }
+        .answer-pill .pill-checkbox { display:none; } /* hide native checkbox */
+        .answer-pill .pill-text { font-weight:700; font-size:13px; display:inline-block; line-height:1; }
+        .answer-pill.checked {
+          background: linear-gradient(135deg,#4caf50 0%, #2e7d32 100%);
+          border-color: rgba(46,125,50,0.12);
+          color:white;
+          box-shadow: var(--btn-shadow);
+        }
+        .answer-pill:hover { transform: translateY(-2px); box-shadow: var(--btn-hover-shadow); }
+        .answer-pill:active { transform: translateY(0); }
+
+        /* responsive tweak */
+        @media (max-width:640px){
+          .qa-header{flex-direction:column;align-items:flex-start;gap:8px}
+          .qa-controls-inline{width:100%;justify-content:flex-end}
+        }
     </style>
 </head>
 <body>
@@ -342,19 +402,24 @@
                 </div>
             </div>
 
-            <!-- Technical Interview Notes (Q&A Editor) -->
+            <!-- Technical Interview Notes (REDESIGNED, kept only here) -->
             <div class="card full-width">
                 <h2 class="card-title"><i class="fas fa-sticky-note"></i> Technical Interview Notes</h2>
                 <div class="form-group">
                     <label for="qaEditor"><i class="fas fa-edit"></i> Q&A Editor <span class="required">*</span></label>
 
+                    <!-- Redesigned QA editor card UI (kept and integrated) -->
                     <div class="qa-editor" id="qaEditor">
                         <div class="qa-controls">
-                            <div style="font-size:14px; color:var(--gray)">Create question boxes and answers side-by-side. Click + to add.</div>
-                            <button id="addQaBtn" class="add-qa-btn"><i class="fas fa-plus"></i> Add Q&A</button>
+                            <div style="font-size:14px; color:var(--gray)">Add questions and optional answers. Drag a card to reorder by mouse.</div>
+                            <div style="display:flex; gap:8px;">
+                                <button id="addQaBtn" type="button" class="add-qa-btn"><i class="fas fa-plus"></i> Add Q&A</button>
+                                <button id="collapseAllBtn" type="button" class="small-btn">Collapse all</button>
+                                <button id="expandAllBtn" type="button" class="small-btn">Expand all</button>
+                            </div>
                         </div>
 
-                        <div class="qa-list" id="qaList"></div>
+                        <div class="qa-list" id="qaList" aria-live="polite"></div>
                     </div>
 
                     <!-- Hidden legacy textarea (used to seed initial content) -->
@@ -432,8 +497,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const rejectionEmailInput = document.getElementById('rejectionEmail');
     const offerEmailInput = document.getElementById('offerEmail');
 
+    // QA redesigned DOM handles
     const qaListContainer = document.getElementById('qaList');
     const addQaBtn = document.getElementById('addQaBtn');
+    const collapseAllBtn = document.getElementById('collapseAllBtn');
+    const expandAllBtn = document.getElementById('expandAllBtn');
     const legacyInterviewNotes = document.getElementById('legacyInterviewNotes');
 
     // Debounced mermaid renderer
@@ -442,147 +510,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set default value for platform select
     if (interviewPlatformSelect) interviewPlatformSelect.value = "Google Meet";
 
-    // QA items store
+    // QA items store (redesigned card items)
     let qaItems = [];
-
-    function renderQAList() {
-        qaListContainer.innerHTML = '';
-        qaItems.forEach((item, idx) => {
-            const wrapper = document.createElement('div');
-            wrapper.className = 'qa-item';
-
-            const qta = document.createElement('textarea');
-            qta.className = 'question-input';
-            qta.placeholder = 'Write the question here (single line or short paragraph)';
-            qta.value = item.q;
-            qta.addEventListener('input', () => {
-                qaItems[idx].q = qta.value;
-                updatePreview();
-            });
-
-            const ata = document.createElement('textarea');
-            ata.className = 'answer-input';
-            ata.placeholder = 'Write the answer here (supports Markdown/HTML)';
-            ata.value = item.a;
-            ata.addEventListener('input', () => {
-                qaItems[idx].a = ata.value;
-                updatePreview();
-            });
-
-            const actions = document.createElement('div');
-            actions.className = 'qa-actions';
-
-            const removeBtn = document.createElement('button');
-            removeBtn.type = 'button';
-            removeBtn.className = 'remove-qa-btn';
-            removeBtn.textContent = 'Delete';
-            removeBtn.addEventListener('click', () => {
-                removeQA(idx);
-            });
-
-            actions.appendChild(removeBtn);
-
-            wrapper.appendChild(qta);
-            wrapper.appendChild(ata);
-            wrapper.appendChild(actions);
-
-            qaListContainer.appendChild(wrapper);
-        });
-
-        // If no items, show a helpful empty state
-        if (qaItems.length === 0) {
-            const empty = document.createElement('div');
-            empty.style.color = 'var(--gray)';
-            empty.style.fontStyle = 'italic';
-            empty.textContent = 'No Q&A yet. Click "Add Q&A" to create the first pair.';
-            qaListContainer.appendChild(empty);
-        }
-    }
-
-    function addQA(q = '', a = '') {
-        qaItems.push({ q: q || '', a: a || '' });
-        renderQAList();
-        updatePreview();
-    }
-
-    function removeQA(index) {
-        qaItems.splice(index, 1);
-        renderQAList();
-        updatePreview();
-    }
-
-    // Initialize QA from legacy textarea if present (best-effort parsing)
-    (function seedInitialQA() {
-        const raw = legacyInterviewNotes ? legacyInterviewNotes.value.trim() : '';
-        if (!raw) {
-            addQA();
-            return;
-        }
-
-        // Try to extract a first question (line that starts with '-') and an answer block (details or the rest)
-        const lines = raw.split('\n');
-        let firstQuestion = '';
-        let answerRemaining = '';
-
-        // find first line starting with '- '
-        for (let i = 0; i < lines.length; i++) {
-            const l = lines[i].trim();
-            if (l.startsWith('- ')) {
-                firstQuestion = l.replace(/^-\\s*/, '');
-                answerRemaining = lines.slice(i + 1).join('\n');
-                break;
-            }
-        }
-
-        // if no '- ' found, put all content into answer
-        if (!firstQuestion) {
-            addQA('Why are you applying for this job?', raw);
-        } else {
-            addQA(firstQuestion, answerRemaining.trim() || '');
-        }
-    })();
-
-    // Wire add button
-    addQaBtn.addEventListener('click', () => addQA());
-
-    // Score handling (if score input exists)
-    const scoreEl = document.getElementById('score');
-    if (scoreEl) {
-        scoreEl.addEventListener('input', function() {
-            const val = this.value;
-            if (scoreDisplay) scoreDisplay.textContent = `${val}/10`;
-
-            const num = parseFloat(val) || 0;
-            if (num >= 8) {
-                scoreDisplay.style.background = 'linear-gradient(135deg, #4caf50 0%, #2e7d32 100%)';
-            } else if (num >= 5) {
-                scoreDisplay.style.background = 'linear-gradient(135deg, #ff9800 0%, #ef6c00 100%)';
-            } else {
-                scoreDisplay.style.background = 'linear-gradient(135deg, #f44336 0%, #c62828 100%)';
-            }
-            updatePreview();
-        });
-    }
-
-    // Update preview when any field changes
-    document.querySelectorAll('input, select, textarea').forEach(element => {
-        element.addEventListener('input', updatePreview);
-        element.addEventListener('change', updatePreview);
-    });
-
-    // Toggle sections
-    const toggleHeaders = document.querySelectorAll('.toggle-header');
-    toggleHeaders.forEach(header => {
-        header.addEventListener('click', function() {
-            const content = this.nextElementSibling;
-            content.style.display = content.style.display === 'none' ? 'block' : 'none';
-            const icon = this.querySelector('i');
-            if (icon) { icon.classList.toggle('fa-eye'); icon.classList.toggle('fa-eye-slash'); }
-        });
-    });
+    let dragSrcIdx = null; // index of dragged card during drag-drop
 
     // ----------------------------
-    // Air Datepicker integration
+    // Air Datepicker integration (original)
     // ----------------------------
     function parseDateFromString(s) {
       if (!s) return null;
@@ -630,60 +563,329 @@ document.addEventListener('DOMContentLoaded', function() {
       input.placeholder = 'yyyy/mm/dd';
     });
 
-    // Download button
-    document.getElementById('downloadBtn').addEventListener('click', function() {
-        const markdownContent = generateMarkdown();
-        const blob = new Blob([markdownContent], { type: 'text/markdown' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        const rawName = (companyNameInput && companyNameInput.value || '').trim();
-        const slug = rawName ? rawName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\-]/g, '') : 'company';
-        a.download = `${slug}-interview.md`;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-        showNotification('Markdown downloaded successfully!');
-    });
+    // ----------------------------
+    // Redesigned QA UI functions (with drag & drop)
+    // ----------------------------
+    function clearDragOverClasses() {
+      qaListContainer.querySelectorAll('.qa-card.drag-over').forEach(el => el.classList.remove('drag-over'));
+    }
 
-    // Reset button
-    document.getElementById('resetBtn').addEventListener('click', function() {
-        if (confirm('Are you sure you want to reset all fields?')) {
-            document.querySelectorAll('input, textarea, select').forEach(element => {
-                if (element.type !== 'button') element.value = element.defaultValue;
-            });
-            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => checkbox.checked = checkbox.defaultChecked);
-            document.querySelectorAll('input[type="radio"]').forEach(radio => radio.checked = radio.defaultChecked);
-            if (jobTitleSelect) jobTitleSelect.value = "Software Engineer";
-            if (interviewPlatformSelect) interviewPlatformSelect.value = "Google Meet";
+    function renderQAList() {
+        qaListContainer.innerHTML = '';
 
-            // reset QA items
-            qaItems = [];
-            (function seedAgain(){
-                const raw = legacyInterviewNotes ? legacyInterviewNotes.value.trim() : '';
-                if (!raw) { addQA(); return; }
-                const lines = raw.split('\n');
-                let firstQuestion = '';
-                let answerRemaining = '';
-                for (let i = 0; i < lines.length; i++) {
-                    const l = lines[i].trim();
-                    if (l.startsWith('- ')) {
-                        firstQuestion = l.replace(/^-\\s*/, '');
-                        answerRemaining = lines.slice(i + 1).join('\n');
-                        break;
-                    }
-                }
-                if (!firstQuestion) { addQA('Question 1', raw); } else { addQA(firstQuestion, answerRemaining.trim() || ''); }
-            })();
-
-            updatePreview();
-            this.innerHTML = '<i class="fas fa-check-circle"></i> Reset';
-            setTimeout(() => { this.innerHTML = '<i class="fas fa-redo"></i> Reset Form'; }, 2000);
+        if (qaItems.length === 0) {
+            const empty = document.createElement('div');
+            empty.style.color = 'var(--gray)';
+            empty.style.fontStyle = 'italic';
+            empty.textContent = 'No Q&A yet. Click "Add Q&A" to create the first question.';
+            qaListContainer.appendChild(empty);
+            return;
         }
+
+        qaItems.forEach((item, idx) => {
+            const card = document.createElement('div');
+            card.className = 'qa-card';
+            card.setAttribute('data-idx', idx);
+            card.draggable = true;
+
+            // drag handlers
+            card.addEventListener('dragstart', (e) => {
+                dragSrcIdx = idx;
+                try { e.dataTransfer.effectAllowed = 'move'; } catch (_) {}
+                card.classList.add('dragging');
+            });
+            card.addEventListener('dragend', (e) => {
+                dragSrcIdx = null;
+                card.classList.remove('dragging');
+                clearDragOverClasses();
+            });
+
+            card.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                // highlight this card as potential drop target
+                if (!card.classList.contains('drag-over')) {
+                    clearDragOverClasses();
+                    card.classList.add('drag-over');
+                }
+            });
+
+            card.addEventListener('dragleave', (e) => {
+                card.classList.remove('drag-over');
+            });
+
+            card.addEventListener('drop', (e) => {
+                e.preventDefault();
+                card.classList.remove('drag-over');
+                const dstIdx = idx;
+                if (dragSrcIdx === null || dragSrcIdx === undefined) return;
+                if (dragSrcIdx === dstIdx) return;
+                const [moved] = qaItems.splice(dragSrcIdx, 1);
+                // adjust dstIdx if source was before destination
+                let insertAt = dstIdx;
+                if (dragSrcIdx < dstIdx) insertAt = dstIdx - 1;
+                if (insertAt < 0) insertAt = 0;
+                qaItems.splice(insertAt, 0, moved);
+                renderQAList();
+                updatePreview();
+            });
+
+            // header
+            const header = document.createElement('div');
+            header.className = 'qa-header';
+
+            const left = document.createElement('div');
+            left.style.display = 'flex';
+            left.style.alignItems = 'center';
+            left.style.gap = '12px';
+            left.style.minWidth = '0';
+
+            const badge = document.createElement('div');
+            badge.className = 'qa-badge';
+            badge.textContent = `Q ${idx + 1}`;
+
+            const title = document.createElement('div');
+            title.className = 'qa-title';
+            const titleText = (item.q || '').trim() || '(Untitled question)';
+            title.textContent = titleText;
+
+            left.appendChild(badge);
+            left.appendChild(title);
+
+            const right = document.createElement('div');
+            right.className = 'qa-controls-inline';
+
+            const collapseBtn = document.createElement('button');
+            collapseBtn.type = 'button';
+            collapseBtn.className = 'small-btn';
+            collapseBtn.title = item.collapsed ? 'Expand' : 'Collapse';
+            collapseBtn.innerHTML = item.collapsed ? '<i class="fas fa-chevron-down"></i>' : '<i class="fas fa-chevron-up"></i>';
+            collapseBtn.addEventListener('click', () => {
+                qaItems[idx].collapsed = !qaItems[idx].collapsed;
+                renderQAList();
+            });
+
+            right.appendChild(collapseBtn);
+
+            header.appendChild(left);
+            header.appendChild(right);
+
+            // body
+            const body = document.createElement('div');
+            body.className = 'qa-body';
+            if (item.collapsed) body.style.display = 'none';
+
+            // question label + textarea
+            const qLabel = document.createElement('label');
+            qLabel.textContent = 'Question';
+            qLabel.htmlFor = `q-${idx}`;
+
+            const qta = document.createElement('textarea');
+            qta.id = `q-${idx}`;
+            qta.className = 'question-input';
+            qta.placeholder = 'Write the question here (single line or short paragraph)';
+            qta.value = item.q || '';
+            qta.addEventListener('input', (e) => {
+                qaItems[idx].q = e.target.value;
+                // update header title quickly
+                title.textContent = (e.target.value || '').trim() || '(Untitled question)';
+                updatePreview();
+            });
+
+            // compact controls
+            const compactRow = document.createElement('div');
+            compactRow.className = 'compact-row';
+
+            // answer-pill (styled like delete button shape but acts as checkbox)
+            const answerLabel = document.createElement('label');
+            answerLabel.className = 'answer-pill' + (item.hasAnswer ? ' checked' : '');
+            answerLabel.title = 'Toggle answer visibility';
+            // accessible hidden checkbox inside
+            const answerCheckbox = document.createElement('input');
+            answerCheckbox.type = 'checkbox';
+            answerCheckbox.className = 'pill-checkbox';
+            answerCheckbox.checked = !!item.hasAnswer;
+            // text span
+            const pillText = document.createElement('span');
+            pillText.className = 'pill-text';
+            pillText.textContent = 'answer?';
+
+            // Clicking label toggles
+            answerLabel.addEventListener('click', (e) => {
+                // don't trigger drag when clicking pill
+                e.preventDefault();
+                const newVal = !qaItems[idx].hasAnswer;
+                qaItems[idx].hasAnswer = newVal;
+                renderQAList();
+                updatePreview();
+            });
+
+            answerLabel.appendChild(answerCheckbox);
+            answerLabel.appendChild(pillText);
+
+            // delete
+            const del = document.createElement('button');
+            del.type = 'button';
+            del.className = 'small-btn danger';
+            del.title = 'Delete this Q&A';
+            del.innerHTML = '<i class="fas fa-trash"></i>';
+            del.addEventListener('click', () => {
+                if (!confirm('Delete this question?')) return;
+                qaItems.splice(idx, 1);
+                renderQAList();
+                updatePreview();
+            });
+
+            compactRow.appendChild(answerLabel);
+            compactRow.appendChild(del);
+
+            // answer textarea (only if hasAnswer)
+            const aLabel = document.createElement('label');
+            aLabel.textContent = 'Answer (optional)';
+            aLabel.htmlFor = `a-${idx}`;
+
+            const ata = document.createElement('textarea');
+            ata.id = `a-${idx}`;
+            ata.className = 'answer-input';
+            ata.placeholder = 'Write the answer here (supports Markdown/HTML)';
+            ata.value = item.a || '';
+            ata.addEventListener('input', (e) => {
+                qaItems[idx].a = e.target.value;
+                updatePreview();
+            });
+
+            body.appendChild(qLabel);
+            body.appendChild(qta);
+            body.appendChild(compactRow);
+
+            if (item.hasAnswer) {
+                body.appendChild(aLabel);
+                body.appendChild(ata);
+            }
+
+            card.appendChild(header);
+            card.appendChild(body);
+            qaListContainer.appendChild(card);
+        });
+
+        // allow dropping to the list empty area (append to end)
+        qaListContainer.addEventListener('dragover', (e) => {
+            e.preventDefault();
+        });
+        qaListContainer.addEventListener('drop', (e) => {
+            e.preventDefault();
+            if (dragSrcIdx === null || dragSrcIdx === undefined) return;
+            // if dropped on container (not a card), move to end
+            const [moved] = qaItems.splice(dragSrcIdx, 1);
+            qaItems.push(moved);
+            renderQAList();
+            updatePreview();
+        });
+    }
+
+    function addQA(q = '', a = '', hasAnswer = true) {
+        qaItems.push({ q: q || '', a: a || '', hasAnswer: !!hasAnswer, collapsed: false });
+        renderQAList();
+        // focus new question
+        setTimeout(() => {
+            const idx = qaItems.length - 1;
+            const el = document.getElementById(`q-${idx}`);
+            if (el) el.focus();
+        }, 0);
+        updatePreview();
+    }
+
+    // seed initial QA from legacy textarea
+    (function seedInitialQA() {
+        const raw = legacyInterviewNotes ? legacyInterviewNotes.value.trim() : '';
+        if (!raw) {
+            addQA('', '', false);
+            return;
+        }
+
+        const lines = raw.split('\n');
+        let firstQuestion = '';
+        let answerRemaining = '';
+
+        for (let i = 0; i < lines.length; i++) {
+            const l = lines[i].trim();
+            if (l.startsWith('- ')) {
+                firstQuestion = l.replace(/^-\\s*/, '');
+                answerRemaining = lines.slice(i + 1).join('\n');
+                break;
+            }
+        }
+
+        if (!firstQuestion) {
+            addQA('Why are you applying for this job?', raw, !!raw);
+        } else {
+            addQA(firstQuestion, answerRemaining.trim() || '', !!answerRemaining.trim());
+        }
+    })();
+
+    // wire add button (fixed)
+    if (addQaBtn) {
+        addQaBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            // default new Q to have no answer to keep UI simple, user can toggle
+            addQA('', '', false);
+        });
+    }
+
+    // collapse / expand all
+    if (collapseAllBtn) {
+        collapseAllBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            qaItems.forEach(it => it.collapsed = true);
+            renderQAList();
+        });
+    }
+    if (expandAllBtn) {
+        expandAllBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            qaItems.forEach(it => it.collapsed = false);
+            renderQAList();
+        });
+    }
+
+    // Score handling
+    const scoreEl = document.getElementById('score');
+    if (scoreEl) {
+        scoreEl.addEventListener('input', function() {
+            const val = this.value;
+            if (scoreDisplay) scoreDisplay.textContent = `${val}/10`;
+
+            const num = parseFloat(val) || 0;
+            if (num >= 8) {
+                scoreDisplay.style.background = 'linear-gradient(135deg, #4caf50 0%, #2e7d32 100%)';
+            } else if (num >= 5) {
+                scoreDisplay.style.background = 'linear-gradient(135deg, #ff9800 0%, #ef6c00 100%)';
+            } else {
+                scoreDisplay.style.background = 'linear-gradient(135deg, #f44336 0%, #c62828 100%)';
+            }
+            updatePreview();
+        });
+    }
+
+    // Update preview when any field changes
+    document.querySelectorAll('input, select, textarea').forEach(element => {
+        element.addEventListener('input', updatePreview);
+        element.addEventListener('change', updatePreview);
     });
 
-    // Helpers
+    // Toggle sections
+    const toggleHeaders = document.querySelectorAll('.toggle-header');
+    toggleHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+            const icon = this.querySelector('i');
+            if (icon) { icon.classList.toggle('fa-eye'); icon.classList.toggle('fa-eye-slash'); }
+        });
+    });
+
+    // ----------------------------
+    // Markdown generation (unchanged logic, respects qaItems)
+    // ----------------------------
     function formatDuration(hours, minutes) {
         hours = parseInt(hours) || 0; minutes = parseInt(minutes) || 0;
         if (hours === 0 && minutes === 0) return "Duration not specified";
@@ -736,10 +938,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const scoreHtml = `<mark style="background-color:${scoreColor}; color:#ffffff; padding:4px 8px; border-radius:4px">${scoreNum}/10</mark>`;
 
         const qaMarkdown = qaItems.map(item => {
-    const q = (item.q || '').trim() || 'Question';
-    const a = (item.a || '').trim() || 'Answer not provided';
-
-    return `- ${q}
+            const q = (item.q || '').trim() || 'Question';
+            const a = (item.a || '').trim() || '';
+            if (!item.hasAnswer || !a) {
+                return `- ${q}`;
+            } else {
+                return `- ${q}
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
     <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
@@ -748,7 +952,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     </div>
     </details>`;
-}).join('\n\n');
+            }
+        }).join('\n\n');
 
 
         return `# [${companyName}](${companySite})\n\n### Status\n#### ${statusValues}\n\n## ${jobTitle}\n\n### Interview Process\n\`\`\`mermaid\n${interviewProcess}\n\`\`\`\n\n### Apply Way\n${applyWayValues}\n\n### Interview Date\n\n- **Sent Resume**<br />${formatDate(sentResume)}\n\n- **HR Call**<br />${formatDate(hrCall)}\n\n- **Technical Interview**<br />${formatDate(technicalInterview)}\n\n${emailLine}\n\n### Interview Duration\n- **Technical Interview**<br />${duration}\n\n### Interview Platform\n${interviewPlatform}\n\n### Technical Interview\n${qaMarkdown}\n\n## Score\n<h4>${scoreHtml}</h4>`;
@@ -774,6 +979,59 @@ document.addEventListener('DOMContentLoaded', function() {
             notification.style.opacity = '0';
         }, 3000);
     }
+
+    // Download button
+    document.getElementById('downloadBtn').addEventListener('click', function() {
+        const markdownContent = generateMarkdown();
+        const blob = new Blob([markdownContent], { type: 'text/markdown' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        const rawName = (companyNameInput && companyNameInput.value || '').trim();
+        const slug = rawName ? rawName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\-]/g, '') : 'company';
+        a.download = `${slug}-interview.md`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showNotification('Markdown downloaded successfully!');
+    });
+
+    // Reset button
+    document.getElementById('resetBtn').addEventListener('click', function() {
+        if (confirm('Are you sure you want to reset all fields?')) {
+            document.querySelectorAll('input, textarea, select').forEach(element => {
+                if (element.type !== 'button') element.value = element.defaultValue;
+            });
+            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => checkbox.checked = checkbox.defaultChecked);
+            document.querySelectorAll('input[type="radio"]').forEach(radio => radio.checked = radio.defaultChecked);
+            if (jobTitleSelect) jobTitleSelect.value = "Software Engineer";
+            if (interviewPlatformSelect) interviewPlatformSelect.value = "Google Meet";
+
+            // reset QA items
+            qaItems = [];
+            (function seedAgain(){
+                const raw = legacyInterviewNotes ? legacyInterviewNotes.value.trim() : '';
+                if (!raw) { addQA('', '', false); return; }
+                const lines = raw.split('\n');
+                let firstQuestion = '';
+                let answerRemaining = '';
+                for (let i = 0; i < lines.length; i++) {
+                    const l = lines[i].trim();
+                    if (l.startsWith('- ')) {
+                        firstQuestion = l.replace(/^-\\s*/, '');
+                        answerRemaining = lines.slice(i + 1).join('\n');
+                        break;
+                    }
+                }
+                if (!firstQuestion) { addQA('Question 1', raw); } else { addQA(firstQuestion, answerRemaining.trim() || ''); }
+            })();
+
+            updatePreview();
+            this.innerHTML = '<i class="fas fa-check-circle"></i> Reset';
+            setTimeout(() => { this.innerHTML = '<i class="fas fa-redo"></i> Reset Form'; }, 2000);
+        }
+    });
 
     // Initialize
     renderQAList();
