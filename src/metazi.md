@@ -130,6 +130,14 @@ Google Meet
     - If the packages are independent (neither imports the other), the relative order is unspecified — you should not rely on a particular ordering.
     - `main()` being empty produces no additional output.
 
+    <br />
+
+    Output:
+    ```txt
+    init a
+    init b
+    ```
+
     </div>
     </details>
 
