@@ -32,6 +32,7 @@
 - [Saraf](src/saraf.md)
 - [Wallgold](src/Wallex/wallgold.md)
 - [Bitpin](src/bitpin/bitpin.md)
+- [Netbox](src/netbox/netbox.md)
 - [Metazi](src/metazi.md)
 - [Hamkaran system](src/hamkaransystem/1404.md)
 - [Malltina](src/malltina.md)

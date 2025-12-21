@@ -17,6 +17,7 @@
 - [Saraf](./saraf.md)
 - [Wallgold](./wallex/wallgold.md)
 - [Bitpin](./bitpin/bitpin.md)
+- [Netbox](./netbox/netbox.md)
 - [Metazi](./metazi.md)
 - [Hamkaran system](./hamkaransystem/1404.md)
 - [Malltina](./malltina.md)
