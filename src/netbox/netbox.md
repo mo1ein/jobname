@@ -1,7 +1,7 @@
 # [Netbox](https://netbox.info/)
 
 ### Status
-#### 📜📞🔧❌📝
+#### 📜📞🔧📝❌
 
 ## Back-End Developer
 
