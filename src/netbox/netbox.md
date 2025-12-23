@@ -8,7 +8,7 @@
 ### Interview Process
 ```mermaid
 flowchart LR
-    sr(Send Resume) --> hr(HR Call) --> ti(Technical Interview) --> Task --rejected--x hri(HR Interview) -.-> o(Offer)
+    sr(Send Resume) --> hr(HR Call) --> ti(Technical Interview) --> task(Task) --rejected--x hri(HR Interview) -.-> o(Offer)
 ```
 
 ### Apply Way
