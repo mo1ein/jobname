@@ -137,7 +137,9 @@ Google Meet
 
 - Any questions?
 
-feedback khobi dad hein mosahebe goft khosham omade azat!!!
+<p dir="rtl">
+مصاحبه‌کننده در آخر فیدبک داد و گفت خوشم اومده ازت. (:
+</p>
 
 ### Task
 
