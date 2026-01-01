@@ -44,6 +44,7 @@
 - [Netbox](./netbox/netbox.md)
 - [Malltina](./malltina.md)
 - [Hamkaran system](./hamkaransystem/1404.md)
+- [Cloudzy](./cloudzy/cloudzy.md)
 
 <p dir="rtl" class="border-bottom">
 شرکت‌هایی که در سال ۱۴۰۳ باهاشون مصاحبه داشتم:
