@@ -25,7 +25,10 @@ LinkedIn
 - **Rejection Email**<br />1404/07/13
 
 ### Interview Duration
+
 - **Technical Interview**<br />1 hour & 30 minutes
+
+- **Task Deadline**<br />7 days
 
 ### Interview Platform
 Google Meet
@@ -55,7 +58,7 @@ Google Meet
 ### Task
 
 <p dir="rtl">
-پس از مصاحبه فنی تسکی فرستادند که می‌تونید از
+پس از مصاحبه فنی تسکی فرستادند که ۷ روز مهلت داشت. می‌تونید از
 <a href="./VOD Scraper — Interview Task.pdf">این‌جا</a>
 ببینید. و همین‌طور 
 <a href="https://github.com/mo1ein/vod_scraper">جواب</a>

@@ -21,6 +21,7 @@
 - [Netbox](./netbox/netbox.md)
 - [Malltina](./malltina.md)
 - [Hamkaran system](./hamkaransystem/1404.md)
+- [Cloudzy](./cloudzy/cloudzy.md)
 - [Wallex](./wallex/wallex1403.md)
 - [Ozone - Golrang](./ozone.md)
 - [Exa](./exalab.md)
