@@ -12,7 +12,7 @@ flowchart LR
 ```
 
 ### Apply Way
-Site & LinkedIn todo:
+Jobinja
 
 ### Interview Date
 
