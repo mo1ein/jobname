@@ -163,7 +163,7 @@ Google Meet
 </p>
 
 ### Score
-<h4><mark style="background-color:#ff9800; color:#ffffff; padding:4px 8px; border-radius:4px">7.5/10</mark></h4>
+<h4><mark style="background-color:#4caf50; color:#ffffff; padding:4px 8px; border-radius:4px">8/10</mark></h4>
 <p dir="rtl">
 مصاحبه خوبی بود و مصاحبه‌کننده بسیار مودب و باتجربه بود. ردفلگی ندیدم. انتظار رفتن به مرحله بعد رو داشتم.
 </p>
