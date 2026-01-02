@@ -36,6 +36,7 @@
 - [Netbox](src/netbox/netbox.md)
 - [Malltina](src/malltina.md)
 - [Hamkaran system](src/hamkaransystem/1404.md)
+- [Doctoreto](src/doctoreto.md)
 - [Cloudzy](src/cloudzy/cloudzy.md)
 
 <p dir="rtl">
