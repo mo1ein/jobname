@@ -51,6 +51,7 @@
 شرکت‌هایی که در سال ۱۴۰۳ باهاشون مصاحبه داشتم:
 </p>
 
+- [Mori](./mori/mori.md)
 - [Wallex](./wallex/wallex1403.md)
 - [Snappshop](./snapp/snappshop.md)
 
