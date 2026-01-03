@@ -23,6 +23,7 @@
 - [Hamkaran system](./hamkaransystem/1404.md)
 - [Doctoreto](./doctoreto.md)
 - [Cloudzy](./cloudzy/cloudzy.md)
+- [Mori](./mori/mori.md)
 - [Wallex](./wallex/wallex1403.md)
 - [Ozone - Golrang](./ozone.md)
 - [Exa](./exalab.md)
