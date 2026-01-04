@@ -1,8 +1,9 @@
 [book]
+title = "jobname"
+description = "Interview experiences"
 authors = ["Moein Halvaei"]
 language = "en"
 src = "src"
-title = "jobname"
 
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
@@ -10,7 +11,6 @@ command = "mdbook-mermaid"
 [output.html]
 default-theme = "rust"
 git-repository-url = "https://github.com/mo1ein/jobname"
-git-repository-icon = "fa-github"
 # edit-url-template = "https://github.com/rust-lang/mdBook/edit/master/guide/{path}"
 # site-url = "/example-book/"
 # cname = "myproject.rs"
@@ -20,3 +20,6 @@ additional-css = ["src/theme/css/general.css"]
 [output.html.fold]
 enable = true
 level = 0
+
+[output.html.print]
+enable = true    # include support for printable output
