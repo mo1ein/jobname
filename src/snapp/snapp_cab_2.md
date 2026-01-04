@@ -12,13 +12,13 @@ flowchart LR
 Site
 
 ### Interview Date
-- **Sent Resume** <br /> 1402.10.22 (IDK really)
+- **Sent Resume** <br> 1402.10.22 (IDK really)
 
-- **HR Call**<br /> 1402.11.08
+- **HR Call**<br> 1402.11.08
 
 - **Technical Interview** <br> 1402.11.14 AT 12 PM
 
-- **Rejection Email** <br /> 1402.11.18
+- **Rejection Email** <br> 1402.11.18
 
 ### Interview Duration
 - **Technical Interview** <br> 1 hour & 30 minutes
@@ -29,7 +29,7 @@ Skype
 ### 1st Technical Interview
 
 <p dir="rtl">
-اول مصاحبه بلوتوث هندزفریم قطع و وصل می‌شد و یک دقیقه از تایم مورد نظر گذشته بود (دقیقا یک دقیقه!) تا جوین شم که تو این فاصله HR زنگ زد و علت را جویا شد! و مشکل رو توضیح دادم. </br>
+اول مصاحبه بلوتوث هندزفریم قطع و وصل می‌شد و یک دقیقه از تایم مورد نظر گذشته بود (دقیقا یک دقیقه!) تا جوین شم که تو این فاصله HR زنگ زد و علت را جویا شد! و مشکل رو توضیح دادم. <br>
 مصاحبه با دونفر بود که هر دو فنی بودن.
 </p>
 

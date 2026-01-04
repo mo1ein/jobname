@@ -61,7 +61,7 @@ In-person
     ```
     </div>
     </details>
-    <br/ >
+    <br>
 - [Second question](./b.pdf)
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
@@ -92,7 +92,7 @@ In-person
     ```
     </div>
     </details>
-    <br/ >
+    <br>
 - [Third question](./c.pdf)
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
