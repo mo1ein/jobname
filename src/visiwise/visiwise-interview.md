@@ -43,16 +43,24 @@ Google Meet
 
 - Tell me about yourself.
 
-- database question that i tell him transx outbox
+- Why have you left your last company?
+
+- What's the number of DAU in your last company?
+
+- What's your salary expectation?
+
+- In a microservices architecture, if one service depends on another and a failure occurs, how can the system handle the error and continue processing?
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
     <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
 
     Answer not provided
+    i said atomic and trx outbox
 
     </div>
     </details>
-- database question...
+
+- Suppose we have an international e-commerce system where users can submit orders. The challenge is calculating taxes, which vary based on time (e.g., Black Friday), product category (e.g., electronic goods), and country. How would you design the database(relational) to support this?
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
     <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
