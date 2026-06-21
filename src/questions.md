@@ -1,7 +1,10 @@
 # List of all questions
 
-**Total questions:** 338
+
+**Total questions:** 338 <br />
 **Total unique questions:** 251
+
+<img src="assets/bullshit_everywhere_meme.jpg" alt="bullshit_everywhere_meme" style="display: block; max-width: 60%; width: 100%; height: auto; margin-left: auto; margin-right: auto; border-radius: 5px; margin-top: 5px;">
 
 ---
 
