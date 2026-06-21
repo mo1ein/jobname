@@ -76,7 +76,7 @@ Google Meet
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
     <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
 
-    #### 1. Primary Defense: The Mutex Lock with Stale Data Fallback
+    1. Primary Defense: The Mutex Lock with Stale Data Fallback
 
     This is your immediate and most critical fix. It directly stops the herd.
 
@@ -88,7 +88,7 @@ Google Meet
 
     **Serve Stale Data (Preferred)**: Even better, the system immediately returns the recently expired ("stale") data while the cache is being refreshed in the background. This provides the best user experience—fast responses with near-real-time data.
 
-    #### 2. Proactive Mitigation: Prevent Synchronized Expiration
+    2. Proactive Mitigation: Prevent Synchronized Expiration
 
     The thundering herd is often caused by thousands of cache entries expiring at the same moment.
 
@@ -96,7 +96,7 @@ Google Meet
 
     **Probabilistic Early Refresh**: Before a cache entry officially expires, have a small percentage of requests (e.g., 1%) trigger an early refresh in the background. This "warms" the cache proactively, making it highly likely that a fresh value is already in place before the true expiration time.
 
-    #### 3. Architectural Decoupling: Asynchronous Cache Population
+    3. Architectural Decoupling: Asynchronous Cache Population
 
     For the ultimate resilience, decouple the user request from the cache regeneration process entirely.
 
@@ -111,13 +111,13 @@ Google Meet
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
     <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
 
-    #### 1. Reproduce & observe
+    1. Reproduce & observe
 
     Reproduce in dev with different browsers/devices and slow network.
 
     Capture request traces (client logs, server logs, request IDs, timestamps) and check analytics for patterns (specific browsers, mobile, retries).
 
-    #### 2. Identify likely causes
+    2. Identify likely causes
 
     **Client**: double-click, button not disabled, or UI retry/optimistic update doing a second call.
 
@@ -127,7 +127,7 @@ Google Meet
 
     **Message layer**: duplicate messages processed twice.
 
-    #### 3. Fixes (short & practical)
+    3. Fixes (short & practical)
 
     **Client**: disable add button after first click and debounce UI actions; show clear loading state.
 
@@ -143,25 +143,25 @@ Google Meet
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
     <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
 
-    #### 1. Fast dedupe/lock in cache (Redis)
+    1. Fast dedupe/lock in cache (Redis)
 
     Prevent processing the same “add” twice within a short window (2–5s). Build a dedupe key from stable request factors you have today (authenticated user_id or session_id, product_id, and a hash of the request body / headers). Use SET key value NX PX <ms>.
 
-    #### 2. Make DB operation idempotent/atomic (defensive)
+    2. Make DB operation idempotent/atomic (defensive)
 
     Even with Redis, races or Redis failures can happen. Enforce a DB-level uniqueness + atomic upsert so duplicates can’t create two rows.
 
-    #### 3. Optional: Consumer-side dedupe / idempotency store
+    3. Optional: Consumer-side dedupe / idempotency store
 
     If your API is queue-based or background-processed, store processed request IDs (or the same dedupe key) for a short TTL and ignore duplicates.
 
-    #### 4. Response strategy & UX-friendly behavior
+    4. Response strategy & UX-friendly behavior
 
     When duplicate is detected in cache, return a harmless success (200) with current cart state — avoids confusing the frontend.
 
     If you detect duplicate after DB upsert, return the updated qty (so frontend can reconcile).
 
-    #### 5. Observability & short-term rollout
+    5. Observability & short-term rollout
 
     Add logging/metric (count of dedupe-hits, Redis failures, db-constraint triggers).
 
@@ -169,7 +169,7 @@ Google Meet
 
     Monitor for false positives (legitimate rapid adds being collapsed) and tune TTL (e.g., 2–5s).
 
-    #### 6. Caveats
+    6. Caveats
 
     This is a short-term backend mitigation. It can merge legitimate rapid adds (user intentionally clicks twice quickly) — verify acceptable with product.
 
@@ -206,12 +206,12 @@ Google Meet
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
     <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
 
-    #### 1. Data Parsing and Structuring
+    1. Data Parsing and Structuring
     **Reading File**: To read a huge file efficiently, stream it in manageable chunks (e.g., several hundred MB at a time) instead of loading it all into memory. Use memory mapping for faster access when possible, and consider distributed or parallel processing frameworks like Apache Spark if you have large-scale infrastructure. Optimize I/O by tuning buffer sizes and, if applicable, store data in compressed or columnar formats to speed selective reads. 
 
     **Log Parsing**: First, I'd parse the unstructured logs into a structured format (e.g., JSON or CSV) by extracting key fields such as timestamp, user ID, message content, IP address, and user agent (if available). This can be done using tools like Apache NiFi for data flow, or custom scripts with regular expressions, but for large-scale data, distributed processing is essential.
 
-    #### 2. Feature Engineering (Bot Indicators)
+    2. Feature Engineering (Bot Indicators)
 
     **Why**: Bots exhibit patterns like bursty activity, repetition, and anomalies vs. human behavior.
     Key Features (Computed in Spark for scale):
