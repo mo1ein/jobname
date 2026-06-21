@@ -8,8 +8,8 @@
 - [Rejection](rejection.md)
 - [Statistically](statistics.md)
 - [Clarifying](clarifying.md)
-- [FAQ](FAQ.md)
-- [md generator](./mdgen.html)
+- [Markdown Generator](./mdgen.html)
+- [List of all questions](questions.md)
 
 
 # Companies
