@@ -68,6 +68,14 @@ details > div > p:last-child {
     margin-bottom: 0;
 }
 
+li > p {
+    margin-bottom: 0.4em;
+}
+
+details {
+    margin-top: 0;
+}
+
 /* make long words/inline code not x overflow */
 main {
     overflow-wrap: break-word;
