@@ -6,8 +6,8 @@
 <img src="./assets/applications.svg">
 <center><p dir="rtl" style="font-size: 13px;">این، مربوط به مصاحبه‌های سال ۱۴۰۲ بین بازه آبان تا اسفند (۵ ماه) است. رکورد جالبیه!</p></center>
 
-<br />
-<br />
+<br>
+<br>
 
 <div style="position: relative; padding-bottom: 56%; padding-top: 25px; hight: 0;">
     <iframe src="./assets/interview_platform.html" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"></iframe>
@@ -20,6 +20,6 @@
 
 <div style="position: relative; padding-bottom: 56%; padding-top: 25px; hight: 0;">
     <iframe src="./assets/apply_way.html" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"></iframe></center>
-<div>
+</div>
 
 <center><p dir="rtl" style="font-size: 13px;">نمودار حاصل از ۲۴ شرکتی که اپلای شده و حداقل یک مرحله به جلو رفته.</p></center>

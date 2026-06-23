@@ -55,6 +55,26 @@ code {
     font-size: var(--code-font-size);
     direction: ltr !important;
 }
+details > div {
+    margin: 0 !important;
+    padding: 10px 12px !important;
+}
+
+details > div > p:first-child {
+    margin-top: 0;
+}
+
+details > div > p:last-child {
+    margin-bottom: 0;
+}
+
+li > p {
+    margin-bottom: 0.4em;
+}
+
+details {
+    margin-top: 0;
+}
 
 /* make long words/inline code not x overflow */
 main {

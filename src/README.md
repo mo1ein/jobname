@@ -41,13 +41,18 @@
 - [Wallgold](./wallex/wallgold.md)
 - [Bitpin](./bitpin/bitpin.md)
 - [Metazi](./metazi.md)
-- [Hamkaran system](./hamkaransystem/1404.md)
+- [Netbox](./netbox/netbox.md)
 - [Malltina](./malltina.md)
+- [Hamkaran system](./hamkaransystem/1404.md)
+- [Doctoreto](./doctoreto.md)
+- [Football360](./football360.md)
+- [Cloudzy](./cloudzy/cloudzy.md)
 
 <p dir="rtl" class="border-bottom">
 شرکت‌هایی که در سال ۱۴۰۳ باهاشون مصاحبه داشتم:
 </p>
 
+- [Mori](./mori/mori.md)
 - [Wallex](./wallex/wallex1403.md)
 - [Snappshop](./snapp/snappshop.md)
 

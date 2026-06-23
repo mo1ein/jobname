@@ -8,8 +8,8 @@
 - [Rejection](rejection.md)
 - [Statistically](statistics.md)
 - [Clarifying](clarifying.md)
-- [FAQ](FAQ.md)
-- [md generator](./mdgen.html)
+- [Markdown Generator](./mdgen.html)
+- [List of all questions](questions.md)
 
 
 # Companies
@@ -18,8 +18,13 @@
 - [Wallgold](./wallex/wallgold.md)
 - [Bitpin](./bitpin/bitpin.md)
 - [Metazi](./metazi.md)
-- [Hamkaran system](./hamkaransystem/1404.md)
+- [Netbox](./netbox/netbox.md)
 - [Malltina](./malltina.md)
+- [Hamkaran system](./hamkaransystem/1404.md)
+- [Doctoreto](./doctoreto.md)
+- [Football360](./football360.md)
+- [Cloudzy](./cloudzy/cloudzy.md)
+- [Mori](./mori/mori.md)
 - [Wallex](./wallex/wallex1403.md)
 - [Ozone - Golrang](./ozone.md)
 - [Exa](./exalab.md)
