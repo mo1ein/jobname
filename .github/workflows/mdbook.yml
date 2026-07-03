@@ -10,15 +10,10 @@ on:
 
 jobs:
   deploy:
-    if: >
-      github.event_name == 'push' ||
-      (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository)
-
     permissions:
       contents: read
       pages: write
       id-token: write
-      pull-requests: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -31,7 +26,7 @@ jobs:
         run: |
           # tag=$(curl 'https://api.github.com/repos/rust-lang/mdbook/releases/latest' | jq -r '.tag_name')
           # update tag manually
-          tag="v0.5.2"
+          tag="v0.5.3"
           url="https://github.com/rust-lang/mdbook/releases/download/${tag}/mdbook-${tag}-x86_64-unknown-linux-gnu.tar.gz"
           mkdir mdbook
           curl -sSL $url | tar -xz --directory=./mdbook
@@ -52,12 +47,15 @@ jobs:
           mdbook-mermaid install
           mdbook build
       - name: Setup Pages
+        if: github.event_name == 'push'
         uses: actions/configure-pages@v4
       - name: Upload artifact
+        if: github.event_name == 'push'
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
           path: "book"
       - name: Deploy to GitHub Pages
+        if: github.event_name == 'push'
         id: deployment
         uses: actions/deploy-pages@v4

@@ -35,7 +35,7 @@
 شرکت‌هایی که در سال ۱۴۰۵ باهاشون مصاحبه داشتم (داغ داغ):
 </p>
 
-- [Tabdeal](src/tabdeal/tabdeal.md)
+- [Tabdeal](./tabdeal/tabdeal.md)
 
 <p dir="rtl" class="border-bottom">
 شرکت‌هایی که در سال ۱۴۰۴ باهاشون مصاحبه داشتم:
