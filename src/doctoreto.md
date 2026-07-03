@@ -68,13 +68,18 @@ Google Meet
     </details><br />
 
 - What is consistency?
-    <details>
-    <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
-    In database systems, consistency (or correctness) refers to the requirement that any given database transaction must change affected data only in allowed ways. Any data written to the database must be valid according to all defined rules, including constraints, cascades, triggers, and any combination thereof. 
-    <a href="https://en.wikipedia.org/wiki/Consistency_(database_systems)" target="_blank" rel="noopener noreferrer">Wikipedia</a><br />
-    </div>
-    </details><br />
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+
+    In **database systems (ACID)**, consistency (or correctness) refers to the requirement that any given database transaction must change affected data only in allowed ways. Any data written to the database must be valid according to all defined rules, including constraints, cascades, triggers, and any combination thereof.
+  <a href="https://en.wikipedia.org/wiki/Consistency_(database_systems)" target="_blank" rel="noopener noreferrer">Wikipedia</a><br />
+
+    In **CAP** theorem:
+    Every read receives the most recent write or an error. Consistency means that all clients see the same data at the same time, no matter which node they connect to. For this to happen, whenever data is written to one node, it must be instantly forwarded or replicated to all the other nodes in the system before the write is deemed ‘successful’
+  <a href="https://en.wikipedia.org/wiki/CAP_theorem#:~:text=Every%20read%20receives,%5B5%5D" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+  </div>
+  </details>
 
 - Which tools and mechanisms help keep a system consistent?
     <details>

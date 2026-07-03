@@ -36,4 +36,4 @@ Google Meet
 - [Game theory question (pirate game)](https://en.wikipedia.org/wiki/Pirate_game)
 
 ### Score
-<h4><mark style="background-color:#ffd700">5/10</mark></h4>
+<h4><mark style="background-color:#ff9800; color:#ffffff; padding:4px 8px; border-radius:4px">5/10</mark></h4>
