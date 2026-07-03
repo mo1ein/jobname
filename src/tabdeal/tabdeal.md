@@ -1,12 +1,12 @@
 # [Tabdeal](https://tabdeal.org/)
 
 ### Status
-#### 📜📞🔧task
+#### 📜📞🔧📝❌
 
 ### Interview process
 ```mermaid
 flowchart LR
-    sr(Send resume) --> hr(HR call) --> ti(Technical Interview I) --> task(Task)--> ti2(Technical Interview II) --> hr2(HR Interview)--> o(Offer)
+    sr(Send resume) --> hr(HR call) --> ti(Technical Interview I) --> task(Task)--> ti2(Task Review) --rejected--x hr2(HR Interview) -.-> o(Offer)
 ```
 
 ### Apply Way
@@ -14,14 +14,23 @@ jobinja
 
 ### Interview Date
 
-- **Sent Resume**<br />1405.00.00
+- **Sent Resume**<br />1405.03.15
 
-- **HR Call**<br />1405.07.28
+- **HR Call**<br />1405.02.27
 
 - **Technical Interview**<br />1405.03.30
 
+- **Task**<br />1405.03.31
+
+- **Task Interview**<br />1405.04.06
+
 ### Interview Duration
+
 - **Technical Interview**<br />1 hour
+
+- **Task**<br />5 days
+
+- **Task Review**<br />1 hour
 
 ### Interview Platform
 Google Meet
@@ -32,19 +41,24 @@ Google Meet
 
 - What is your most challenging experience that you involved with in your work?
 
-- What you gonna do if suddenly we recieve massive requests? How you can handle it?
+- What would you do if suddenly we receive massive requests? How would you handle it?
 
   <details>
   <summary style="font-size:14px"><b><em>Answer</em></b></summary>
   <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
 
-    ### 1. 🎯 Short Answer
+  If we suddenly receive a massive number of requests, the first thing I'd do is identify the root cause instead of immediately scaling the system. I'd check our monitoring dashboards, logs, and traces to understand whether the spike is caused by legitimate user traffic, a recent deployment, a client bug causing excessive retries, or even malicious traffic.
 
-    First, I'd identify the bottleneck — is it CPU, memory, DB, or network? Then apply a layered approach: add caching (Redis) to reduce DB hits, scale horizontally with load balancers, use rate limiting to protect upstream services, and offload heavy work to async queues (Kafka/RabbitMQ) so the main path stays fast.
+  Next, I'd identify the bottleneck by looking at metrics such as request latency, error rates, CPU and memory usage, database performance, connection pool utilization, and network traffic.
 
-    ### 1. 🎯 Long Answer
+  Once I know the bottleneck, I'd apply the appropriate solution:
 
-    When facing a sudden traffic spike, the key is to respond in layers rather than panic-fixing one thing. Start by observing metrics (latency, error rates, CPU, memory, DB connections) to pinpoint the bottleneck. If the bottleneck is the database, introduce caching layers like Redis or CDN for read-heavy data. If it's compute, scale horizontally by adding more instances behind a load balancer. If the issue is synchronous processing overwhelming your system, decouple with message queues — push non-critical work (notifications, analytics) to background consumers. Apply rate limiting and circuit breakers to prevent cascading failures. Finally, consider auto-scaling policies so the system adapts proactively to traffic patterns.
+  - If the database is overloaded, I'd reduce the load with Redis or CDN caching, optimize slow queries, or use read replicas for read-heavy workloads.
+  - If the application servers are the bottleneck, I'd scale them horizontally behind a load balancer or rely on auto-scaling if it's configured.
+  - If synchronous processing is slowing requests, I'd move non-critical tasks like notifications or analytics to background workers using a message queue.
+  - To protect the system from cascading failures, I'd enable rate limiting, circuit breakers, and, if necessary, load shedding.
+
+  After the incident is resolved, I'd perform a postmortem to understand what happened, fix the root cause if it was a bug, review our auto-scaling and capacity planning, and run load tests to ensure we're better prepared for future traffic spikes.  
 
   </div>
   </details>
@@ -86,66 +100,19 @@ Google Meet
   </div>
   </details>
 
-- One service sent events to other service and retries it and we have 3 events in destination service how can handle it in second service? for example 3 same events of buy order.
+- One service sends events to another service and retries, resulting in 3 duplicate events at the destination service. How can the second service handle this? For example, 3 identical buy order events.
 the answer is we check with uuid or request id ...
 
   <details>
   <summary style="font-size:14px"><b><em>Answer</em></b></summary>
   <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
 
-    ### 1. 🎯 Short Answer
+  This is the **idempotency** problem. The solution is to assign a unique ID (UUID or request ID) to each event and have the receiving service track processed IDs. When a duplicate arrives, the service checks the ID, sees it's already processed, and ignores it. This ensures that processing an event multiple times has the same effect as processing it once.
 
-    This is the **idempotency** problem. The solution is to assign a unique ID (UUID or request ID) to each event and have the receiving service track processed IDs. When a duplicate arrives, the service checks the ID, sees it's already processed, and ignores it. This ensures that processing an event multiple times has the same effect as processing it once.
+  </div>
+  </details>
 
-    ### 1. 🎯 Long Answer
-
-    In distributed systems, networks are unreliable. The producer service might retry sending an event because it didn't receive an acknowledgment, even though the consumer already processed it. This leads to duplicate processing. The standard solution is **idempotent processing**: attach a unique identifier (UUID, request ID, or a composite key like order_id + event_type) to each event. The consumer stores processed IDs in a fast lookup (Redis or database) with a TTL. On each incoming event, it first checks if the ID exists — if yes, it returns success without reprocessing; if no, it processes the event and stores the ID atomically. For database operations, you can also use unique constraints or upserts as a safety net.
-
-    ### 2. 💡 Illustration / Analogy
-
-    It's like a ticket at a concert. Each ticket has a unique barcode. When you scan it at the entrance, the system marks it as "used." If you try to scan the same ticket again (or someone copies it), the system sees it's already been used and denies entry — even though the ticket looks valid.
-
-    ### 3. 🛠️ Real-World Example
-
-    In a crypto exchange, when a buy order event is published to the trade matching service, we attach an `event_id` (UUID v4). The matching service stores processed event IDs in Redis with a 24-hour TTL:
-
-    ```python
-    # Pseudocode
-    def process_event(event):
-        idempotency_key = f"event:{event.event_id}"
-        if redis.set(idempotency_key, "1", nx=True, ex=86400):
-            # First time — process it
-            execute_trade(event.order)
-            return "processed"
-        else:
-            # Duplicate — skip
-            return "already_processed"
-    ```
-
-    For extra safety, the database has a unique constraint on `(order_id, event_type)` so even if Redis is down, duplicates can't create double trades.
-
-    ### 5. 🎤 Interview Tips
-
-    **Common follow-up questions:**
-    - What happens if Redis crashes and we lose the idempotency keys?
-    - How do you choose the TTL for idempotency keys?
-    - What's the difference between exactly-once and effectively-once delivery?
-    - How does Kafka handle this differently from RabbitMQ?
-
-    **Common mistakes candidates make:**
-    - Not thinking about the atomicity of "check ID + process + store ID"
-    - Forgetting edge cases like Redis failure between check and store
-    - Confusing idempotency with deduplication (they're related but not identical)
-
-    **What interviewers are looking for:**
-    - Immediate recognition of the idempotency pattern
-    - Understanding of the atomicity requirement
-    - Awareness of failure modes and defense-in-depth (Redis + DB constraint)
-
-    </div>
-    </details>
-
-- When do you use queue?
+- When do you use a queue?
 
   <details>
   <summary style="font-size:14px"><b><em>Answer</em></b></summary>
@@ -213,46 +180,71 @@ the answer is we check with uuid or request id ...
 
 - Implement an LRU Cache in 20 mins.
 
-```python
-class LRUCache:
-    def __init__(self, capacity: int) -> None:
-        self.capacity = capacity
-        self.cache = {}
-        
-    def put(self, key: int, value: int):
-        if key in self.cache:
-            self.cache[key] = value
-            self.cache[key] = self.cache.pop(key)
-        else:
-            if len(self.cache) == self.capacity:
-                del self.cache[next(iter(self.cache))]
-            self.cache[key] = value
+  <details>
+  <summary style="font-size:14px"><b><em>Answer (My solution)</em></b></summary>
+  <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
 
-    def get(self, key: int):
-        if key not in self.cache:
-            return -1
-        self.cache[key] = self.cache.pop(key)
-        return self.cache[key]
+  ```python
+  class LRUCache:
+      def __init__(self, capacity: int) -> None:
+          self.capacity = capacity
+          self.cache = {}
+          
+      def put(self, key: int, value: int):
+          if key in self.cache:
+              self.cache[key] = value
+              self.cache[key] = self.cache.pop(key)
+          else:
+              if len(self.cache) == self.capacity:
+                  del self.cache[next(iter(self.cache))]
+              self.cache[key] = value
 
-    def print_cache(self):
-        print(self.cache)
+      def get(self, key: int):
+          if key not in self.cache:
+              return -1
+          self.cache[key] = self.cache.pop(key)
+          return self.cache[key]
 
-c = LRUCache(3)
+      def print_cache(self):
+          print(self.cache)
 
-c.put(1,1)
-c.put(2,2)
-c.put(3,3)
-c.print_cache()
-c.get(2)
-c.get(1)
-c.print_cache()
-c.put(4,4)
-c.print_cache()
-```
+  c = LRUCache(3)
 
-### Task
+  c.put(1,1)
+  c.put(2,2)
+  c.put(3,3)
+  c.print_cache()
+  c.get(2)
+  c.get(1)
+  c.print_cache()
+  c.put(4,4)
+  c.print_cache()
+  ```
 
-### HR Interview
+  </div>
+  </details>
+
+<p dir="rtl">
+این مرحله همه سوالاتو جواب دادم و دیگه حرفی نمونده بود و پشمای طرف ریخته بود طوری که فرداش زنگ زدن برای مرحله بعد، اما چیزی که رو مخم بود بی‌سوادی مصاحبه‌کننده بود مثل یه ربات از رو لیست داشت سوال می‌خوند یه کوچولو هم مانور نمی‌داد رو سوالا که ببینه چقدر تو اون دامین مسلطم صرفا خبرنگاری سوال و جواب. لایوکدم که زدم متوجه نمی‌شد هی می‌گفت دیکشنری رو چی کار کردی هی توضیح می دادم آخر انقد تست کیس مختلف داد گفت آها درست کار می‌کنه! 
+</p>
+
+### Task & Code review interview
+
+<p dir="rtl">
+پس از مصاحبه فنی تسکی فرستادند که می‌تونید از
+<a href="./Backend Project.pdf">این‌جا</a>
+ببینید. و همین‌طور 
+<a href="https://github.com/mo1ein/qq">جواب</a>
+من رو.
+<br />
+خود نوع نگارش تسک گویای اینه که چه خبره اون تو!
+مصاحبه‌کننده به شدت نوب بود و سنیوریتی لازم و سواد کافی برای سنجیدن دیگری رو نداشت فکر کنم کلا ۲-۳ سال سابقه داشت و خوب متوجه کد نشد و وب‌کم رو هم تو این مرحله روشن نکرد. صداها و مکث‌های عجیبی هم میومد انگار چند نفر پشت مانیتور باشن. طبق تحقیقات و ارتباطاتم فهمیدم که بچه‌های تیم رندوم مصاحبه می‌کنن که نشون می‌ده همین‌طوری خیاریه مصاحبه‌ها. سوال‌ها هم یه لیستیه که طوطی‌وار می‌پرسن و خب برای همه هم همونه.
+</p>
 
 ### Score
 
+<h4><mark style="background-color:#ff9800; color:#ffffff; padding:4px 8px; border-radius:4px">6/10</mark></h4>
+
+<p dir="rtl">
+رقمی بد نبود با یه عدد سه رقمی اوکی بودن یعنی اولش که HR زنگ زد گفتم انقد و گفت خب حالا خبر می‌دیم بهت، رفت با رئیسش (احتمالا) صحبت کرد بعد چند روز مصاحبه ست کردن حالا دیگه نمی‌دونم واقعا اوکی بودن یا تهش به آفر می‌رسید می‌گفتن خب ما ۵۰ بیشتر نمی‌دیم. ولی خب چون پول دارن بنا رو می‌ذاریم رو این که اوکی بودن. در هر صورت اگه فقط پول می‌خواید لقمه راحتیه ولی جای باحال، فکر نکنم!
+</p>

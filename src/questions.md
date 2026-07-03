@@ -1,8 +1,8 @@
 # List of all questions
 
 
-**Total questions:** 345 <br />
-**Total unique questions:** 257
+**Total questions:** 346 <br />
+**Total unique questions:** 258
 
 <img src="assets/bullshit_everywhere_meme.jpg" alt="bullshit_everywhere_meme" style="display: block; max-width: 60%; width: 100%; height: auto; margin-left: auto; margin-right: auto; border-radius: 5px; margin-top: 5px;">
 
@@ -1283,6 +1283,52 @@
 - **We have this menu and there are task & subtasks. How you can traverse all items and access to each?** (1 times — [Sternx](https://mo1ein.github.io/jobname/sternx/sternx.html#:~:text=We%20have%20this%20menu%20and%20there%20are%20task%20%26%20subtasks.%20How%20you%20can%20traverse%20all%20items%20and%20access%20to%20each%3F))
 
 - **Math question: The market has reached a state where it has fallen 5 units, then after a while, it rises 1 unit, and this pattern has repeated. How can we predict the market for some time ahead (for example, a month)? How can we assess its probability? Do you have a solution?** (1 times — [Wallex](https://mo1ein.github.io/jobname/wallex/wallex1403.html#:~:text=Math%20question%3A%20The%20market%20has%20reached%20a%20state%20where%20it%20has%20fallen%205%20units%2C%20then%20after%20a%20while%2C%20it%20rises%201%20unit%2C%20and%20this%20pattern%20has%20repeated.%20How%20can%20we%20predict%20the%20market%20for%20some%20time%20ahead%20%28for%20example%2C%20a%20month%29%3F%20How%20can%20we%20assess%20its%20probability%3F%20Do%20you%20have%20a%20solution%3F))
+
+- **Implement an LRU Cache in 20 mins.** (1 times — [Tabdeal](https://mo1ein.github.io/jobname/tabdeal/tabdeal.html#:~:text=Implement%20an%20LRU%20Cache%20in%2020%20mins.))
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer (My solution)</em></b></summary>
+  <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+
+  ```python
+  class LRUCache:
+      def __init__(self, capacity: int) -> None:
+          self.capacity = capacity
+          self.cache = {}
+          
+      def put(self, key: int, value: int):
+          if key in self.cache:
+              self.cache[key] = value
+              self.cache[key] = self.cache.pop(key)
+          else:
+              if len(self.cache) == self.capacity:
+                  del self.cache[next(iter(self.cache))]
+              self.cache[key] = value
+
+      def get(self, key: int):
+          if key not in self.cache:
+              return -1
+          self.cache[key] = self.cache.pop(key)
+          return self.cache[key]
+
+      def print_cache(self):
+          print(self.cache)
+
+  c = LRUCache(3)
+
+  c.put(1,1)
+  c.put(2,2)
+  c.put(3,3)
+  c.print_cache()
+  c.get(2)
+  c.get(1)
+  c.print_cache()
+  c.put(4,4)
+  c.print_cache()
+  ```
+
+  </div>
+  </details>
 
 ### DevOps & Infrastructure
 
