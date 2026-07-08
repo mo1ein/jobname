@@ -39,7 +39,7 @@ Google Meet
 Write a function to calculate `pow(x, n)`.
 <details>
 <summary style="font-size:14px"><b><em>My answer</em></b></summary>
-<div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+<div>
 
 ```python
 import sys

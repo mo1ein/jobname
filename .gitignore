@@ -11,3 +11,5 @@ gh-md-toc
 # Ignore Vim temporary and swap files.
 *.sw?
 *~
+
+CLAUDE.md

@@ -1,0 +1,20 @@
+services:
+  web:
+    build: .
+    ports:
+      - "7000:7000"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: sh -c "touch db.sqlite3 && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+
+  scraper:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: sh -c "python manage.py migrate && python manage.py scrap --concurrency 1"
+    # scraper should not restart automatically
+    restart: "no"

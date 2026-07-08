@@ -1,8 +1,8 @@
 # List of all questions
 
 
-**Total questions:** 346 <br />
-**Total unique questions:** 258
+**Total questions:** 349 <br />
+**Total unique questions:** 261
 
 <img src="assets/bullshit_everywhere_meme.jpg" alt="bullshit_everywhere_meme" style="display: block; max-width: 60%; width: 100%; height: auto; margin-left: auto; margin-right: auto; border-radius: 5px; margin-top: 5px;">
 
@@ -14,7 +14,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Inheritance models an ‘is-a’ relationship and shares behavior via a superclass. Composition models ‘has-a’ and embeds functionality by using other objects. Composition is generally preferred for flexibility and testability.
 
@@ -31,7 +31,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     A generator is a function that yields values lazily and returns an iterator. Benefits: low memory usage for large sequences, simple stateful iteration, and easy composition of pipelines.
         - [Introduction to Python Generators](https://realpython.com/introduction-to-python-generators/)
@@ -47,7 +47,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     The `is` operator checks for **identity**.
         The `==` operator checks for **equality**.
@@ -106,7 +106,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     `@classmethod` receives the class (`cls`) and is used for alternative constructors or methods that operate on class-level state. `@staticmethod` has no implicit first argument and is used for utility functions grouped with the class without accessing class or instance state.
         realpython
@@ -118,7 +118,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Use a single leading underscore `_method` to indicate ‘internal’ use (convention). Use double leading underscores `__method` for name-mangling to reduce accidental access from subclasses; note that nothing is truly private.
         - [Python Private Methods Explained](https://www.datacamp.com/tutorial/python-private-methods-explained)
@@ -130,7 +130,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Django follows an MTV (Model–Template–View) pattern: Models hold data/ORM; Views handle requests; Templates render presentation. Requests flow through middleware, URL routing sends them to views, which use models/templates; Django runs on WSGI/ASGI.
         - [Understanding Django's Architecture: The MTV Pattern](https://dev.to/vincenttommi/2-understanding-djangos-architecture-the-mtv-pattern-1gl)
@@ -142,7 +142,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Django’s serialization framework provides a mechanism for “translating” Django models into other formats. Usually these other formats will be text-based and used for sending Django data over a wire, but it’s possible for a serializer to handle any format (text-based or not).
         djangoproject
@@ -154,7 +154,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Custom permissions encapsulate business authorization rules. Implement them by subclassing `rest_framework.permissions.BasePermission` and overriding `has_permission` and/or `has_object_permission`, then apply to views or viewsets.
         - [DRF Permissions](https://www.django-rest-framework.org/api-guide/permissions/)
@@ -166,7 +166,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     In Python, you scale CPU usage by running multiple processes, not threads. In production I usually run Uvicorn behind Gunicorn and configure it with one worker per CPU core—so on a 30-core machine, -w 30 lets the app fully utilize all cores.
 
@@ -197,7 +197,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Millions are possible, limited by memory (heap + per-goroutine stack) and scheduling overhead. GOMAXPROCS controls parallel workers/OS threads (parallelism), not the total goroutine count. Real limit depends on your workload and memory profile.
         ardanlabs
@@ -215,7 +215,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     - [Goroutine vs Thread](https://www.geeksforgeeks.org/go-language/golang-goroutine-vs-thread/)
 
@@ -226,7 +226,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     - [Go Receiver Value vs Pointer](https://www.bogotobogo.com/GoLang/GoLang_Receiver_Value_vs_Pointer.php)
 
@@ -237,7 +237,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Using the `pprof` package to profile memory usage and inspect heap allocations.
         Observing increasing memory usage over time in long-running programs.
@@ -251,7 +251,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     If goroutines aren’t properly stopped, they can leak memory, waste CPU, and potentially cause deadlocks or resource exhaustion in the program.
 
@@ -262,7 +262,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Go has no built-in semaphore type, but a counting semaphore is commonly implemented with a buffered channel or a small wrapper around sync primitives. sync provides low-level primitives; higher-level concurrency is often done with channels.
 
@@ -273,7 +273,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     medium
 
@@ -284,7 +284,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     The Go runtime scheduler handles blocking/wakeup. Goroutines are parked when they wait on channels, locks, I/O, timers, or syscalls; the runtime keeps them on wait lists and moves them to runnable queues when the event occurs (timer, channel ready, I/O complete), then schedules them onto OS threads.
 
@@ -295,7 +295,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Reduce allocations and object lifetimes: reuse buffers, pool temporary objects, use sync.Pool for short-lived objects, avoid unnecessary boxing/heap escapes, prefer stack/value types when safe, batch work to reuse memory. Measure with pprof and trace before optimizing.
         victoriametrics
@@ -325,7 +325,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     [go.dev](https://go.dev/doc/effective_go#init)
 
@@ -342,7 +342,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     ```go
         package main
@@ -421,7 +421,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     The runtime scheduler uses three core concepts: G, M, and P.
 
@@ -468,7 +468,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     `_` is the blank identifier. When used in an import like `import _ "pkg/path"` it means: import the package solely for its side effects (package initialization) but do not bind any name to refer to it in the importing file. The compiler won’t complain about an unused import because the blank identifier intentionally discards the package name.
 
@@ -487,7 +487,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Use them when the package’s `init()` performs necessary side effects (driver registration, plugin/handler registration, global initialization). If a package has no needed side effects, remove the import.
 
@@ -498,7 +498,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Pros: `init()` runs before `main()`, so it can prepare package-level state.
 
@@ -511,7 +511,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     ```go
         // pkg/a/a.go
@@ -571,7 +571,7 @@
 
   <details>
   <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-  <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+  <div>
 
   - [ACID - Wikipedia](https://en.wikipedia.org/wiki/ACID)
 
@@ -582,7 +582,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     geeksforgeeks
         Wikipedia
@@ -610,7 +610,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     In computer science, a hash table is a data structure that implements an associative array, also called a dictionary or simply map; an associative array is an abstract data type that maps keys to values. A hash table uses a hash function to compute an index, also called a hash code, into an array of buckets or slots, from which the desired value can be found. During lookup, the key is hashed and the resulting hash indicates where the corresponding value is stored. A map implemented by a hash table is called a hash map.
         wikipedia
@@ -629,7 +629,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     a replication model where updates will propagate and replicas converge eventually (if no new updates), so reads may be stale briefly but become consistent over time. Practical trade-off: higher availability and latency at the cost of short-term anomalies.
         Wikipedia
@@ -673,7 +673,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     1. Primary Defense: The Mutex Lock with Stale Data Fallback
 
@@ -710,7 +710,7 @@
 
   <details>
   <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-  <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+  <div>
 
     Django provides `select_related` for single-valued relationships and `prefetch_related` for many-to-many or reverse relations to eager-load related objects and avoid N+1 queries. You should profile queries and use `.values()` or annotations when appropriate.
         - [Django ORM Performance Tips (YouTube)](https://www.youtube.com/watch?v=zwF5ADW6eKs)
@@ -724,7 +724,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     With singleton pattern
 
@@ -739,6 +739,64 @@
 
 - **We have two queries that are unrelated to each other. How do you run these and combine their data? Do you run one first and then the other or how?** (1 times — [Snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=We%20have%20two%20queries%20that%20are%20unrelated%20to%20each%20other.%20How%20do%20you%20run%20these%20and%20combine%20their%20data%3F%20Do%20you%20run%20one%20first%20and%20then%20the%20other%20or%20how%3F))
 
+- **How do you store money?** (1 times — [Visiwise](https://mo1ein.github.io/jobname/visiwise/visiwise.html#:~:text=How%20do%20you%20store%20money%3F))
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
+  Never use floating-point types (FLOAT, DOUBLE) for money. Use fixed-point precision:
+
+  **NUMERIC vs DECIMAL:**
+
+  | Database | NUMERIC | DECIMAL | Notes |
+  |----------|---------|---------|-------|
+  | PostgreSQL | Exact numeric type | Alias for NUMERIC | Same type, same behavior |
+  | MySQL | Synonym for DECIMAL | Standard SQL type | DECIMAL is preferred |
+  | SQL Server | Not supported | Standard type | Use DECIMAL |
+
+  `DECIMAL` is the SQL standard; `NUMERIC` is PostgreSQL's name for the same thing. Both store exact values with no rounding errors. Use `DECIMAL` for portability across databases.
+
+  **Storage for money:**
+
+  ```sql
+  -- Prices and totals
+  DECIMAL(12,2)    -- up to 999,999,999.99
+
+  -- Exchange rates (higher precision)
+  DECIMAL(18,8)    -- for crypto or FX rates
+
+  -- Tax rates
+  DECIMAL(5,2)     -- 0.00 to 999.99 percent
+  ```
+
+  **In application code:**
+
+  ```python
+  from decimal import Decimal, ROUND_HALF_UP
+
+  price = Decimal("19.99")
+  tax = Decimal("0.0825")
+  total = (price * (1 + tax)).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
+  # total = Decimal("21.64") ✅
+
+  # ❌ Never do this
+  total = 19.99 * 1.0825  # 21.6387025 — rounding nightmare
+  ```
+
+  **Why not FLOAT/DOUBLE:**
+
+  ```python
+  0.1 + 0.2 == 0.3       # False!
+  0.1 + 0.2               # 0.30000000000000004
+  Decimal("0.1") + Decimal("0.2") == Decimal("0.3")  # True ✅
+  ```
+
+  **Summary:** Use `DECIMAL` (SQL standard) or `NUMERIC` (PostgreSQL). Never use FLOAT/DOUBLE for financial data. Always round at the display layer.
+
+  </div>
+  </details>
+
 ### System Design
 
 - **Microservices vs monolotic? How do you choose it when you want to start a project?** (2 times — [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=Microservices%20vs%20monolotic%3F%20How%20do%20you%20choose%20it%20when%20you%20want%20to%20start%20a%20project%3F), [Snapp Market Pro](https://mo1ein.github.io/jobname/snapp/snapp_market_pro.html#:~:text=Microservices%20vs%20monolotic%3F%20How%20do%20you%20choose%20it%20when%20you%20want%20to%20start%20a%20project%3F))
@@ -747,7 +805,7 @@
 
   <details>
   <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-  <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+  <div>
 
   I usually **start with a monolith and split it into microservices when needed**. A monolith is faster to develop, easier to debug, and simpler to deploy and maintain, allowing the team to move quickly in the early stages. As the system grows and requirements such as independent scaling, team autonomy, or clear domain boundaries emerge, I gradually decompose it into microservices. This approach avoids the premature complexity of distributed systems—such as network communication, distributed transactions, and observability challenges—while keeping the architecture scalable.
   </div>
@@ -776,7 +834,7 @@
 
   <details>
   <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-  <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+  <div>
 
     In **database systems (ACID)**, consistency (or correctness) refers to the requirement that any given database transaction must change affected data only in allowed ways. Any data written to the database must be valid according to all defined rules, including constraints, cascades, triggers, and any combination thereof.
   <a href="https://en.wikipedia.org/wiki/Consistency_(database_systems)" target="_blank" rel="noopener noreferrer">Wikipedia</a><br />
@@ -802,7 +860,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     1. Reproduce & observe
 
@@ -835,7 +893,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     - Set a strict downstream timeout and propagate cancellation.
 
@@ -858,7 +916,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     1. Data Parsing and Structuring
         **Reading File**: To read a huge file efficiently, stream it in manageable chunks (e.g., several hundred MB at a time) instead of loading it all into memory. Use memory mapping for faster access when possible, and consider distributed or parallel processing frameworks like Apache Spark if you have large-scale infrastructure. Optimize I/O by tuning buffer sizes and, if applicable, store data in compressed or columnar formats to speed selective reads.
@@ -891,7 +949,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Common techniques: distributed consensus (Raft/Paxos), transactional guarantees (ACID), two-phase commit, idempotency + deduplication, transactional outbox and ...
 
@@ -903,6 +961,75 @@
 - **If you were given a project with slow loading performance, what steps would you take to improve it?** (1 times — [Kharazmi](https://mo1ein.github.io/jobname/dpkharazmi.html#:~:text=If%20you%20were%20given%20a%20project%20with%20slow%20loading%20performance%2C%20what%20steps%20would%20you%20take%20to%20improve%20it%3F))
 
 - **Suppose we used other service that has error how can handle it?** (1 times — [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=Suppose%20we%20used%20other%20service%20that%20has%20error%20how%20can%20handle%20it%3F))
+
+- **In a microservices architecture, if service A depends on service B and a failure occurs mid-request (e.g., user balance is checked in A, then A calls B to deduct from the wallet, but B fails), how do you handle it?** (1 times — [Visiwise](https://mo1ein.github.io/jobname/visiwise/visiwise.html#:~:text=In%20a%20microservices%20architecture%2C%20if%20service%20A%20depends%20on%20service%20B%20and%20a%20failure%20occurs%20mid-request))
+
+  > **Follow-up:** Where does atomicity and rollback happen, and at what level do you solve this?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
+  **Where atomicity happens:**
+
+  Atomicity is per-service, not cross-service. Each service has its own local transaction. If A commits but B fails, A's state is already written — you need a pattern to reconcile.
+
+  **Solutions by level:**
+
+  | Level | Pattern | Atomicity Scope |
+  |-------|---------|-----------------|
+  | **Database** | Local transactions | Single service only |
+  | **Messaging** | Transactional Outbox | Guarantees event delivery, not instant consistency |
+  | **Saga** | Compensation steps | Logical atomicity via rollback handlers |
+  | **API** | Retry + idempotency | Best-effort, transient failure recovery |
+
+  **Transactional Outbox (recommended):**
+
+  ```
+  Service A:
+  1. BEGIN TRANSACTION
+     - INSERT into orders
+     - INSERT into outbox (event: "deduct_wallet")
+  2. COMMIT TRANSACTION (atomic — both succeed or both fail)
+  3. Outbox poller → Kafka/RabbitMQ
+  ```
+
+  ```
+  Service B:
+  1. Consume message
+  2. Idempotency check (event_id)
+  3. BEGIN TRANSACTION
+     - UPDATE wallet SET balance = balance - amount
+     - INSERT into processed_events
+  4. COMMIT TRANSACTION
+  ```
+
+  **Failure recovery:**
+
+  | Failure Point | Recovery |
+  |---------------|----------|
+  | A's DB commit fails | Full rollback — no side effects |
+  | A's outbox poll fails | Event stays in outbox, retried |
+  | B fails to process | Message retried by broker |
+  | B processes twice | Idempotency check rejects duplicate |
+
+  **Saga (for multi-step flows):**
+
+  ```
+  Order Saga:
+    Step 1: Create order      → compensation: cancel order
+    Step 2: Deduct wallet     → compensation: refund wallet
+    Step 3: Reserve inventory → compensation: release inventory
+
+  If Step 3 fails:
+    → refund wallet (Step 2 reverse)
+    → cancel order (Step 1 reverse)
+  ```
+
+  **Key takeaway:** Atomicity in microservices is **per-service** (local DB transactions). Cross-service consistency is achieved through eventual consistency patterns (Saga, Outbox), not distributed transactions (2PC).
+
+  </div>
+  </details>
 
 - **How do you update a user's feed when they follow or unfollow someone?** (1 times — [Netbox](https://mo1ein.github.io/jobname/netbox/netbox.html#:~:text=How%20do%20you%20update%20a%20user%27s%20feed%20when%20they%20follow%20or%20unfollow%20someone%3F))
 
@@ -926,7 +1053,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     1. Fast dedupe/lock in cache (Redis)
 
@@ -963,13 +1090,15 @@
     </div>
     </details>
 
+- **How would you design a project for scale? What challenges might you face at scale? How would you design the data pipeline and scraper at scale?** (1 times — [Visiwise](https://mo1ein.github.io/jobname/visiwise/visiwise.html#:~:text=How%20would%20you%20design%20a%20project%20for%20scale))
+
 ### Concurrency
 
 - **What is race condition?** (5 times — [Quiz of Kings](https://mo1ein.github.io/jobname/QuizOfKings.html#:~:text=What%20is%20race%20condition%3F), [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=What%20is%20race%20condition%3F), [Saraf](https://mo1ein.github.io/jobname/saraf.html#:~:text=What%20is%20race%20condition%3F), 2x [Zibal](https://mo1ein.github.io/jobname/zibal/zibal.html#:~:text=What%20is%20race%20condition%3F))
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     A race condition happens when concurrent operations interleave and produce incorrect state. Solve it
         with mutual exclusion (mutexes) for in-process protection, transactions, locks (pessimistic or optimistic), atomic DB operations, idempotency, or by
@@ -990,7 +1119,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Threads share a process memory space (lightweight, require synchronization). Processes have separate memory (safer isolation, heavier IPC). Choose threads for shared-memory, processes for isolation.
 
@@ -1013,7 +1142,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     ```python
         def check_braces(args: str)-> bool:
@@ -1034,7 +1163,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     ```python
         def student_gift(nums: list):
@@ -1107,7 +1236,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     - [Hash Collision Explained (YouTube)](https://www.youtube.com/watch?v=kNheXzNOcm4&t=251s)
 
@@ -1120,7 +1249,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Search: O(n)
         Delete: O(1)
@@ -1144,7 +1273,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Run
 
@@ -1201,7 +1330,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     ```python
         in_put = str(input())
@@ -1217,7 +1346,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     ```python
         def check_2sum(nums: list, k: int) -> tuple | int:
@@ -1250,7 +1379,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     ```python
         def longest_palindromic_subsequence(s: str) -> int:
@@ -1288,7 +1417,7 @@
 
   <details>
   <summary style="font-size:14px"><b><em>Answer (My solution)</em></b></summary>
-  <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+  <div>
 
   ```python
   class LRUCache:
@@ -1378,7 +1507,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Transactional outbox
 
@@ -1417,7 +1546,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     cherry-pick
 
@@ -1462,7 +1591,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Dependency injection supplies an object’s dependencies from the outside (constructor, setter, or factory) rather than creating them internally; this improves testability, decoupling, and configurability.
 
@@ -1474,7 +1603,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     A repository abstracts persistence, centralizes queries, and decouples domain logic from storage details — making testing, swapping databases, and enforcing consistency simpler.
 
@@ -1505,7 +1634,7 @@
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+    <div>
 
     High performance (HTTP/2 multiplexing), low latency, built-in streaming (client/server/bi-directional), strongly typed contracts via protobuf and code generation, language polyglot support, and built-in interception hooks (auth, load–balancing). Good for microservices and low-latency RPCs.
 

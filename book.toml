@@ -14,7 +14,7 @@ git-repository-url = "https://github.com/mo1ein/jobname"
 # edit-url-template = "https://github.com/rust-lang/mdBook/edit/master/guide/{path}"
 # site-url = "/example-book/"
 # cname = "myproject.rs"
-additional-js = ["mermaid.min.js", "mermaid-init.js"]
+additional-js = ["mermaid.min.js", "mermaid-init.js", "mermaid-zoom.js"]
 additional-css = ["src/theme/css/general.css"]
 mathjax-support = true
 

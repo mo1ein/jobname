@@ -35,7 +35,7 @@ Google Meet
 - What is `init` in Go? How does it work and how does it differ from `main`?
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     [go.dev](https://go.dev/doc/effective_go#init)
 
@@ -52,7 +52,7 @@ Google Meet
 
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     `_` is the blank identifier. When used in an import like `import _ "pkg/path"` it means: import the package solely for its side effects (package initialization) but do not bind any name to refer to it in the importing file. The compiler won’t complain about an unused import because the blank identifier intentionally discards the package name.
 
@@ -71,7 +71,7 @@ Google Meet
 
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Use them when the package’s `init()` performs necessary side effects (driver registration, plugin/handler registration, global initialization). If a package has no needed side effects, remove the import.
 
@@ -82,7 +82,7 @@ Google Meet
 
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Pros: `init()` runs before `main()`, so it can prepare package-level state.
 
@@ -95,7 +95,7 @@ Google Meet
 
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     ```go
     // pkg/a/a.go
@@ -145,7 +145,7 @@ Google Meet
 
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     ```go
     package main
@@ -224,7 +224,7 @@ Google Meet
 
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     At least one main goroutine plus several runtime goroutines (GC, timers, netpoller). You commonly see 2–4 at startup, but exact number varies. `GOMAXPROCS` controls parallelism (Ps), not total goroutine count.
 
@@ -235,7 +235,7 @@ Google Meet
 
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     The runtime scheduler uses three core concepts: G, M, and P.
 
@@ -251,6 +251,6 @@ Google Meet
     </div>
     </details>
 
-
 ### Score
-<h4><mark style="background-color:#54ca56">6/10</mark></h4>
+<h4><mark style="background-color:#ff9800; color:#ffffff; padding:4px 8px; border-radius:4px">6/10</mark></h4>
+

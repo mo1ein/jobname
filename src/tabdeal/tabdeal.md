@@ -45,7 +45,7 @@ Google Meet
 
   <details>
   <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-  <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+  <div>
 
   If we suddenly receive a massive number of requests, the first thing I'd do is identify the root cause instead of immediately scaling the system. I'd check our monitoring dashboards, logs, and traces to understand whether the spike is caused by legitimate user traffic, a recent deployment, a client bug causing excessive retries, or even malicious traffic.
 
@@ -67,7 +67,7 @@ Google Meet
 
   <details>
   <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-  <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+  <div>
 
     In **database systems (ACID)**, consistency (or correctness) refers to the requirement that any given database transaction must change affected data only in allowed ways. Any data written to the database must be valid according to all defined rules, including constraints, cascades, triggers, and any combination thereof.
   <a href="https://en.wikipedia.org/wiki/Consistency_(database_systems)" target="_blank" rel="noopener noreferrer">Wikipedia</a><br />
@@ -82,7 +82,7 @@ Google Meet
 
   <details>
   <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-  <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+  <div>
 
   Consistency is usually more important because users expect their P&L to reflect the latest trades, balances, and market positions accurately. Showing stale or inconsistent data can lead to incorrect decisions and loss of trust. In CAP theorem terms, this feature is typically CP-oriented, prioritizing strong consistency over high availability. Techniques such as transactional updates, event ordering, and read-after-write consistency help ensure accurate PnL calculations.    
   </div>
@@ -92,7 +92,7 @@ Google Meet
 
   <details>
   <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-  <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+  <div>
 
   **Double-spending** is the unauthorized spending of the same money (either digital or conventional) more than once. It happens when someone tries to spend the same money in multiple transactions before the first transaction is fully confirmed.
 
@@ -105,7 +105,7 @@ the answer is we check with uuid or request id ...
 
   <details>
   <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-  <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+  <div>
 
   This is the **idempotency** problem. The solution is to assign a unique ID (UUID or request ID) to each event and have the receiving service track processed IDs. When a duplicate arrives, the service checks the ID, sees it's already processed, and ignores it. This ensures that processing an event multiple times has the same effect as processing it once.
 
@@ -116,7 +116,7 @@ the answer is we check with uuid or request id ...
 
   <details>
   <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-  <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+  <div>
 
     Queues are used in several key scenarios: 
 
@@ -139,7 +139,7 @@ the answer is we check with uuid or request id ...
 
   <details>
   <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-  <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+  <div>
 
   I usually **start with a monolith and split it into microservices when needed**. A monolith is faster to develop, easier to debug, and simpler to deploy and maintain, allowing the team to move quickly in the early stages. As the system grows and requirements such as independent scaling, team autonomy, or clear domain boundaries emerge, I gradually decompose it into microservices. This approach avoids the premature complexity of distributed systems—such as network communication, distributed transactions, and observability challenges—while keeping the architecture scalable.
   </div>
@@ -152,7 +152,7 @@ the answer is we check with uuid or request id ...
 
   <details>
   <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-  <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+  <div>
   
   \\[
   8 \times 4 = 32 \text{ machine-hours}
@@ -182,7 +182,7 @@ the answer is we check with uuid or request id ...
 
   <details>
   <summary style="font-size:14px"><b><em>Answer (My solution)</em></b></summary>
-  <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px; background-color: rgba(74,85,104,0.15);">
+  <div>
 
   ```python
   class LRUCache:

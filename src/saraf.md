@@ -49,7 +49,7 @@ Google Meet
     <details>
     <summary style="font-size:14px"><b><em>My Answer</em></b></summary>
     <a href="https://go.dev/play/p/62zP7BcAAYd">Run</a>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     ```go
     package main
@@ -106,7 +106,7 @@ Google Meet
     <b><em><span style="background-color:#16a34a; color:#ffffff; padding:3px 8px; border-radius:6px; display:inline-block;">Answer</span></em></b>
     </summary>
     <a href="https://go.dev/play/p/E4jpxBj1B6i">Run</a>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     ```go
     package main

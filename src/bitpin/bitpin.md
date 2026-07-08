@@ -52,7 +52,7 @@ In-person
 - [First question](./a.pdf)
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     ```python
     in_put = str(input())
@@ -65,7 +65,7 @@ In-person
 - [Second question](./b.pdf)
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     ```python
     def check_2sum(nums: list, k: int) -> tuple | int:
@@ -96,7 +96,7 @@ In-person
 - [Third question](./c.pdf)
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     ```python
     def longest_palindromic_subsequence(s: str) -> int:
@@ -143,7 +143,7 @@ In-person
 
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     | Input | Explanation                              | Expected Output |
     | :---- | :--------------------------------------- | :-------------- |
@@ -167,7 +167,7 @@ In-person
 
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     ```python
     def check_braces(args: str)-> bool:
@@ -189,7 +189,7 @@ In-person
 
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     ```python
     def check_braces2(args: str)-> bool:
@@ -213,7 +213,7 @@ In-person
 
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     ```python
     from sys import stdin
@@ -273,7 +273,7 @@ In-person
 
     <details>
     <summary style="font-size:14px"><b><em>My Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     ```python
     def student_gift(nums: list):
@@ -327,7 +327,7 @@ In-person
     <br />
     <details>
     <summary style="font-size:14px"><b><em>Leetcode Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     ```python
     def candy(ratings):
