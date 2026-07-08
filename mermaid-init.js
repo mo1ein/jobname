@@ -1,7 +1,7 @@
 // Initialize mermaid and convert code blocks
 document.addEventListener('DOMContentLoaded', function() {
-    // Find all code blocks with language-mermaid class
-    document.querySelectorAll('code.language-mermaid, code[class*="mermaid"]').forEach(function(code) {
+    // Find all code blocks with language-mermaid or language-mermaid-er class
+    document.querySelectorAll('code.language-mermaid, code.language-mermaid-er, code[class*="mermaid"]').forEach(function(code) {
         var pre = code.parentElement;
         if (pre && pre.tagName === 'PRE') {
             // Skip if already converted
