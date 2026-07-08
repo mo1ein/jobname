@@ -74,7 +74,7 @@ Google Meet
 - We have a cache for some data in our exchange that we show on the page to users, such as the number of trades, Tether price, etc. When the cached data is cleared, many requests hit the database directly, causing heavy load and potential downtime. How would you fix this problem?
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     1. Primary Defense: The Mutex Lock with Stale Data Fallback
 
@@ -109,7 +109,7 @@ Google Meet
 - Suppose we have an e-commerce product (like Digikala) and there's an issue: when I add one item to my basket, two are added. This happens sometimes. How would you fix this problem?
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     1. Reproduce & observe
 
@@ -141,7 +141,7 @@ Google Meet
 - Think we know the problem is from front-end and we don't want to deploy new version in front and want to fix it for short time in backend how fix it?
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     1. Fast dedupe/lock in cache (Redis)
 
@@ -182,7 +182,7 @@ Google Meet
 
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     - Set a strict downstream timeout and propagate cancellation.
 
@@ -204,7 +204,7 @@ Google Meet
 - We have a very large, unstructured log file containing Divar chat data (ranging from gigabytes to terabytes). How would you approach detecting bot activity?
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     1. Data Parsing and Structuring
     **Reading File**: To read a huge file efficiently, stream it in manageable chunks (e.g., several hundred MB at a time) instead of loading it all into memory. Use memory mapping for faster access when possible, and consider distributed or parallel processing frameworks like Apache Spark if you have large-scale infrastructure. Optimize I/O by tuning buffer sizes and, if applicable, store data in compressed or columnar formats to speed selective reads. 

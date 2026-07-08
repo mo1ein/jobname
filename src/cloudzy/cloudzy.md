@@ -46,7 +46,7 @@ Google Meet
 - If a git conflict occurs in our project, how can you determine whether it happens on the client-side or server-side? For example, during a `git pull` or `git push`, where do conflicts typically occur, and how would you handle them? Also, when you run git diff, does it operate on the client-side or server-side?
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
     Git conflicts always occur on the client-side during a merge. For example, if your local branch is behind the remote, a git pull may produce conflicts that you need to resolve locally. A git push can be rejected if the remote has new commits, but the actual conflict still happens when you merge locally. To resolve conflicts, you manually edit the conflicting files, stage them, and commit the merge.
     git diff is also a client-side operation—it shows differences in your local repository and does not access the server.
     </div>
@@ -55,7 +55,7 @@ Google Meet
 - What is hash table?
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     In computer science, a hash table is a data structure that implements an associative array, also called a dictionary or simply map; an associative array is an abstract data type that maps keys to values. A hash table uses a hash function to compute an index, also called a hash code, into an array of buckets or slots, from which the desired value can be found. During lookup, the key is hashed and the resulting hash indicates where the corresponding value is stored. A map implemented by a hash table is called a hash map. 
     <a href="https://en.wikipedia.org/wiki/Hash_table#:~:text=In%20computer%20science,hash%20map" target="_blank" rel="noopener noreferrer">wikipedia</a><br />
@@ -66,7 +66,7 @@ Google Meet
 - What is hash collision and how do you resolve it?
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     https://www.youtube.com/watch?v=kNheXzNOcm4&t=251s
 
@@ -76,7 +76,7 @@ Google Meet
 - What are the time complexities of search, insert, and delete in a linked list?
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Search: O(n)
     Delete: O(1)
@@ -97,7 +97,7 @@ Google Meet
 - What's difference between goroutine and thread?
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     https://www.geeksforgeeks.org/go-language/golang-goroutine-vs-thread/
 
@@ -107,7 +107,7 @@ Google Meet
 - What is the difference between pointer receivers and value receivers in Go?
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     https://www.bogotobogo.com/GoLang/GoLang_Receiver_Value_vs_Pointer.php
 
@@ -117,7 +117,7 @@ Google Meet
 - How do you detect memory leaks in Go?
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
 
     Using the `pprof` package to profile memory usage and inspect heap allocations.
     Observing increasing memory usage over time in long-running programs.
@@ -130,7 +130,7 @@ Google Meet
 - What can happen if goroutines are not properly stopped or cleaned up?
     <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
-    <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+    <div>
     If goroutines aren’t properly stopped, they can leak memory, waste CPU, and potentially cause deadlocks or resource exhaustion in the program.
     </div>
     </details>

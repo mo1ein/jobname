@@ -34,6 +34,7 @@
 شرکت‌هایی که در سال ۱۴۰۴ باهاشون مصاحبه داشتم:
 </p>
 
+- [Visiwise](src/visiwise/visiwise.md)
 - [Zibal](src/zibal/zibal.md)
 - [Saraf](src/saraf.md)
 - [Wallgold](src/Wallex/wallgold.md)

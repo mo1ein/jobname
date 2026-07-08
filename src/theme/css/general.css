@@ -58,6 +58,85 @@ code {
 details > div {
     margin: 0 !important;
     padding: 10px 12px !important;
+    overflow-x: auto;
+    background-color: var(--table-alternate-bg, rgba(74, 85, 104, 0.15)) !important;
+    border: 2px dashed #555;
+    border-radius: 6px;
+}
+
+details > div pre {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+details > div code {
+    white-space: pre;
+}
+
+/* Tables inside answer blocks - match mdbook table styling */
+details > div table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+details > div table td {
+    padding: 6px 12px;
+    border: 1px solid var(--table-border-color);
+}
+
+details > div table thead {
+    background: var(--table-header-bg);
+}
+
+details > div table thead td,
+details > div table thead th {
+    font-weight: 700;
+    border: none;
+    color: var(--fg);
+}
+
+details > div table tbody tr:nth-child(2n) {
+    background: var(--table-alternate-bg);
+}
+
+details > div table tbody tr:nth-child(2n+1) {
+    background: transparent;
+}
+
+/* Code block dynamic backgrounds - slightly different from page bg */
+pre {
+    background-color: var(--table-alternate-bg, #f0f0f0) !important;
+    border: 1px solid #888;
+    border-radius: 4px;
+    padding: 12px;
+    overflow-x: auto;
+}
+
+pre code {
+    background-color: transparent !important;
+    border: none;
+    padding: 0;
+}
+
+code {
+    background-color: var(--table-alternate-bg, #f0f0f0);
+    border-radius: 3px;
+    padding: 2px 5px;
+}
+
+/* Dark themes */
+.ayu code,
+.coal code,
+.navy code {
+    background-color: var(--table-header-bg, #2d334f);
+}
+
+.ayu pre,
+.coal pre,
+.navy pre {
+    background-color: var(--table-header-bg, #1a1f2e) !important;
+    border-color: var(--table-border-color, #3d424d);
 }
 
 details > div > p:first-child {
@@ -346,4 +425,55 @@ kbd {
 .border-bottom{
     border-bottom: 1px solid #727272;
     padding-bottom: 1rem;
+}
+
+/* Mermaid diagram zoom/scroll support */
+pre.mermaid {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 16px;
+    border: 1px solid var(--table-border-color);
+    border-radius: 6px;
+    background: var(--bg);
+    cursor: grab;
+    max-width: 100%;
+}
+
+pre.mermaid:active {
+    cursor: grabbing;
+}
+
+pre.mermaid svg {
+    max-width: none;
+    height: auto;
+}
+
+/* Click-to-zoom modal for mermaid */
+.mermaid-zoom-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    overflow: auto;
+    padding: 20px;
+}
+
+.mermaid-zoom-overlay.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mermaid-zoom-overlay svg {
+    max-width: 95vw;
+    max-height: 95vh;
+    background: var(--bg);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
