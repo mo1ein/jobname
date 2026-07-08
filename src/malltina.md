@@ -64,7 +64,7 @@ print(ans)
 </details>
 
 ### Score
-<h4><mark style="background-color:#ffd700">6/10</mark></h4>
+<h4><mark style="background-color:#ff9800; color:#ffffff; padding:4px 8px; border-radius:4px">6/10</mark></h4>
 <p dir="rtl">
 اوکی بود خیلی نظر خاصی ندارم. مقداری عجیب بود چنین شرکت نه چندان شناخته‌شده‌ای لایوکد داشته باشه. روند مصاحبه هم معرفی بود و حل مسئله. ایمیل ریجکتی هم ندادند.
 </p>

@@ -13,6 +13,7 @@
 
 
 # Companies
+- [Tabdeal](./tabdeal/tabdeal.md)
 - [Zibal](./zibal/zibal.md)
 - [Saraf](./saraf.md)
 - [Wallgold](./wallex/wallgold.md)

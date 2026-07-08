@@ -25,7 +25,13 @@
 <h2 id="companies" dir="rtl"><a class="header" href="#companies">شرکت‌ها</a></h2>
 
 <p dir="rtl">
-شرکت‌هایی که در سال ۱۴۰۴ باهاشون مصاحبه داشتم (داغ داغ):
+شرکت‌هایی که در سال ۱۴۰۵ باهاشون مصاحبه داشتم (داغ داغ):
+</p>
+
+- [Tabdeal](src/tabdeal/tabdeal.md)
+
+<p dir="rtl">
+شرکت‌هایی که در سال ۱۴۰۴ باهاشون مصاحبه داشتم:
 </p>
 
 - [Zibal](src/zibal/zibal.md)

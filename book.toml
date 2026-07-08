@@ -16,6 +16,7 @@ git-repository-url = "https://github.com/mo1ein/jobname"
 # cname = "myproject.rs"
 additional-js = ["mermaid.min.js", "mermaid-init.js"]
 additional-css = ["src/theme/css/general.css"]
+mathjax-support = true
 
 [output.html.fold]
 enable = true
