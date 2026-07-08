@@ -637,9 +637,9 @@ Google Meet
 
 <p dir="rtl">
 تسکی به من داده شد (حضوری)، دو ساعت زمان داشتم و از هر ابزاری مانند سرچ، LLM و AI می‌تونستم استفاده کنم. فقط باید درست کار می‌کرد و این که مسئولیت کد نوشته شده با من بود. همون فایل رو دادم AI و یکمی هم وقت تلف کردم الکی که انگار دارم خودم می‌زنم.
-<a href="https://github.com/mo1ein/jobname/visiwise/visiwise-tracking-assignment/interview-assignment.md">تسک</a>
+<a href="https://github.com/mo1ein/jobname/blob/main/src/visiwise/visiwise-tracking-assignment/interview-assignment.md">تسک</a>
 و  
-<a href="https://github.com/mo1ein/jobname/visiwise/visiwise-tracking-assignment/">پاسخ</a>
+<a href="https://github.com/mo1ein/jobname/tree/main/src/visiwise/visiwise-tracking-assignment">پاسخ</a>
 من.
 
 </p>
