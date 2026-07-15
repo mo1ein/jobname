@@ -55,7 +55,7 @@ Skype
 
 - When indexing is bad?
 
-- Microservices vs monolotic? How do you choose it when you want to start a project?
+- Microservices vs monolithic? How do you choose it when you want to start a project?
 
 - Do you know what semantic versioning is?
 
@@ -63,7 +63,7 @@ Skype
 
 - What is CAP theory?
 
-- We have an API and we want to add new features on it. How can we handle compatibality with older version? v1 v2
+- We have an API and we want to add new features on it. How can we handle compatibility with older version? v1 v2
 
 - Difference between multiprocess and multithread?
 

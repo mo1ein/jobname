@@ -30,7 +30,7 @@ Jobvision
 
 - **Screening Interview**<br />30 minutes
 
-- **Technical Interview**<br />1 hours
+- **Technical Interview**<br />1 hour
 
 ### Interview Platform
 Google Meet

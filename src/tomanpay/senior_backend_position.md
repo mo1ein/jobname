@@ -53,7 +53,7 @@ Microsoft Teams
 
 - Can You tell what are the migration files in django?
 
-- Did you have any sepecific challenge with the django migrations?
+- Did you have any specific challenge with the django migrations?
 
 - Have you ever changed the migration files manually for any specific reason?
 

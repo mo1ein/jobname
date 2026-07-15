@@ -47,7 +47,7 @@ In-person
 
 - Can you explain the SOLID principle?
 
-- What is eventEmmiter?
+- What is eventEmitter?
 
 - What are guards in Angular? where have you used them?
 

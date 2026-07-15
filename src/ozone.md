@@ -31,7 +31,7 @@ Linkedin
 
 - **2nd Technical Interview** <br>30 minutes
 
-- **HR Interview** <br>30 minuts
+- **HR Interview** <br>30 minutes
 
 ### 1st Technical Interview
 
@@ -85,7 +85,7 @@ Linkedin
 
 - We have 2 mindsets in software engineering. One is "tools, languages and stack is not important, you should solve problems regardless of tools." and the other one is "tools is important and everyone have to solve problems with tools that know them". Which mindset do you prefer?
 
-- If a task is difficult or not familliar with it (language, tool and etc.), what whould be your approach? Would you face it or not?
+- If a task is difficult or not familiar with it (language, tool and etc.), what would be your approach? Would you face it or not?
 
 - Which part of the codebase do you write unit test for it?
 

@@ -12,7 +12,7 @@
 ### Go
 
 **_Is go an OOP language?_** <br />
-**_(3 times - [ozone](mo1ein.github.io/jobname/ozone.html#:~:text=Is%20Golang%20an%20OOP%20language%3F), [hamkaran-system](https://mo1ein.github.io/jobname/hamkaran-system.html?highlight=hamkaran#status:~:text=What%20is%20OOP%20concepts%20that%20go%20don%27t%20have%20it%3F), [sternx](https://mo1ein.github.io/jobname/sternx/sternx.html?highlight=sternx#sternx:~:text=Go%20doesn%27t%20have%20classes%20and%20is%20not%20based%20on%20OOP%20principles.%20Can%20you%20explain%20that%3F))_**
+**_(3 times - [ozone](https://mo1ein.github.io/jobname/ozone.html#:~:text=Is%20Golang%20an%20OOP%20language%3F), [hamkaran-system](https://mo1ein.github.io/jobname/hamkaransystem/1402.html?highlight=hamkaran#status:~:text=What%20is%20OOP%20concepts%20that%20go%20don%27t%20have%20it%3F), [sternx](https://mo1ein.github.io/jobname/sternx/sternx.html?highlight=sternx#sternx:~:text=Go%20doesn%27t%20have%20classes%20and%20is%20not%20based%20on%20OOP%20principles.%20Can%20you%20explain%20that%3F))_**
 - [go.dev](https://go.dev/doc/faq#:~:text=Yes%20and%20no,to%20structs%20(classes).)
 
 **_Go has inheritance concept?_**
@@ -31,7 +31,7 @@ No. Inheritance means inheriting the properties of the superclass into the base 
 
 ### Python
 **_What is decorator?_** <br />
-**_(5 times - [digikala](https://mo1ein.github.io/jobname/digikala/digikala.html?highlight=decorator#technical-interview:~:text=What%20is%20RPC%3F-,What%20is%20decorator%3F,-What%20feature%20of), [siz-tel](https://mo1ein.github.io/jobname/siztel/internship.html?highlight=What%20is%20python%20decorator?#technical-interview), [exalab](https://mo1ein.github.io/jobname/exalab.html#:~:text=What%20is%20decorator%3F%20and%20where%20do%20you%20use%20it%3F%20do%20you%20write%20decorator%3F), [karnameh](), [sternx]())_**
+**_(5 times - [digikala](https://mo1ein.github.io/jobname/digikala/digikala.html?highlight=decorator#technical-interview:~:text=What%20is%20RPC%3F-,What%20is%20decorator%3F,-What%20feature%20of), [siz-tel](https://mo1ein.github.io/jobname/siztel/internship.html?highlight=What%20is%20python%20decorator?#technical-interview), [exalab](https://mo1ein.github.io/jobname/exalab.html#:~:text=What%20is%20decorator%3F%20and%20where%20do%20you%20use%20it%3F%20do%20you%20write%20decorator%3F), [karnameh](https://mo1ein.github.io/jobname/karnameh.html), [sternx](https://mo1ein.github.io/jobname/sternx/sternx.html))_**
 - [geeksforgeeks (short description)](https://www.geeksforgeeks.org/decorators-in-python/)
 - [realpython](https://realpython.com/primer-on-python-decorators/)
 
@@ -130,7 +130,7 @@ Some queries may not benefit from additional indexes, particularly those that in
 - [wikipedia](https://en.wikipedia.org/wiki/Isolation_(database_systems))
 
 **_We have a query that is too slow, how you try to fast it?_** <br />
-**_(2 times, [snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=We%20have%20a%20query%20that%20is%20too%20slow%2C%20how%20you%20try%20to%20fast%20it%3F), [hamkaran system](https://mo1ein.github.io/jobname/hamkaran-system.html#live-code:~:text=If%20our%20query%20is%20slow%2C%20how%20would%20you%20optimize%20it%3F%20What%20is%20your%20solution%20for%20this%20problem%3F))_**
+**_(2 times, [snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=We%20have%20a%20query%20that%20is%20too%20slow%2C%20how%20you%20try%20to%20fast%20it%3F), [hamkaran system](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#live-code:~:text=If%20our%20query%20is%20slow%2C%20how%20would%20you%20optimize%20it%3F%20What%20is%20your%20solution%20for%20this%20problem%3F))_**
 
 1. Analyze the Query Execution Plan <br />
 Use `EXPLAIN`: Run the query with the `EXPLAIN` command (or `EXPLAIN ANALYZE` for more detailed output) to understand how the database engine executes the query. This will provide insights into which indexes are being used, join methods, and where potential bottlenecks lie.
@@ -171,7 +171,7 @@ Denormalization: In some cases, denormalizing the database schema (i.e., combini
 Optimize Application Code: Sometimes, the issue may not be with the query itself but with how it is called from the application. Review the application logic to ensure that it is making efficient use of database queries.
 
 ### Git
-**_Merge vs Rebase... explain differneces and pros and cons._** <br />
+**_Merge vs Rebase... explain differences and pros and cons._** <br />
 **_(3 times - [snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=What%20is%20difference%20between%20git%20Merge%20and%20Rebase%3F), [wallex](https://mo1ein.github.io/jobname/wallex/wallex1402.html#:~:text=What%20was%20your%20git%20flow%20at%20your%20previous%20company%3F%20Why%20did%20you%20not%20choose%20to%20rebase%20instead%20of%20merging%20the%20master%20branch%20with%20your%20task%20branch), [sternx](https://mo1ein.github.io/jobname/sternx/sternx.html#1st-technical-interview:~:text=know%20about%20git%3F-,What%20is%20git%20rebase%3F,-What%27s%20your%20salary))_**
 - [coderefinery](https://coderefinery.github.io/git-branch-design/01-rebase/)
 - [codeparrot](https://codeparrot.ai/blogs/git-merge-vs-rebase)

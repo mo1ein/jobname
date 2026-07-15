@@ -39,7 +39,7 @@ Google Meet
 
 - What is mutable and immutable and why? give me an example for each.
 
-- We have one dictionary and we have a function that change this dictionary. If function dosen't return anything, our dictionary changed or not?
+- We have one dictionary and we have a function that change this dictionary. If function doesn't return anything, our dictionary changed or not?
 
 - What is references relationship with mutable and immutable? have relationship between this?
 

@@ -47,15 +47,15 @@ Google Meet
 
 - What is the difference between concurrency and parallelism?
 
-- We have a scenario. We have two goroutine that traverse a slice. One is start from begining and other starts from end. How each goroutine can know other one is in the middle of slice? With cannels.
+- We have a scenario. We have two goroutine that traverse a slice. One is start from beginning and other starts from end. How each goroutine can know other one is in the middle of slice? With channels.
 
 - We have a scenario that we have a goroutine and this goroutine wait for other goroutine how do you handle it? waitgroup.
 
 - What is interface?
 
-- Waht is method?
+- What is method?
 
-- What is reciever function and when we use pass by reference (pointer) on it?
+- What is receiver function and when we use pass by reference (pointer) on it?
 
 - What is linked list?
 
@@ -69,7 +69,7 @@ Google Meet
 
 - Do you know abstract factory design pattern?
 
-- What go freamwork you are familiar with?
+- What go framework you are familiar with?
 
 - When you receive a request, how do you read data? How do you unmarshal it?
 
