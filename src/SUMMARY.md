@@ -62,6 +62,9 @@
 - [Graph](./graph/graph.md)
 - [Gharar](./gharar.md)
 - [Toman Pay](./tomanpay/senior_backend_position.md)
+
+---
+
 - [Kharazmi](./dpkharazmi.md)
 - [Postex](./postex/postex-interview.md)
 - [Busnet](./busnet/busnet-interview.md)
