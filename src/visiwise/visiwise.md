@@ -29,11 +29,11 @@ Email & LinkedIn & Jobinja & Jobvision
 - **Offer**<br />1404.10.01
 
 ### Interview Duration
-- **Technical Interview I**<br />1 hours
+- **Technical Interview I**<br />1 hour
 
 - **Technical Interview II**<br />2 hours
 
-- **HR Interview**<br />1 hours
+- **HR Interview**<br />1 hour
 
 ### Interview Platform
 Google Meet

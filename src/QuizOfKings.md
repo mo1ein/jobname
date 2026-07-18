@@ -43,9 +43,9 @@ Google Meet
 
 - What is the difference between concurrency in python and go?
 
-- Waht is event driven architecture?
+- What is event driven architecture?
 
-- What is redis datastuctures?
+- What is redis data structures?
 
 - Suppose we have a queue and a redis and more requests sent to our web server how can handle to redis. redis can handle just a few requests. What's your approach to handle scale?
 
@@ -55,7 +55,7 @@ Google Meet
 
 - If you want to design a database, how do you determine which technologies or approaches to use?
 
-- What is docker & kober?
+- What is docker & kubernetes?
 
 - We want to design a URL shortener system. How would you design it?
 

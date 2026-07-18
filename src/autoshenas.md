@@ -61,7 +61,7 @@ Google Meet
 
 - Are there any APIs that are not stateless?
 
-- Do you familar with NoSQL?
+- Do you familiar with NoSQL?
 
 - Are you familiar with Postgres?
 

@@ -63,7 +63,7 @@ Skype
 
 - What is object pool?
 
-- What is microservice? Are you familliar with that?
+- What is microservice? Are you familiar with that?
 
 - How did you implement microservice architecture in your past company?
 
@@ -77,7 +77,7 @@ Skype
 
 - What is decorator?
 
-- What feature of python that help decorator functionallity?
+- What feature of python that help decorator functionality?
 
 - What is concurrency and parallelism?
 
@@ -101,7 +101,7 @@ Skype
 
 - What is ACID?
 
-- Can you example about consistancy issue in work?
+- Can you example about consistency issue in work?
 
 - Which SQL engines support ACID?
 

@@ -1,8 +1,8 @@
 # List of all questions
 
 
-**Total questions:** 349 <br />
-**Total unique questions:** 261
+**Total questions:** 345 <br />
+**Total unique questions:** 251
 
 <img src="assets/bullshit_everywhere_meme.jpg" alt="bullshit_everywhere_meme" style="display: block; max-width: 60%; width: 100%; height: auto; margin-left: auto; margin-right: auto; border-radius: 5px; margin-top: 5px;">
 
@@ -21,13 +21,13 @@
     </div>
     </details>
 
-- **What is decorator?** (6 times — 2x [Digikala](https://mo1ein.github.io/jobname/digikala/digikala.html#:~:text=What%20is%20decorator%3F), [Exalab](https://mo1ein.github.io/jobname/exalab.html#:~:text=What%20is%20decorator%3F), [Karnameh](https://mo1ein.github.io/jobname/karnameh.html#:~:text=What%20is%20decorator%3F), [Siz-tel](https://mo1ein.github.io/jobname/siztel/internship.html#:~:text=What%20is%20decorator%3F), [Sternx](https://mo1ein.github.io/jobname/sternx/sternx.html#:~:text=What%20is%20decorator%3F))
+- **What is decorator?** (6 times — 2x [Digikala](https://mo1ein.github.io/jobname/digikala/digikala.html#:~:text=What%20is%20decorator%3F), [Exalab](https://mo1ein.github.io/jobname/exalab.html#:~:text=What%20is%20decorator%3F), [Karnameh](https://mo1ein.github.io/jobname/karnameh.html#:~:text=What%20is%20decorator%3F), [Siz-tel](https://mo1ein.github.io/jobname/siztel/internship.html#:~:text=What%20is%20python%20decorator%3F), [Sternx](https://mo1ein.github.io/jobname/sternx/sternx.html#:~:text=What%20is%20decorator%20in%20python%3F))
 
 - **What is the difference between concurrency in python and go?** (2 times — [Quiz of Kings](https://mo1ein.github.io/jobname/QuizOfKings.html#:~:text=What%20is%20the%20difference%20between%20concurrency%20in%20python%20and%20go%3F), [Narvan](https://mo1ein.github.io/jobname/narvan.html#:~:text=What%20is%20the%20difference%20between%20concurrency%20in%20python%20and%20go%3F))
 
 - **What is mutable and immutable and why? give me an example for each.** (3 times — 2x [Exalab](https://mo1ein.github.io/jobname/exalab.html#:~:text=What%20is%20mutable%20and%20immutable%20and%20why%3F%20give%20me%20an%20example%20for%20each.), [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=What%20is%20mutable%20and%20immutable%20and%20why%3F%20give%20me%20an%20example%20for%20each.))
 
-- **What is generator? when do we use them? do you use them?** (2 times — [Exalab](https://mo1ein.github.io/jobname/exalab.html#:~:text=What%20is%20generator%3F%20when%20do%20we%20use%20them%3F%20do%20you%20use%20them%3F), [Zibal](https://mo1ein.github.io/jobname/zibal/zibal.html#:~:text=What%20is%20generator%3F%20when%20do%20we%20use%20them%3F%20do%20you%20use%20them%3F))
+- **What is generator? when do we use them? do you use them?** (3 times — [Exalab](https://mo1ein.github.io/jobname/exalab.html#:~:text=What%20is%20generator%3F%20when%20do%20we%20use%20them%3F%20do%20you%20use%20them%3F), [Karnameh](https://mo1ein.github.io/jobname/karnameh.html#:~:text=What%20are%20generators%3F), [Zibal](https://mo1ein.github.io/jobname/zibal/zibal.html#:~:text=What%20is%20a%20generator%20and%20what%20are%20its%20benefits%3F))
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
@@ -77,8 +77,6 @@
 
 
 - **What is method overriding in python?** (1 times — [Itoll](https://mo1ein.github.io/jobname/itoll.html#:~:text=What%20is%20method%20overriding%20in%20python%3F))
-
-- **What are generators?** (1 times — [Karnameh](https://mo1ein.github.io/jobname/karnameh.html#:~:text=What%20are%20generators%3F))
 
 
 - **What is GIL?** (1 times — [Narvan](https://mo1ein.github.io/jobname/narvan.html#:~:text=What%20is%20GIL%3F))
@@ -183,7 +181,7 @@
 - **What is abc?** (1 times — [Digikala](https://mo1ein.github.io/jobname/digikala/digikala.html#:~:text=What%20is%20abc%3F))
 
 
-- **We have one dictionary and we have a function that change this dictionary. If function dosen't return anything, our dictionary changed or not?** (1 times — [Exalab](https://mo1ein.github.io/jobname/exalab.html#:~:text=We%20have%20one%20dictionary%20and%20we%20have%20a%20function%20that%20change%20this%20dictionary.%20If%20function%20dosen%27t%20return%20anything%2C%20our%20dictionary%20changed%20or%20not%3F))
+- **We have one dictionary and we have a function that change this dictionary. If function doesn't return anything, our dictionary changed or not?** (1 times — [Exalab](https://mo1ein.github.io/jobname/exalab.html#:~:text=We%20have%20one%20dictionary%20and%20we%20have%20a%20function%20that%20change%20this%20dictionary.%20If%20function%20dosen%27t%20return%20anything%2C%20our%20dictionary%20changed%20or%20not%3F))
 
 - **Difference between list & set? Which one is faster?** (1 times — [Itoll](https://mo1ein.github.io/jobname/itoll.html#:~:text=Difference%20between%20list%20%26%20set%3F%20Which%20one%20is%20faster%3F))
 
@@ -205,11 +203,11 @@
     </div>
     </details>
 
-- **What is OOP concepts that go don't have it?** (2 times — [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=What%20is%20OOP%20concepts%20that%20go%20don%27t%20have%20it%3F), [Snapp (cab 1)](https://mo1ein.github.io/jobname/snapp/snapp_cab_1.html#:~:text=What%20is%20OOP%20concepts%20that%20go%20don%27t%20have%20it%3F))
+- **What is OOP concepts that go don't have it?** (3 times — [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=What%20is%20OOP%20concepts%20that%20go%20don%27t%20have%20it%3F), [Snapp (cab 1)](https://mo1ein.github.io/jobname/snapp/snapp_cab_1.html#:~:text=What%20is%20OOP%3F%20What%20are%20the%20benifits%20and%20concept.), [Sternx](https://mo1ein.github.io/jobname/sternx/sternx.html#:~:text=Go%20doesn%27t%20have%20classes%20and%20is%20not%20based%20on%20OOP%20principles.%20Can%20you%20explain%20that%3F))
 
 - **What is defer?** (2 times — [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=What%20is%20defer%3F), [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=What%20is%20defer%3F))
 
-- **We have a scenario that we have a goroutine and this goroutine wait for other goroutine how do you handle it? waitgroup.** (2 times — [MH Holding](https://mo1ein.github.io/jobname/mhholding.html#:~:text=We%20have%20a%20scenario%20that%20we%20have%20a%20goroutine%20and%20this%20goroutine%20wait%20for%20other%20goroutine%20how%20do%20you%20handle%20it%3F%20waitgroup.), [Ozone](https://mo1ein.github.io/jobname/ozone.html#:~:text=We%20have%20a%20scenario%20that%20we%20have%20a%20goroutine%20and%20this%20goroutine%20wait%20for%20other%20goroutine%20how%20do%20you%20handle%20it%3F%20waitgroup.))
+- **We have a scenario that we have a goroutine and this goroutine wait for other goroutine how do you handle it? waitgroup.** (2 times — [MH Holding](https://mo1ein.github.io/jobname/mhholding.html#:~:text=We%20have%20a%20scenario%20that%20we%20have%20a%20goroutine%20and%20this%20goroutine%20wait%20for%20other%20goroutine%20how%20do%20you%20handle%20it%3F%20waitgroup.), [Ozone](https://mo1ein.github.io/jobname/ozone.html#:~:text=What%20is%20waitgroup%3F))
 
 - **What's difference between goroutine and thread?** (1 times — [Cloudzy](https://mo1ein.github.io/jobname/cloudzy/cloudzy.html#:~:text=What%27s%20difference%20between%20goroutine%20and%20thread%3F))
 
@@ -309,9 +307,9 @@
 
 - **What is rune and size?** (1 times — [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=What%20is%20rune%20and%20size%3F))
 
-- **What is UTf-8 and difference with ASCII? What is 8 mean? What is UTF-16?** (1 times — [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=What%20is%20UTf-8%20and%20difference%20with%20ASCII%3F%20What%20is%208%20mean%3F%20What%20is%20UTF-16%3F))
+- **What is UTF-8 and difference with ASCII? What is 8 mean? What is UTF-16?** (1 times — [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=What%20is%20UTF-8%20and%20difference%20with%20ASCII%3F%20What%20is%208%20mean%3F%20What%20is%20UTF-16%3F))
 
-- **What is methods in go?** (1 times — [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=What%20is%20methods%20in%20go%3F))
+- **What is method?** (2 times — [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=What%20is%20methods%20in%20go%3F), [MH Holding](https://mo1ein.github.io/jobname/mhholding.html#:~:text=What%20is%20method%3F))
 
 - **How do we use the encapsulation concept in Go?** (1 times — [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=How%20do%20we%20use%20the%20encapsulation%20concept%20in%20Go%3F))
 
@@ -439,7 +437,7 @@
 
 - **What is generic?** (1 times — [MH Holding](https://mo1ein.github.io/jobname/mhholding.html#:~:text=What%20is%20generic%3F))
 
-- **We have a scenario. We have two goroutine that traverse a slice. One is start from begining and other starts from end. How each goroutine can know other one is in the middle of slice? With cannels.** (1 times — [MH Holding](https://mo1ein.github.io/jobname/mhholding.html#:~:text=We%20have%20a%20scenario.%20We%20have%20two%20goroutine%20that%20traverse%20a%20slice.%20One%20is%20start%20from%20begining%20and%20other%20starts%20from%20end.%20How%20each%20goroutine%20can%20know%20other%20one%20is%20in%20the%20middle%20of%20slice%3F%20With%20cannels.))
+- **We have a scenario. We have two goroutine that traverse a slice. One is start from beginning and other starts from end. How each goroutine can know other one is in the middle of slice? With channels.** (1 times — [MH Holding](https://mo1ein.github.io/jobname/mhholding.html#:~:text=We%20have%20a%20scenario.%20We%20have%20two%20goroutine%20that%20traverse%20a%20slice.%20One%20is%20start%20from%20beginning%20and%20other%20starts%20from%20end.%20How%20each%20goroutine%20can%20know%20other%20one%20is%20in%20the%20middle%20of%20slice%3F%20With%20channels.))
 
 
 - **What is context in go?** (1 times — [MH Holding](https://mo1ein.github.io/jobname/mhholding.html#:~:text=What%20is%20context%20in%20go%3F))
@@ -453,8 +451,6 @@
 
 - **What is difference between channel and connection in rabbitMQ?** (1 times — [Snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=What%20is%20difference%20between%20channel%20and%20connection%20in%20rabbitMQ%3F))
 
-- **Go doesn't have classes and is not based on OOP principles. Can you explain that?** (1 times — [Sternx](https://mo1ein.github.io/jobname/sternx/sternx.html#:~:text=Go%20doesn%27t%20have%20classes%20and%20is%20not%20based%20on%20OOP%20principles.%20Can%20you%20explain%20that%3F))
-
 - **What is init function?** (1 times — [MH Holding](https://mo1ein.github.io/jobname/mhholding.html#:~:text=What%20is%20init%20function%3F))
 
 - **What is a slice, and what is the difference between a slice and an array?** (2 times — [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=What%20is%20a%20slice%2C%20and%20what%20is%20the%20difference%20between%20a%20slice%20and%20an%20array%3F), [Siz-tel](https://mo1ein.github.io/jobname/siztel/junior.html#:~:text=What%20is%20a%20slice%2C%20and%20what%20is%20the%20difference%20between%20a%20slice%20and%20an%20array%3F))
@@ -462,7 +458,7 @@
 
 - **What is Promise?** (1 times — [Kharazmi](https://mo1ein.github.io/jobname/dpkharazmi.html#:~:text=What%20is%20Promise%3F))
 
-- **Waht is stack and differences between heap?** (1 times — [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=Waht%20is%20stack%20and%20differences%20between%20heap%3F))
+- **What is stack and differences between heap?** (1 times — [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=What%20is%20stack%20and%20differences%20between%20heap%3F))
 
 - **What is `_` in imported packages?** (1 times — [Metazi](https://mo1ein.github.io/jobname/metazi.html#:~:text=What%20is%20_%20in%20imported%20packages%3F))
 
@@ -555,8 +551,6 @@
     </div>
     </details>
 
-- **Waht is method?** (1 times — [MH Holding](https://mo1ein.github.io/jobname/mhholding.html#:~:text=Waht%20is%20method%3F))
-
 - **When you receive a request, how do you read data? How do you unmarshal it?** (1 times — [MH Holding](https://mo1ein.github.io/jobname/mhholding.html#:~:text=When%20you%20receive%20a%20request%2C%20how%20do%20you%20read%20data%3F%20How%20do%20you%20unmarshal%20it%3F))
 
 - **What is anonymous function?** (1 times — [Siz-tel](https://mo1ein.github.io/jobname/siztel/junior.html#:~:text=What%20is%20anonymous%20function%3F))
@@ -592,14 +586,14 @@
 
 - **What is the difference between SQL and NoSQL?** (3 times — [Exalab](https://mo1ein.github.io/jobname/exalab.html#:~:text=What%20is%20the%20difference%20between%20SQL%20and%20NoSQL%3F), [Siz-tel](https://mo1ein.github.io/jobname/siztel/junior.html#:~:text=What%20is%20the%20difference%20between%20SQL%20and%20NoSQL%3F), [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=What%20is%20the%20difference%20between%20SQL%20and%20NoSQL%3F))
 
-- **If our query is slow, how would you optimize it? What is your solution for this problem?** (3 times — [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=If%20our%20query%20is%20slow%2C%20how%20would%20you%20optimize%20it%3F%20What%20is%20your%20solution%20for%20this%20problem%3F), [Snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=If%20our%20query%20is%20slow%2C%20how%20would%20you%20optimize%20it%3F%20What%20is%20your%20solution%20for%20this%20problem%3F), [Wallex](https://mo1ein.github.io/jobname/wallex/wallex1403.html#:~:text=If%20our%20query%20is%20slow%2C%20how%20would%20you%20optimize%20it%3F%20What%20is%20your%20solution%20for%20this%20problem%3F))
+- **If our query is slow, how would you optimize it? What is your solution for this problem?** (3 times — [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=If%20our%20query%20is%20slow%2C%20how%20would%20you%20optimize%20it%3F%20What%20is%20your%20solution%20for%20this%20problem%3F), [Snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=We%20have%20a%20query%20that%20is%20too%20slow%2C%20how%20you%20try%20to%20fast%20it%3F), [Wallex](https://mo1ein.github.io/jobname/wallex/wallex1403.html#:~:text=We%20want%20to%20extract%20trading%20volumes%20based%20on%20daily%2C%20monthly%2C%20and%20yearly%20data.%20We%20have%20several%20rows%20that%20contain%20transactions%2C%20and%20our%20sum%20query%20is%20slow.%20How%20will%20you%20solve%20this%20problem%3F))
 
 - **If you want to design a database, how do you determine which technologies or approaches to use?** (2 times — [Quiz of Kings](https://mo1ein.github.io/jobname/QuizOfKings.html#:~:text=If%20you%20want%20to%20design%20a%20database%2C%20how%20do%20you%20determine%20which%20technologies%20or%20approaches%20to%20use%3F), [Digikala](https://mo1ein.github.io/jobname/digikala/digikala.html#:~:text=If%20you%20want%20to%20design%20a%20database%2C%20how%20do%20you%20determine%20which%20technologies%20or%20approaches%20to%20use%3F))
 
 
 - **When indexing is bad?** (2 times — [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=When%20indexing%20is%20bad%3F), [Snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=When%20indexing%20is%20bad%3F))
 
-- **What is redis datastuctures?** (1 times — [Quiz of Kings](https://mo1ein.github.io/jobname/QuizOfKings.html#:~:text=What%20is%20redis%20datastuctures%3F))
+- **What is redis data structures?** (1 times — [Quiz of Kings](https://mo1ein.github.io/jobname/QuizOfKings.html#:~:text=What%20is%20redis%20datastuctures%3F))
 
 - **Suppose we have a queue and a redis and more requests sent to our web server how can handle to redis. redis can handle just a few requests. What's your approach to handle scale?** (1 times — [Quiz of Kings](https://mo1ein.github.io/jobname/QuizOfKings.html#:~:text=Suppose%20we%20have%20a%20queue%20and%20a%20redis%20and%20more%20requests%20sent%20to%20our%20web%20server%20how%20can%20handle%20to%20redis.%20redis%20can%20handle%20just%20a%20few%20requests.%20What%27s%20your%20approach%20to%20handle%20scale%3F))
 
@@ -799,9 +793,7 @@
 
 ### System Design
 
-- **Microservices vs monolotic? How do you choose it when you want to start a project?** (2 times — [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=Microservices%20vs%20monolotic%3F%20How%20do%20you%20choose%20it%20when%20you%20want%20to%20start%20a%20project%3F), [Snapp Market Pro](https://mo1ein.github.io/jobname/snapp/snapp_market_pro.html#:~:text=Microservices%20vs%20monolotic%3F%20How%20do%20you%20choose%20it%20when%20you%20want%20to%20start%20a%20project%3F))
-
-- **When starting a new project, do you prefer a monolithic architecture or a microservices architecture, and why?** (1 times — [Tabdeal](https://mo1ein.github.io/jobname/tabdeal/tabdeal.html#:~:Text=When%20starting%20a%20new%20project%2C%20do%20you%20prefer%20a%20monolithic%20architecture%20or%20a%20microservices%20architecture%2C%20and%20why%3F))
+- **Microservices vs monolithic? How do you choose it when you want to start a project?** (3 times — [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=Microservices%20vs%20monolithic%3F%20How%20do%20you%20choose%20it%20when%20you%20want%20to%20start%20a%20project%3F), [Snapp Market Pro](https://mo1ein.github.io/jobname/snapp/snapp_market_pro.html#:~:text=Microservices%20vs%20monolithic), [Tabdeal](https://mo1ein.github.io/jobname/tabdeal/tabdeal.html#:~:text=When%20starting%20a%20new%20project%2C%20do%20you%20prefer%20a%20monolithic%20architecture%20or%20a%20microservices%20architecture%2C%20and%20why%3F))
 
   <details>
   <summary style="font-size:14px"><b><em>Answer</em></b></summary>
@@ -811,14 +803,14 @@
   </div>
   </details>
 
-- **Waht is event driven architecture?** (1 times — [Quiz of Kings](https://mo1ein.github.io/jobname/QuizOfKings.html#:~:text=Waht%20is%20event%20driven%20architecture%3F))
+- **What is event driven architecture?** (1 times — [Quiz of Kings](https://mo1ein.github.io/jobname/QuizOfKings.html#:~:text=What%20is%20event%20driven%20architecture%3F))
 
 - **We want to design a URL shortener system. How would you design it?** (1 times — [Quiz of Kings](https://mo1ein.github.io/jobname/QuizOfKings.html#:~:text=We%20want%20to%20design%20a%20URL%20shortener%20system.%20How%20would%20you%20design%20it%3F))
 
 
 - **What is reverse proxy?** (1 times — [Autoshenas](https://mo1ein.github.io/jobname/autoshenas.html#:~:text=What%20is%20reverse%20proxy%3F))
 
-- **What you gonna do if suddenly we recieve massive requests? How you can handle it?** (1 times — [Tabdeal](https://mo1ein.github.io/jobname/tabdeal/tabdeal.html#:~:Text=What%20you%20gonna%20do%20if%20suddenly%20we%20recieve%20massive%20requests%3F%20How%20you%20can%20handle%20it%3F))
+- **What would you do if suddenly we receive massive requests? How would you handle it?** (1 times — [Tabdeal](https://mo1ein.github.io/jobname/tabdeal/tabdeal.html#:~:Text=What%20you%20gonna%20do%20if%20suddenly%20we%20receive%20massive%20requests%3F%20How%20you%20can%20handle%20it%3F&text=What%20would%20you%20do%20if%20suddenly%20we%20receive%20massive%20requests%3F%20How%20would%20you%20handle%20it%3F))
 
 - **For displaying a user's daily Profit & Loss (P&L) in a crypto exchange system, which is more important: Consistency or Availability? Why?** (1 times — [Tabdeal](https://mo1ein.github.io/jobname/tabdeal/tabdeal.html#:~:Text=For%20displaying%20a%20user%27s%20daily%20Profit%20%26%20Loss%20%28P%26L%29%20in%20a%20crypto%20exchange%20system%2C%20which%20is%20more%20important%3A%20Consistency%20or%20Availability%3F%20Why%3F))
 
@@ -1035,7 +1027,7 @@
 
 - **Suppose we have sent a request to a service and an action failed. How can we handle other processes to know that the action has failed and handle them accordingly?** (1 times — [Ozone](https://mo1ein.github.io/jobname/ozone.html#:~:text=Suppose%20we%20have%20sent%20a%20request%20to%20a%20service%20and%20an%20action%20failed.%20How%20can%20we%20handle%20other%20processes%20to%20know%20that%20the%20action%20has%20failed%20and%20handle%20them%20accordingly%3F))
 
-- **We have an API and we want to add new features on it. How can we handle compatibality with older version? v1 v2** (1 times — [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=We%20have%20an%20API%20and%20we%20want%20to%20add%20new%20features%20on%20it.%20How%20can%20we%20handle%20compatibality%20with%20older%20version%3F%20v1%20v2))
+- **We have an API and we want to add new features on it. How can we handle compatibility with older version? v1 v2** (1 times — [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=We%20have%20an%20API%20and%20we%20want%20to%20add%20new%20features%20on%20it.%20How%20can%20we%20handle%20compatibility%20with%20older%20version%3F%20v1%20v2))
 
 - **How can we make sure that the codes you said, are unique? _A: My answer was using UUID_** (1 times — [Toman Pay](https://mo1ein.github.io/jobname/tomanpay/senior_backend_position.html#:~:text=How%20can%20we%20make%20sure%20that%20the%20codes%20you%20said%2C%20are%20unique%3F%20_A%3A%20My%20answer%20was%20using%20UUID_))
 
@@ -1043,7 +1035,7 @@
 
 - **Can you tell me the software layers that a request goes through in our code, and where it ends up?** (1 times — [Wallex](https://mo1ein.github.io/jobname/wallex/wallex1402.html#:~:text=Can%20you%20tell%20me%20the%20software%20layers%20that%20a%20request%20goes%20through%20in%20our%20code%2C%20and%20where%20it%20ends%20up%3F))
 
-- **Suppose we want to sent 1 million notification and need request it to db how u handle it?** (1 times — [Wallex](https://mo1ein.github.io/jobname/wallex/wallex1402.html#:~:text=Suppose%20we%20want%20to%20sent%201%20million%20notification%20and%20need%20request%20it%20to%20db%20how%20u%20handle%20it%3F))
+- **Suppose we want to send 1 million notification and need request it to db how u handle it?** (1 times — [Wallex](https://mo1ein.github.io/jobname/wallex/wallex1402.html#:~:text=Suppose%20we%20want%20to%20sent%201%20million%20notification%20and%20need%20request%20it%20to%20db%20how%20u%20handle%20it%3F))
 
 - **When do you use a cache?** (1 times — [Wallex](https://mo1ein.github.io/jobname/wallex/wallex1402.html#:~:text=When%20do%20you%20use%20a%20cache%3F))
 
@@ -1109,9 +1101,7 @@
 
 - **What is concurrency and parallelism?** (4 times — [Digikala](https://mo1ein.github.io/jobname/digikala/digikala.html#:~:text=What%20is%20concurrency%20and%20parallelism%3F), [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=What%20is%20concurrency%20and%20parallelism%3F), [MH Holding](https://mo1ein.github.io/jobname/mhholding.html#:~:text=What%20is%20concurrency%20and%20parallelism%3F), [Siz-tel](https://mo1ein.github.io/jobname/siztel/junior.html#:~:text=What%20is%20concurrency%20and%20parallelism%3F))
 
-- **What is the difference between multithread and multiprocess?** (1 times — [Exalab](https://mo1ein.github.io/jobname/exalab.html#:~:text=What%20is%20the%20difference%20between%20multithread%20and%20multiprocess%3F))
-
-- **Difference between multiprocess and multithread?** (1 times — [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=Difference%20between%20multiprocess%20and%20multithread%3F))
+- **What is the difference between multithread and multiprocess?** (2 times — [Exalab](https://mo1ein.github.io/jobname/exalab.html#:~:text=What%20is%20the%20difference%20between%20multithread%20and%20multiprocess%3F), [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=Difference%20between%20multiprocess%20and%20multithread%3F))
 
 - **What is the difference between multithreading and concurrency?** (1 times — [Snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=What%20is%20the%20difference%20between%20multithreading%20and%20concurrency%3F))
 
@@ -1326,7 +1316,7 @@
     </details>
 
 
-- **[First question](./a.pdf)** (1 times — [BitPin](https://mo1ein.github.io/jobname/bitpin/bitpin.html#:~:text=First%20question))
+- **[First question](./bitpin/a.pdf)** (1 times — [BitPin](https://mo1ein.github.io/jobname/bitpin/bitpin.html#:~:text=First%20question))
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
@@ -1342,7 +1332,7 @@
     </details>
 
 
-- **[Second question](./b.pdf)** (1 times — [BitPin](https://mo1ein.github.io/jobname/bitpin/bitpin.html#:~:text=Second%20question))
+- **[Second question](./bitpin/b.pdf)** (1 times — [BitPin](https://mo1ein.github.io/jobname/bitpin/bitpin.html#:~:text=Second%20question))
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
@@ -1375,7 +1365,7 @@
     </details>
 
 
-- **[Third question](./c.pdf)** (1 times — [BitPin](https://mo1ein.github.io/jobname/bitpin/bitpin.html#:~:text=Third%20question))
+- **[Third question](./bitpin/c.pdf)** (1 times — [BitPin](https://mo1ein.github.io/jobname/bitpin/bitpin.html#:~:text=Third%20question))
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
@@ -1461,7 +1451,7 @@
 
 ### DevOps & Infrastructure
 
-- **What is docker & kober?** (6 times — [Quiz of Kings](https://mo1ein.github.io/jobname/QuizOfKings.html#:~:text=What%20is%20docker%20%26%20kober%3F), 2x [Autoshenas](https://mo1ein.github.io/jobname/autoshenas.html#:~:text=What%20is%20docker%20%26%20kober%3F), [Phanous](https://mo1ein.github.io/jobname/phanous/phanous.html#:~:text=What%20is%20docker%20%26%20kober%3F), [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=What%20is%20docker%20%26%20kober%3F), [Snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=What%20is%20docker%20%26%20kober%3F))
+- **What is docker & kubernetes?** (6 times — [Quiz of Kings](https://mo1ein.github.io/jobname/QuizOfKings.html#:~:text=What%20is%20docker%20%26%20kober%3F), 2x [Autoshenas](https://mo1ein.github.io/jobname/autoshenas.html#:~:text=kuber%20and%20etc.-,What%20is%20docker%3F,-What%20is%20EXPOSE), [Phanous](https://mo1ein.github.io/jobname/phanous/phanous.html#:~:text=com%20what%E2%80%99s%20happening%3F-,What%20is%20Docker%3F,-Someone%20tries%20to), [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=What%20is%20the%20difference%20between%20virtual%20machine%20and%20docker%3F), [Snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=stackoverflow-,What%20is%20Docker%3F,-docker))
 
 
 - **What is the difference between virtual machine and docker?** (2 times — [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=What%20is%20the%20difference%20between%20virtual%20machine%20and%20docker%3F), [Snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=What%20is%20the%20difference%20between%20virtual%20machine%20and%20docker%3F))
@@ -1569,7 +1559,7 @@
 
 ### Design Patterns & SOLID
 
-- **What is SOLID?** (4 times — [Digikala](https://mo1ein.github.io/jobname/digikala/digikala.html#:~:text=What%20is%20SOLID%3F), [Itoll](https://mo1ein.github.io/jobname/itoll.html#:~:text=What%20is%20SOLID%3F), [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=What%20is%20SOLID%3F), [Wallex](https://mo1ein.github.io/jobname/wallex/wallex1402.html#:~:text=What%20is%20SOLID%3F))
+- **What is SOLID?** (5 times — [Digikala](https://mo1ein.github.io/jobname/digikala/digikala.html#:~:text=What%20is%20SOLID%3F), [Itoll](https://mo1ein.github.io/jobname/itoll.html#:~:text=What%20is%20SOLID%3F), [Kharazmi](https://mo1ein.github.io/jobname/dpkharazmi.html#:~:text=What%20is%20SOLID%3F), [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=What%20is%20SOLID%3F), [Wallex](https://mo1ein.github.io/jobname/wallex/wallex1402.html#:~:text=What%20is%20SOLID%3F))
 
 - **What is polymorphism?** (2 times — [Itoll](https://mo1ein.github.io/jobname/itoll.html#:~:text=What%20is%20polymorphism%3F), [Snapp (cab 1)](https://mo1ein.github.io/jobname/snapp/snapp_cab_1.html#:~:text=What%20is%20polymorphism%3F))
 
@@ -1578,8 +1568,6 @@
 - **Which part of MVT that we working with data?** (1 times — [Digikala](https://mo1ein.github.io/jobname/digikala/digikala.html#:~:text=Which%20part%20of%20MVT%20that%20we%20working%20with%20data%3F))
 
 - **What is singleton?** (1 times — [Digikala](https://mo1ein.github.io/jobname/digikala/digikala.html#:~:text=What%20is%20singleton%3F))
-
-- **Can you explain the SOLID principle?** (1 times — [Kharazmi](https://mo1ein.github.io/jobname/dpkharazmi.html#:~:text=Can%20you%20explain%20the%20SOLID%20principle%3F))
 
 - **What is dependency inversion?** (3 times — 3x [Wallex](https://mo1ein.github.io/jobname/wallex/wallex1402.html#:~:text=What%20is%20dependency%20inversion%3F))
 
@@ -1648,7 +1636,7 @@
 ### Misc
 - **When you prefer use other packages or write your library?** (2 times — 2x [Autoshenas](https://mo1ein.github.io/jobname/autoshenas.html#:~:text=When%20you%20prefer%20use%20other%20packages%20or%20write%20your%20library%3F))
 - **What is signal?** (1 times — [Kharazmi](https://mo1ein.github.io/jobname/dpkharazmi.html#:~:text=What%20is%20signal%3F))
-- **What is eventEmmiter?** (1 times — [Kharazmi](https://mo1ein.github.io/jobname/dpkharazmi.html#:~:text=What%20is%20eventEmmiter%3F))
+- **What is eventEmitter?** (1 times — [Kharazmi](https://mo1ein.github.io/jobname/dpkharazmi.html#:~:text=What%20is%20eventEmitter%3F))
 - **What are guards in Angular? where have you used them?** (1 times — [Kharazmi](https://mo1ein.github.io/jobname/dpkharazmi.html#:~:text=What%20are%20guards%20in%20Angular%3F%20where%20have%20you%20used%20them%3F))
 - **What is Angular optimization?** (1 times — [Kharazmi](https://mo1ein.github.io/jobname/dpkharazmi.html#:~:text=What%20is%20Angular%20optimization%3F))
 - **Have you ever had a weird bug in production even though all your tests passed? How did you fix it?** (1 times — [Football360](https://mo1ein.github.io/jobname/football360.html#:~:text=Have%20you%20ever%20had%20a%20weird%20bug%20in%20production%20even%20though%20all%20your%20tests%20passed%3F%20How%20did%20you%20fix%20it%3F))

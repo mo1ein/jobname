@@ -2,7 +2,7 @@
 
 ### Status
 #### 📜📞📝❌
-## Back-End developer (pyhton)
+## Back-End developer (python)
 ### Interview process
 ```mermaid
 flowchart LR

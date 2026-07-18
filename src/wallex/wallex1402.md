@@ -39,7 +39,7 @@ Google Meet
 
 - What is REST?
 
-- Suppose we want to sent 1 million notification and need request it to db how u handle it?
+- Suppose we want to send 1 million notification and need request it to db how do you handle it?
 
 - When we want to know a user authenticated or not for some action, how know that and how we handle that?
 

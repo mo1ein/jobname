@@ -33,7 +33,7 @@ Site
 
 - Compare python with C++.
 
-- What is OOP? What are the benifits and concept.
+- What is OOP? What are the benefits and concept.
 
 - What is access modifiers?
 

@@ -9,7 +9,7 @@
     <li><a href="src/redflags.md">پرچم‌های خونی</a></li>
     <li><a href="src/rejection.md">ریجکت، ریجکت، ریجکت...</a></li>
     <li><a href="src/statistics.md">نگاه آماری</a></li>
-    <li><a href="clarifying.md">شفاف‌‌سازی</a></li>
+    <li><a href="src/clarifying.md">شفاف‌‌سازی</a></li>
 </ul>
 
 <h2 id="intro" dir="rtl"><a class="header" href="#intro">دیباچه</a></h2>
@@ -70,7 +70,7 @@
 - [Digikala](src/digikala/digikala.md)
 - [Karnameh](src/karnameh.md)
 - [Siztel](src/siztel/siztel.md)
-- [Hamkaran system](src/hamkaran-system.md)
+- [Hamkaran system](src/hamkaransystem/1402.md)
 - [Bitex](src/bitex/bitex.md)
 - [Autoshenas](src/autoshenas.md)
 

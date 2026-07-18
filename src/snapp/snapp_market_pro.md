@@ -45,17 +45,17 @@ Skype
 
 - Tell me about yourself.
 
-- When will you be graduatd?
+- When will you be graduated?
 
 - What is your plan after you finished university?
 
-- HR asked weather we're having a live coding or not? no.
+- HR asked whether we're having a live coding or not? no.
 
 - Why did you choose go?
 
 - After the interview, what position do you think you want?
 
-- Microservices vs monolotic
+- Microservices vs monolithic
 
 - How do you fix latency in microservices?
 

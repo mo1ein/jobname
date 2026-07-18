@@ -38,24 +38,28 @@ Skype
 
 - What are the differences between Go and Python? Compare these two languages.
 
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
   1. **Performance**<br>
     Go: Go is a compiled language, meaning the code is directly translated into machine code, which results in faster execution times. It is designed for high-performance tasks, making it suitable for building high-performance systems, networking applications, and cloud-native services.<br>
-    Python: Python is an interpreted language, which means it’s slower than Go due to the overhead of the interpreter. However, Python's performance can be enhanced by using external libraries or tools like Cython or PyPy.
+    Python: Python is an interpreted language, which means it's slower than Go due to the overhead of the interpreter. However, Python's performance can be enhanced by using external libraries or tools like Cython or PyPy.
   2. **Concurrency**<br>
     Go: Go has built-in support for concurrency through goroutines and channels. Its concurrency model is one of the key reasons developers choose Go, as it simplifies writing concurrent programs and is ideal for systems with heavy multitasking.<br>
     Python: Python supports concurrency with threads and multiprocessing, but its Global Interpreter Lock (GIL) can be a bottleneck for CPU-bound tasks. Concurrency in Python can be more complex compared to Go.
   3. **Ease of Learning and Syntax**<br>
-    Go: Go has a simple and straightforward syntax, but it can feel more restrictive. Its simplicity is part of the language’s design, making it easier to understand for beginners, but it may require more boilerplate code.<br>
-    Python: Python is known for its clean, readable, and concise syntax. It’s often recommended as a first programming language because of its simplicity and ease of learning, making it very popular for scripting, automation, and rapid application development.
+    Go: Go has a simple and straightforward syntax, but it can feel more restrictive. Its simplicity is part of the language's design, making it easier to understand for beginners, but it may require more boilerplate code.<br>
+    Python: Python is known for its clean, readable, and concise syntax. It's often recommended as a first programming language because of its simplicity and ease of learning, making it very popular for scripting, automation, and rapid application development.
   4. **Use Cases**<br>
     Go: Go is optimized for backend systems, microservices, cloud infrastructure, and networking applications. It is widely used by companies like Google, Docker, and Kubernetes for building scalable, concurrent systems.<br>
     Python: Python excels in a wide range of areas, including web development (with frameworks like Django and Flask), data science, artificial intelligence, automation, and scripting. Its large ecosystem of libraries makes it a popular choice for scientific computing and data analysis.
   5. **Ecosystem and Libraries**<br>
-    Go: Go’s ecosystem is still growing, but it has a strong focus on performance and concurrency. The language has a standard library that's robust for network programming, but it has fewer third-party libraries compared to Python.
+    Go: Go's ecosystem is still growing, but it has a strong focus on performance and concurrency. The language has a standard library that's robust for network programming, but it has fewer third-party libraries compared to Python.
     Python: Python has a massive ecosystem with a rich set of libraries and frameworks for virtually every domain, including data science (NumPy, Pandas), machine learning (TensorFlow, PyTorch), web development, and more. Python's ecosystem is one of its greatest strengths.
   6. **Development Speed**<br>
     Go: Go is designed to be simple and efficient, but it often requires more boilerplate code, which can slow down initial development compared to dynamic languages like Python.<br>
-    Python: Python’s dynamic nature and extensive libraries allow for faster prototyping and development. It’s ideal for startups and projects where time-to-market is critical.
+    Python: Python's dynamic nature and extensive libraries allow for faster prototyping and development. It's ideal for startups and projects where time-to-market is critical.
   7. **Memory Management**<br>
     Go: Go has built-in garbage collection, but it is designed with manual optimizations to handle memory more efficiently than typical garbage-collected languages.<br>
     Python: Python also uses garbage collection, but its memory management is slower, making it less suitable for performance-critical tasks without optimization.
@@ -69,24 +73,45 @@ Skype
     Go: Go has a growing community, especially in cloud and infrastructure-related fields. It has strong backing from Google and is seeing increasing adoption.<br>
     Python: Python has one of the largest and most active programming communities, with extensive support for various use cases. Its community-driven development ensures frequent updates and improvements.
 
+  </div>
+  </details>
+
 - How does memory management work in Go and Python?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   In python: <br>
   [realpython](https://realpython.com/python-memory-management/)
 
+  </div>
+  </details>
+
 - How does referencing work in Python, and how does it determine when to clean up references?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   In Python, variables reference objects, and the language uses reference counting to manage memory. When an object's reference count reaches zero (i.e., no variables point to it), the memory is freed. Additionally, Python has a garbage collector to handle circular references that reference counting can't clean up. Cleanup happens automatically when reference counts drop or during periodic garbage collection.
 
   [geekflare](https://geekflare.com/python-garbage-collection-explained/)<br>
   [towardsdatascience](https://towardsdatascience.com/understanding-reference-counting-in-python-3894b71b5611)
   <div style="text-align: center;">
-      <img src="    https://geekflare.com/cdn-cgi/image/width=1914,height=1191,fit=crop,quality=90,format=auto,onerror=redirect,metadata=none/wp-content/uploads/2023/11/ref-count-1.png" alt="python ref count" style="max-width: 70%; height: auto;" />
+      <img src="https://geekflare.com/cdn-cgi/image/width=1914,height=1191,fit=crop,quality=90,format=auto,onerror=redirect,metadata=none/wp-content/uploads/2023/11/ref-count-1.png" alt="python ref count" style="max-width: 70%; height: auto;" />
   </div>
+
+  </div>
+  </details>
 
 - How does a Python project (django or fastapi) start up? How is it run from scratch?
 
 - In Python, how does a request reach our service?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   1. **Client Request**<br>
   A client (such as a web browser or an API client) sends an HTTP request to your service. This request includes information such as the HTTP method (GET, POST, etc.), headers, and any payload data.
@@ -109,7 +134,14 @@ Skype
   8. **Client Receives Response**<br>
   Finally, the client receives the response and can process it accordingly, such as rendering a webpage or displaying data.
 
+  </div>
+  </details>
+
 - What is the difference between `is` and `==` in Python?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   The `is` operator checks for **identity**. <br>
   The `==` operator checks for **equality**.
@@ -124,7 +156,14 @@ Skype
   print(a == c)  # True, because a and c have the same content
   ```
 
+  </div>
+  </details>
+
 - We have two queries that are unrelated to each other. How do you run these and combine their data? Do you run one first and then the other or how?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   **Sequential Execution**: <br>
   Run the first query, then the second, and combine the results.
@@ -134,7 +173,6 @@ Skype
   This allows you to start both queries without waiting for the first to complete.
   Example:
   ```python
-  python
   import asyncio
 
   async def run_query1():
@@ -175,7 +213,14 @@ Skype
   }
   ```
 
+  </div>
+  </details>
+
 - We have a query that is too slow, how you try to fast it?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   1. **Analyze the Query Execution Plan** <br />
   Use `EXPLAIN`: Run the query with the `EXPLAIN` command (or `EXPLAIN ANALYZE` for more detailed output) to understand how the database engine executes the query. This will provide insights into which indexes are being used, join methods, and where potential bottlenecks lie.
@@ -194,7 +239,7 @@ Skype
   4. **Optimize Joins**<br />
   Check Join Conditions: Ensure that join conditions are using indexed columns.
   Limit the Number of Joins: If possible, reduce the number of joins or rearrange them to optimize performance.
-  Use `INNER JOIN` Instead of `OUTER JOIN`: If you don’t need all rows from both tables, prefer `INNER JOIN` as it can be more efficient.
+  Use `INNER JOIN` Instead of `OUTER JOIN`: If you don't need all rows from both tables, prefer `INNER JOIN` as it can be more efficient.
 
   5. **Use Query Caching**<br />
   Enable Query Caching: If your database supports it, enable query caching for frequently executed queries. This can significantly reduce execution time for repeated queries.
@@ -215,19 +260,48 @@ Skype
   10. **Review Application Logic**<br />
   Optimize Application Code: Sometimes, the issue may not be with the query itself but with how it is called from the application. Review the application logic to ensure that it is making efficient use of database queries.
 
+  </div>
+  </details>
+
 - Do you know ACID? What is A?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   Atomicity in ACID refers to the property that ensures a series of operations within a transaction are completed fully or not at all. If any part of the transaction fails, the entire transaction is rolled back, maintaining data integrity.
 
+  </div>
+  </details>
+
 - What is index in database?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   [atlassian](https://www.atlassian.com/data/databases/how-does-indexing-work)
 
+  </div>
+  </details>
+
 - Is the list that holds pointers for rows in the database during indexing a list or another type of data structure?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   No. Common data structures used for indexing are `B-Trees`, `Hash Tables`, `Bitmap Indexes` and `Inverted Indexes`.
 
+  </div>
+  </details>
+
 - Why shouldn't we index all columns? Doesn't it become faster?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
   1. **Increased Storage Requirements** <br />
   While having more space might seem beneficial, each index consumes additional disk space. For large databases, this can lead to significant storage overhead, especially if many indexes are created on various columns that may not be frequently queried.
 
@@ -246,31 +320,72 @@ Skype
   6. **Reduced Performance for Certain Queries** <br />
   Some queries may not benefit from additional indexes, particularly those that involve complex joins or aggregations. In such cases, the overhead of maintaining multiple indexes can outweigh the performance benefits, leading to slower overall query execution.
 
+  </div>
+  </details>
+
 - What is database isolation level?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   [geeksforgeeks](https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/)<br>
   [wikipedia](https://en.wikipedia.org/wiki/Isolation_(database_systems))
 
-- What level is the isolation level of your company’s database?
+  </div>
+  </details>
+
+- What level is the isolation level of your company's database?
 
 - The pod is not down, but you have an error (for example, error 500). How do you know where it comes from?
 
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
   With Sentry.
+
+  </div>
+  </details>
 
 - How do you determine if an application is slow, and how do you measure it?
 
-  With Graphana.
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
+  With Grafana.
+
+  </div>
+  </details>
 
 - What is the difference between multithreading and concurrency?
 
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
   [stackoverflow](https://stackoverflow.com/questions/4844637/what-is-the-difference-between-concurrency-parallelism-and-asynchronous-methods#:~:text=Concurrent%20and%20parallel,may%20not%20be.)
+
+  </div>
+  </details>
 
 - What is Docker?
 
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
   [docker](https://docs.docker.com/get-started/docker-overview/)
 
+  </div>
+  </details>
+
 - What is the difference between Docker and VMs?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   **Virtualization Approach**<br>
   _**VMs**_ virtualize the hardware, running a complete operating system on top of virtual hardware. Each VM has its own OS, libraries, and applications.<br>
@@ -288,7 +403,14 @@ Skype
   _**VMs**_ provide strong isolation between the host and guest OS.<br>
   _**Docker**_ provides process-level isolation between containers, but less isolation compared to VMs.
 
+  </div>
+  </details>
+
 - What features does Linux have that Docker uses for isolated and separate operating systems and for running multiple isolated operating systems?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   _**Namespaces**_<br>
   **Purpose**: Namespaces provide isolation for system resources, allowing Docker containers to have their own view of the system.<br>
@@ -303,7 +425,14 @@ Skype
   **Purpose**: Union file systems allow Docker to create a layered file system, where images can share common layers.<br>
   **Benefits**: This reduces disk space usage and improves efficiency, as multiple containers can share the same underlying image layers while maintaining their own changes.<br>
 
+  </div>
+  </details>
+
 - What is the difference between hashing and encryption?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   **Hashing**<br>
   **Purpose**: Hashing is primarily used for data integrity verification. It creates a fixed-size string (hash) from input data of any size, allowing for quick comparisons to verify that the data has not changed.<br>
@@ -318,23 +447,58 @@ Skype
   **Common Algorithms**: Examples of encryption algorithms include AES (Advanced Encryption Standard), RSA, and DES (Data Encryption Standard).<br>
   **Use Cases**: Encryption is used in secure communications, data protection, and secure storage solutions.<br>
 
+  </div>
+  </details>
+
 - What hashing algorithm do you use?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   SHA256
 
+  </div>
+  </details>
+
 - What is difference between RSA and AES?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   [geeksforgeeks](https://www.geeksforgeeks.org/difference-between-aes-and-rsa-encryption/)
 
+  </div>
+  </details>
+
 - If you have multiple users with the same password, resulting in identical hashes, and you want to ensure that their records in the database are unique, what can you do to make the records unique?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   Use Salted Hashes
 
+  </div>
+  </details>
+
 - What is difference between channel and connection in rabbitMQ?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   [rabbitmq](https://www.rabbitmq.com/docs/channels#:~:text=Some%20applications%20need,channels%20between%20them.)
 
+  </div>
+  </details>
+
 - We have a table with three fields: start time, end time and ID. This is too slow. How do you try to speed it up?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   [bennadel](https://www.bennadel.com/blog/3467-the-not-so-dark-art-of-designing-database-indexes-reflections-from-an-average-software-engineer.htm#:~:text=An%20index%20can,index%20provides%20them.)
 
@@ -342,10 +506,17 @@ Skype
       <img src="https://bennadel-cdn.com/resources/uploads/2018/database-index-design-index-basics2.png" alt="composite index" style="max-width: 70%; height: auto;" />
   </div>
 
+  </div>
+  </details>
+
 - We have two consumers and there are a hundred messages in the queue (RabbitMQ). The first one takes all of them. What should we do so that the second one also receives some?
 
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
   <div style="text-align: center;">
-    <img src="https://codeopinion.com/wp-content/uploads/2023/07/7-2-1024x271.png" alt="rabbitmq consumers  " style="max-width: 70%; height: auto;" />
+    <img src="https://codeopinion.com/wp-content/uploads/2023/07/7-2-1024x271.png" alt="rabbitmq consumers" style="max-width: 70%; height: auto;" />
   </div>
 
   Ensure that your consumers are configured to use fair dispatch. This means that RabbitMQ will distribute messages more evenly between consumers. You can achieve this by setting the prefetch count to a lower value, which allows each consumer to receive a limited number of messages at a time. For example:
@@ -356,7 +527,14 @@ Skype
 
   [rabbitmq](https://www.rabbitmq.com/docs/consumer-prefetch)
 
+  </div>
+  </details>
+
 - We execute a query for successful user transactions and send a message to RabbitMQ to trigger an SMS. What do you do if RabbitMQ is down?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   However, for this specific scenario, the [Outbox pattern](https://microservices.io/patterns/data/transactional-outbox.html) is indeed an excellent solution.<br>And you can:
   1. **Implement a retry mechanism**: <br>
@@ -376,24 +554,48 @@ Skype
   8. **Implement a dead letter queue**: <br>
   Messages that repeatedly fail to be published can be moved to a dead letter queue for later manual processing or investigation.
 
+  </div>
+  </details>
+
 - How you fix merge conflict?
 
 - What is difference between git Merge and Rebase?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   [coderefinery](https://coderefinery.github.io/git-branch-design/01-rebase/)<br>
   [codeparrot](https://codeparrot.ai/blogs/git-merge-vs-rebase)<br>
   [geeksforgeeks](https://www.geeksforgeeks.org/git-difference-between-merging-and-rebasing/)
 
+  </div>
+  </details>
+
 - What is fast-forward?
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
 
   [graphite](https://graphite.dev/guides/git-fast-forward-merge)<br>
   [atlassian](https://www.atlassian.com/git/tutorials/using-branches/git-merge#:~:text=A%20fast%2Dforward%20merge%20can,look%20something%20like%20the%20following%3A)
+
+  </div>
+  </details>
 
 - What was your git flow at your previous company?
 
 - Any questions?
 
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
   I want to know about your teams, your company, your state, and things like these.
+
+  </div>
+  </details>
 
 ### Score
 <h4><mark style="background-color:#54ca56">7/10</mark></h4>
