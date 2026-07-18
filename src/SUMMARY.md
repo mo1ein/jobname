@@ -35,6 +35,7 @@
     - [Snapp cab 2](./snapp/snapp_cab_2.md)
     - [Snapp Market Pro](./snapp/snapp_market_pro.md)
     - [Snapp shop](./snapp/snappshop.md)
+    - [Snapp shop front](./snapp/snapp-shop-front.md)
 - [Cpol](./cpol.md)
 - [Hermes](./hermes.md)
 - [Quiz of Kings](./QuizOfKings.md)
@@ -61,7 +62,13 @@
 - [Graph](./graph/graph.md)
 - [Gharar](./gharar.md)
 - [Toman Pay](./tomanpay/senior_backend_position.md)
+
+---
+
 - [Kharazmi](./dpkharazmi.md)
+- [Postex](./postex/postex-interview.md)
+- [Busnet](./busnet/busnet-interview.md)
+
 
 ---
 

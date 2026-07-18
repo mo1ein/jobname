@@ -101,3 +101,6 @@
 
 - [Toman Pay](src/tomanpay/senior_backend_position.md)
 - [Kharazmi](src/dpkharazmi.md)
+- [Postex](src/postex/postex-interview.md)
+- [SnappShop](src/snapp/snapp-shop-front.md)
+- [Busnet](src/busnet/busnet-interview.md)
