@@ -6,7 +6,7 @@
 ### Interview process
 ```mermaid
 flowchart LR
-    sr(Send resume) --> hr(HR call) --> ti(Technical Interview I) --> task(Task)--> ti2(Task Review) --rejected--x hr2(HR Interview) -.-> o(Offer)
+    sr(Send resume) --> hr(HR call) --> ti(Technical Interview I) --> ti2(Technical Interview II) --rejected--x hr2(HR Interview) -.-> o(Offer)
 ```
 
 ### Apply Way
@@ -23,6 +23,8 @@ jobinja
 - **Task**<br />1405.03.31
 
 - **Task Interview**<br />1405.04.06
+
+- **Rejection Email** <br /> 1405.04.08
 
 ### Interview Duration
 

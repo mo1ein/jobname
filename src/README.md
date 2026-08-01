@@ -35,6 +35,7 @@
 شرکت‌هایی که در سال ۱۴۰۵ باهاشون مصاحبه داشتم (داغ داغ):
 </p>
 
+- [780](./780/780.md)
 - [Tabdeal](./tabdeal/tabdeal.md)
 
 <p dir="rtl" class="border-bottom">
