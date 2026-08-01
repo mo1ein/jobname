@@ -327,7 +327,7 @@
 
   **1. The Core Algorithm: Tri-Color Mark-and-Sweep**
 
-  ![sv](./gc.svg)
+  ![sv](https://github.com/mo1ein/jobname/blob/main/src/780/gc.svg)
 
   Go uses a **concurrent tri-color mark-and-sweep** algorithm. 
 
