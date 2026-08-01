@@ -1,8 +1,8 @@
 # List of all questions
 
 
-**Total questions:** 345 <br />
-**Total unique questions:** 251
+**Total questions:** 360 <br />
+**Total unique questions:** 260
 
 <img src="assets/bullshit_everywhere_meme.jpg" alt="bullshit_everywhere_meme" style="display: block; max-width: 60%; width: 100%; height: auto; margin-left: auto; margin-right: auto; border-radius: 5px; margin-top: 5px;">
 
@@ -209,7 +209,7 @@
 
 - **We have a scenario that we have a goroutine and this goroutine wait for other goroutine how do you handle it? waitgroup.** (2 times — [MH Holding](https://mo1ein.github.io/jobname/mhholding.html#:~:text=We%20have%20a%20scenario%20that%20we%20have%20a%20goroutine%20and%20this%20goroutine%20wait%20for%20other%20goroutine%20how%20do%20you%20handle%20it%3F%20waitgroup.), [Ozone](https://mo1ein.github.io/jobname/ozone.html#:~:text=What%20is%20waitgroup%3F))
 
-- **What's difference between goroutine and thread?** (1 times — [Cloudzy](https://mo1ein.github.io/jobname/cloudzy/cloudzy.html#:~:text=What%27s%20difference%20between%20goroutine%20and%20thread%3F))
+- **What's difference between goroutine and thread?** (2 times — [Cloudzy](https://mo1ein.github.io/jobname/cloudzy/cloudzy.html#:~:text=What%27s%20difference%20between%20goroutine%20and%20thread%3F), [780](https://mo1ein.github.io/jobname/780/780.html#:~:text=What%27s%20the%20difference%20between%20a%20goroutine%20and%20an%20OS%20thread%3F))
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
@@ -313,7 +313,73 @@
 
 - **How do we use the encapsulation concept in Go?** (1 times — [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=How%20do%20we%20use%20the%20encapsulation%20concept%20in%20Go%3F))
 
-- **What is garbage collector?** (1 times — [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=What%20is%20garbage%20collector%3F))
+- **What is garbage collector?** (2 times — [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=What%20is%20garbage%20collector%3F), [780](https://mo1ein.github.io/jobname/780/780.html#:~:text=How%20does%20Go%27s%20garbage%20collector%20work%3F))
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
+  Go’s Garbage Collector (GC) is famously simple from a developer's perspective (you just let variables fall out of scope), but under the hood, it is a highly sophisticated, modern piece of engineering. 
+
+  Its primary design goal is **low latency**, meaning it aims to keep application pause times as short as possible (typically under 500 microseconds), rather than maximizing overall throughput.
+
+  Here is a breakdown of how Go’s GC works.
+
+  **1. The Core Algorithm: Tri-Color Mark-and-Sweep**
+
+  ![sv](./gc.svg)
+
+  Go uses a **concurrent tri-color mark-and-sweep** algorithm. 
+
+  Imagine every object in memory as a node in a giant web, connected by pointers. The GC's job is to start at "root" pointers (like global variables and local variables on your CPU stacks) and trace this web to find out what is still alive.
+
+  To do this concurrently without stopping your program, it colors objects three ways:
+
+  *   **White:** The object has not been visited yet. (At the end of the cycle, anything still white is garbage).
+  *   **Grey:** The object has been visited, but the GC hasn't yet checked the pointers *inside* this object to see what they point to. (Think of grey as the "to-do list").
+  *   **Black:** The object has been visited, and all the objects it points to have been successfully marked grey/black. (This object is definitively alive and fully processed).
+
+  **The Rule:** A black object must *never* be allowed to point directly to a white object. If that happens, the white object gets lost and becomes a memory leak.
+
+  **2. The Lifecycle of a GC Cycle**
+
+  A single GC cycle happens in four distinct phases. Two of these require briefly stopping your program (Stop-The-World, or STW), but they are incredibly fast.
+
+  1.  **Mark Start (STW - very brief):** 
+    The GC stops the program just long enough to scan the stacks and global variables. It turns everything those roots point to **Grey**, and turns the roots themselves **Black**.
+  2.  **Concurrent Marking (No pause):** 
+    The GC runs on dedicated background threads. It picks a **Grey** object, looks at the pointers inside it, and turns the objects it points to **Grey**. Once finished, it turns the original object **Black**. It repeats this until there are no Grey objects left. *Meanwhile, your application is running normally.*
+  3.  **Mark Termination (STW - very brief):** 
+    The GC stops the program again to clean up. It re-scans any stacks that might have changed during the concurrent phase, clears internal GC state, and prepares for the next step.
+  4.  **Concurrent Sweeping (No pause):** 
+    The GC runs in the background and walks through the memory pages. Any object that is still **White** is freed up and returned to the memory pool for future use.
+
+  **3. The Magic Trick: The Write Barrier**
+
+  If your program is running *while* the GC is coloring things, what happens if your program suddenly changes a pointer? 
+
+  For example: What if the GC just turned Object A **Black**, and then your program changes Object A to point to a brand new **White** object? This violates the core rule and means the new object would be mistakenly deleted.
+
+  Go solves this using a **Write Barrier**. 
+  The Go compiler secretly injects a tiny piece of code every time your program writes to a pointer. If the GC is currently in the concurrent marking phase, this write barrier intercepts the assignment. It ensures that if a Black object is forced to point to a White object, the White object is immediately turned Grey (added to the to-do list) so it doesn't get lost.
+
+  Go specifically uses a **Hybrid Write Barrier** (introduced in Go 1.8) which drastically reduced the length of the STW pauses by simplifying how stack rescanning works.
+
+  **4. What Go’s GC Does NOT Do (Common Misconceptions)**
+
+  *   **No Generational GC:** Languages like Java or V8 (JavaScript) use "generational" GCs, assuming that most objects die young (created and destroyed in milliseconds). They split the heap into "Young" and "Old" generations. **Go does not do this.** Go uses a unified heap. Why? Go's pointer-heavy structures (like slices and maps) and the way Go code is typically written didn't show a massive "die young" benefit, and a unified heap is much simpler to implement without introducing latency spikes.
+  *   **No Compaction (Moving objects):** Many GCs move surviving objects around in memory to pack them tightly together and prevent fragmentation. **Go does not move objects.** Once an object is allocated at a memory address, it stays there until it dies. This makes Go's GC much faster and simpler, but it means memory can become fragmented over time.
+
+  **5. How to Control It**
+
+  By default, Go triggers a GC cycle when the heap size **doubles**. You can tweak this using environment variables:
+
+  *   **`GOGC`**: The default is `100` (meaning 100% growth = doubling). If you set `GOGC=200`, the heap can grow by 300% before a GC triggers (less frequent GC, but higher memory usage). If you set `GOGC=50`, it triggers after 50% growth (more frequent GC, lower memory footprint).
+  *   **`GOMEMLIMIT`** (Introduced in Go 1.19): This is a hard upper limit on total memory (heap + off-heap + OS overhead). If Go approaches this limit, it will trigger GC as aggressively as possible to try and stay under the ceiling, preventing your app from being killed by the OS's Out-Of-Memory (OOM) killer. 
+
+  [bytebytego](https://bytebytego.com/guides/how-does-garbage-collection-work/)
+  </div>
+  </details>
 
 - **When should we use panic?** (3 times — 3x [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=When%20should%20we%20use%20panic%3F))
 
@@ -557,11 +623,45 @@
 
 - **If we want to know type of var in runtime, how can figure out?** (1 times — [Siz-tel](https://mo1ein.github.io/jobname/siztel/junior.html#:~:text=If%20we%20want%20to%20know%20type%20of%20var%20in%20runtime%2C%20how%20can%20figure%20out%3F))
 
+- **What is buffered and unbuffered channel in Go?** (1 times — [780](https://mo1ein.github.io/jobname/780/780.html#:~:text=What%20is%20buffered%20and%20unbuffered%20channel%20in%20Go%3F))
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
+  - **Unbuffered** `(make(chan T))` has zero capacity and requires both sender and receiver to be ready simultaneously—acting as a synchronous handoff.
+  - **Buffered** `(make(chan T, n))` has a fixed queue; senders block only when full, receivers block only when empty—acting as an asynchronous mailbox.
+
+
+    **Unbuffered** channels guarantee a synchronization point (safe for signaling), while **buffered** channels decouple goroutines for higher throughput.
+  Use **unbuffered** by default for simplicity and safety; use **buffered** only for known bursts or rate-limiting, and never guess the buffer size without benchmarking.
+
+  </div>
+  </details>
+
+- **What is a worker pool and what are its benefits?** (1 times — [780](https://mo1ein.github.io/jobname/780/780.html#:~:text=What%20is%20a%20worker%20pool%20and%20what%20are%20its%20benefits%3F))
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
+  - **Bounded resource usage** — you control exactly how many things run concurrently (e.g., match DB connection pool size).
+  - **Backpressure** — if the queue fills up, producers slow down or block, instead of the system falling over.
+  - **Reusability** — workers aren't recreated per task, avoiding goroutine/thread spin-up overhead.
+  - **Easier to reason about** — a known, fixed concurrency level makes load testing and capacity planning predictable.
+  - **Graceful shutdown** — you can close the job channel and sync.WaitGroup.Wait() for a clean drain.
+  </div>
+  </details>
+
+
+  </div>
+  </details>
+
 ### Database
 
 - **How do database index columns work?** (5 times — [Quiz of Kings](https://mo1ein.github.io/jobname/QuizOfKings.html#:~:text=How%20do%20database%20index%20columns%20work%3F), [Karnameh](https://mo1ein.github.io/jobname/karnameh.html#:~:text=How%20do%20database%20index%20columns%20work%3F), [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=How%20do%20database%20index%20columns%20work%3F), 2x [Snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=How%20do%20database%20index%20columns%20work%3F))
 
-- **What is ACID?** (5 times — 2x [Digikala](https://mo1ein.github.io/jobname/digikala/digikala.html#:~:text=What%20is%20ACID%3F), [Karnameh](https://mo1ein.github.io/jobname/karnameh.html#:~:text=What%20is%20ACID%3F), [MH Holding](https://mo1ein.github.io/jobname/mhholding.html#:~:text=What%20is%20ACID%3F), [Zibal](https://mo1ein.github.io/jobname/zibal/zibal.html#:~:text=What%20is%20ACID%3F))
+- **What is ACID?** (6 times — 2x [Digikala](https://mo1ein.github.io/jobname/digikala/digikala.html#:~:text=What%20is%20ACID%3F), [Karnameh](https://mo1ein.github.io/jobname/karnameh.html#:~:text=What%20is%20ACID%3F), [MH Holding](https://mo1ein.github.io/jobname/mhholding.html#:~:text=What%20is%20ACID%3F), [Zibal](https://mo1ein.github.io/jobname/zibal/zibal.html#:~:text=What%20is%20ACID%3F), [780](https://mo1ein.github.io/jobname/780.html#:~:text=What%20is%20ACID%3F))
 
   <details>
   <summary style="font-size:14px"><b><em>Answer</em></b></summary>
@@ -572,7 +672,7 @@
   </div>
   </details>
 
-- **Can you list and explain common database isolation levels and the trade-offs between them?** (3 times — [Doctoreto](https://mo1ein.github.io/jobname/doctoreto.html#:~:text=Can%20you%20list%20and%20explain%20common%20database%20isolation%20levels%20and%20the%20trade-offs%20between%20them%3F), 2x [Snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=Can%20you%20list%20and%20explain%20common%20database%20isolation%20levels%20and%20the%20trade-offs%20between%20them%3F))
+- **Can you list and explain common database isolation levels and the trade-offs between them?** (4 times — [Doctoreto](https://mo1ein.github.io/jobname/doctoreto.html#:~:text=Can%20you%20list%20and%20explain%20common%20database%20isolation%20levels%20and%20the%20trade-offs%20between%20them%3F), 2x [Snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=Can%20you%20list%20and%20explain%20common%20database%20isolation%20levels%20and%20the%20trade-offs%20between%20them%3F), [780](https://mo1ein.github.io/jobname/780/780.html#:~:text=Say%20some%20problems%20that%20one%20of%20the%20isolation%20levels%20solves.))
 
   <details>
     <summary style="font-size:14px"><b><em>Answer</em></b></summary>
@@ -588,7 +688,7 @@
 
 - **If our query is slow, how would you optimize it? What is your solution for this problem?** (3 times — [Hamkaran System](https://mo1ein.github.io/jobname/hamkaransystem/1402.html#:~:text=If%20our%20query%20is%20slow%2C%20how%20would%20you%20optimize%20it%3F%20What%20is%20your%20solution%20for%20this%20problem%3F), [Snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=We%20have%20a%20query%20that%20is%20too%20slow%2C%20how%20you%20try%20to%20fast%20it%3F), [Wallex](https://mo1ein.github.io/jobname/wallex/wallex1403.html#:~:text=We%20want%20to%20extract%20trading%20volumes%20based%20on%20daily%2C%20monthly%2C%20and%20yearly%20data.%20We%20have%20several%20rows%20that%20contain%20transactions%2C%20and%20our%20sum%20query%20is%20slow.%20How%20will%20you%20solve%20this%20problem%3F))
 
-- **If you want to design a database, how do you determine which technologies or approaches to use?** (2 times — [Quiz of Kings](https://mo1ein.github.io/jobname/QuizOfKings.html#:~:text=If%20you%20want%20to%20design%20a%20database%2C%20how%20do%20you%20determine%20which%20technologies%20or%20approaches%20to%20use%3F), [Digikala](https://mo1ein.github.io/jobname/digikala/digikala.html#:~:text=If%20you%20want%20to%20design%20a%20database%2C%20how%20do%20you%20determine%20which%20technologies%20or%20approaches%20to%20use%3F))
+- **If you want to design a database, how do you determine which technologies or approaches to use?** (3 times — [Quiz of Kings](https://mo1ein.github.io/jobname/QuizOfKings.html#:~:text=If%20you%20want%20to%20design%20a%20database%2C%20how%20do%20you%20determine%20which%20technologies%20or%20approaches%20to%20use%3F), [Digikala](https://mo1ein.github.io/jobname/digikala/digikala.html#:~:text=If%20you%20want%20to%20design%20a%20database%2C%20how%20do%20you%20determine%20which%20technologies%20or%20approaches%20to%20use%3F), [780](https://mo1ein.github.io/jobname/780/780.html#:~:text=How%20do%20you%20choose%20a%20database%20for%20this%20service%2C%20SQL%20or%20NoSQL%3F))
 
 
 - **When indexing is bad?** (2 times — [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=When%20indexing%20is%20bad%3F), [Snappshop](https://mo1ein.github.io/jobname/snapp/snappshop.html#:~:text=When%20indexing%20is%20bad%3F))
@@ -791,6 +891,20 @@
   </div>
   </details>
 
+- **What is a dirty read?** (1 times — [780](https://mo1ein.github.io/jobname/780/780.html#:~:text=What%20is%20a%20dirty%20read%3F))
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
+  A dirty read is a database error that happens when one transaction reads data changed by another transaction that has not finished or saved yet. If that first transaction cancels or rolls back its changes, the second transaction is left using data that never truly existed.
+  - Transaction A changes a value (like lowering item count from 10 to 9) but does not commit/save yet.
+  - Transaction B reads that new value (9) right before Transaction A finishes.
+  - Transaction A encounters an error and rolls back, resetting the value back to 10.
+  - Transaction B base their action on a false number (9), causing a dirty read error.
+  </div>
+  </details>
+
 ### System Design
 
 - **Microservices vs monolithic? How do you choose it when you want to start a project?** (3 times — [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=Microservices%20vs%20monolithic%3F%20How%20do%20you%20choose%20it%20when%20you%20want%20to%20start%20a%20project%3F), [Snapp Market Pro](https://mo1ein.github.io/jobname/snapp/snapp_market_pro.html#:~:text=Microservices%20vs%20monolithic), [Tabdeal](https://mo1ein.github.io/jobname/tabdeal/tabdeal.html#:~:text=When%20starting%20a%20new%20project%2C%20do%20you%20prefer%20a%20monolithic%20architecture%20or%20a%20microservices%20architecture%2C%20and%20why%3F))
@@ -839,7 +953,15 @@
 
 - **What is a matching engine in an exchange? Explain how it works.** (1 times — [Netbox](https://mo1ein.github.io/jobname/netbox/netbox.html#:~:text=What%20is%20a%20matching%20engine%20in%20an%20exchange%3F%20Explain%20how%20it%20works.))
 
-- **What is CAP theory?** (1 times — [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=What%20is%20CAP%20theory%3F))
+- **What is CAP theorem?** (2 times — [Snapp (cab 2)](https://mo1ein.github.io/jobname/snapp/snapp_cab_2.html#:~:text=What%20is%20CAP%20theory%3F), [780](https://mo1ein.github.io/jobname/780.html#:~:text=What%20is%20the%20CAP%20theorem%3F))
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
+  [Cap theorem - Wikipedia](https://en.wikipedia.org/wiki/CAP_theorem)
+  </div>
+  </details>
 
 - **How do you fix latency in microservices?** (1 times — [Snapp Market Pro](https://mo1ein.github.io/jobname/snapp/snapp_market_pro.html#:~:text=How%20do%20you%20fix%20latency%20in%20microservices%3F))
 
@@ -1083,6 +1205,99 @@
     </details>
 
 - **How would you design a project for scale? What challenges might you face at scale? How would you design the data pipeline and scraper at scale?** (1 times — [Visiwise](https://mo1ein.github.io/jobname/visiwise/visiwise.html#:~:text=How%20would%20you%20design%20a%20project%20for%20scale))
+
+- **Design a mobile top-up system where users can purchase prepaid credit by entering their phone number and selecting a mobile operator. Assume each operator exposes a set of APIs for processing top-ups. Walk through your system design and the end-to-end request flow.** (1 times — [780](https://mo1ein.github.io/jobname/780/780.html#:~:text=We%20have%20a%20scenario%3A%20we%20want%20to%20design%20a%20SIM%20charge%20purchase%20system%20where%20the%20user%20inputs%20a%20phone%20number%20and%20operator%2C%20and%20we%20have%20some%20endpoints%20for%20the%20operator.%20How%20do%20you%20design%20it%20and%20the%20overall%20flow%3F))
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
+  
+  **Step-by-step**
+
+  **1. Create the transaction**
+
+  Status: `pending`
+ 
+  ---
+
+  **2. Reserve the wallet balance**
+
+  - Don't deduct it yet.
+  - Move the amount from **available** to **reserved**.
+
+  Status: `FundsReserved`
+  
+
+  ---
+
+  **3. Publish `TopUpRequested`**
+
+  The worker processes the request asynchronously.
+
+  ---
+
+  **4. Call the operator**
+
+  If successful:
+
+  - Capture the reservation (permanently deduct the funds).
+  - Mark the transaction as `Completed`.
+
+  If failed:
+
+  - Release the reservation.
+  - Mark the transaction as `Failed`.
+
+  ---
+
+  **Why reserve instead of deduct immediately?**
+
+  Suppose the user has **$10** and buys a **$10** top-up.
+
+  If you deduct immediately and the operator later returns an error, you must issue a refund, which introduces extra complexity and can fail.
+
+  With reservations:
+
+  - The money is temporarily locked.
+  - It can't be spent twice.
+  - If the operator fails, you simply release the reservation.
+  - If the operator succeeds, you capture it.
+
+  This is the same pattern used by payment systems (authorization → capture).
+  </div>
+  </details>
+
+- **We get an error when buying a top-up from a third-party operator, for example, a timeout. How would you handle this?** (1 times — [780](https://mo1ein.github.io/jobname/780/780.html#:~:text=We%20got%20an%20error%20when%20buying%20charge%20from%20a%20third-party%20operator.%20How%20do%20you%20solve%20that%3F))
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
+  ```
+  Reserve Funds
+      │
+      ▼
+  Call Operator
+      │
+      ▼
+  Timeout
+  ```
+
+  You should not immediately release the reservation because the operator may have successfully processed the top-up but failed to send a response.
+
+  Instead:
+
+  1. Mark the transaction as `Pending`.
+  2. Retry or query the operator's status API (or wait for a webhook if available).
+  3. Only after receiving a definitive success or failure:
+
+  - Capture the reservation on success.
+  - Release the reservation on failure.
+
+  This avoids both charging the user without delivering the top-up and giving away a free top-up. This pattern is commonly used in payment and financial systems to ensure consistency across distributed services.
+  </div>
+  </details>
 
 ### Concurrency
 
@@ -1446,6 +1661,100 @@
   c.print_cache()
   ```
 
+  </div>
+  </details>
+
+- **You have n files (txt) and we want to remove duplicate files. How do you do it?** (1 times — [780](https://mo1ein.github.io/jobname/780/780.html#:~:text=You%20have%20n%20files%20%28txt%29%20and%20we%20want%20to%20remove%20duplicate%20files.%20How%20do%20you%20do%20it%3F))
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
+  **Part 1: Standard Scenario (Sufficient RAM)**
+  
+  When you have enough RAM, the primary goal is speed. We can leverage in-memory data structures to avoid unnecessary disk I/O.
+  
+  **The Algorithm**
+  
+  1. **Filter by Size:** Iterate through all `n` files and group them by their file size. If two files have different sizes, they absolutely cannot be duplicates. This eliminates the vast majority of files instantly with zero file-content reading.
+  2. **Hash the Content:** For files that share the same size, read their contents and calculate a cryptographic hash (e.g., SHA-256).
+  3. **Use a Hash Map:** Use an in-memory dictionary/hash map where the `Key` is the `SHA-256 hash` and the `Value` is a `list of file paths`.
+  4. **Resolve Duplicates:**
+     * If you compute a hash and it’s not in the map, add it.
+     * If the hash *is* already in the map, append the current file path to the value list.
+  5. **Delete:** Iterate through your hash map. For every key that has more than one file path in its list, keep the first file and delete the rest.
+  
+  **Complexity**
+  
+  * **Time Complexity:** O(N) where N is the total number of bytes across all files.
+  * **Space Complexity:** O(U) where U is the number of unique files (required to store the hash map and active file handles).
+  
+  </div>
+  </details>
+
+- **OK, you don't have enough RAM to read the files; you only have 20KB of RAM. What would you do?** (1 times — [780](https://mo1ein.github.io/jobname/780/780.html#:~:text=OK%2C%20you%20don%27t%20have%20enough%20RAM%20to%20read%20the%20files%3B%20you%20only%20have%2020KB%20of%20RAM.%20How%20do%20you%20do%20it%3F))
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
+  **Part 2: Constrained Scenario (Only 20KB RAM)**
+  
+  20KB of RAM is extremely restrictive. You cannot hold a standard hash map, nor can you hold a large list of file paths (a 100-character path string for 200 files already exceeds 20KB). 
+  
+  You must rely entirely on **External Sorting** and **Streaming (Chunking)**. This approach is similar to how classic Unix tools like `fdupes` operate under the hood, heavily optimized for disk rather than RAM.
+  
+  **Step 1: Group by Size using Disk**
+  
+  Since you cannot hold a map of `size -> [files]` in RAM, you offload this grouping to disk.
+  
+  1. Create a temporary text file (`sizes.txt`).
+  2. Read the directory. For each file, append `FileSize|FilePath\n` to `sizes.txt`. (This takes almost zero RAM).
+  3. Use an **External Sort** (e.g., a disk-based merge sort) to sort `sizes.txt` numerically by the file size. *Note: External sort only requires small sequential reads/writes of chunks into your 20KB RAM buffer.*
+  4. Iterate through the sorted `sizes.txt` sequentially. Any file with a unique size is immediately marked as "Keep". Group the paths of files with identical sizes into temporary "candidate lists" on disk.
+  
+  **Step 2: Progressive Chunking (No Hashing)**
+  
+  Why no hashing in this scenario? To hash a file, you must process every single byte of the file. If two 10GB files differ in the very first byte, reading and hashing the remaining 10GB is a massive waste of disk I/O.
+  
+  Instead, compare the candidate files byte-by-byte in small chunks that fit inside your 20KB RAM limit.
+  
+  Assume you have a group of 5 candidate files that are all exactly 1,000,000 bytes long:
+  
+  1. Open all 5 file handles simultaneously.
+  2. Allocate a small read buffer in your RAM (e.g., a 2KB character array).
+  3. Read the first 2KB from File 1 into Buffer A.
+  4. Read the first 2KB from File 2 into Buffer B and compare them.
+     * **If they differ:** Close File 2. It is unique. Remove it from the candidate group.
+     * **If they match:** Discard Buffer B, read File 3 into Buffer B, compare against Buffer A, and so on.
+  5. **RAM Check:** Comparing 5 files requires holding one 2KB "master" buffer and one 2KB "comparison" buffer at a time (4KB total). This easily fits in 20KB. (If the candidate group is massive, you might have to compare in sub-groups, but typically, groups of identical sizes are small).
+  6. Once you have compared the first 2KB of all candidates, discard the buffers, advance the file pointers, and repeat the process for the next 2KB chunk.
+  7. If you reach the End of File (EOF) and multiple files have matched perfectly across all chunks, **they are exact duplicates**.
+  
+  **Step 3: Delete**
+  
+  Keep the first file in the fully matched group, and issue OS-level delete commands for the rest.
+  </div>
+  </details>
+
+- **We have a file with a lot of names. How do you remove duplicate names?** (1 times — [780](https://mo1ein.github.io/jobname/780/780.html#:~:text=We%20have%20a%20file%20with%20a%20lot%20of%20names.%20How%20do%20you%20remove%20duplicate%20names%3F))
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+  
+  In-memory: Stream the file, use a hash set to track seen names, write only first occurrences — O(n) time, O(unique names) memory.
+  In go we can use `map`.
+  </div>
+  </details>
+
+- **Right! If we don't want to use memory, how do we solve it?** (1 times — [780](https://mo1ein.github.io/jobname/780/780.html#:~:text=Right%21%20If%20we%20don%27t%20want%20to%20use%20memory%2C%20how%20do%20we%20solve%20it%3F))
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
+  We just must use `O(n^2)` loop.
   </div>
   </details>
 
