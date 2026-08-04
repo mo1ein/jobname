@@ -103,7 +103,6 @@ Google Meet
   </details>
 
 - One service sends events to another service and retries, resulting in 3 duplicate events at the destination service. How can the second service handle this? For example, 3 identical buy order events.
-the answer is we check with uuid or request id ...
 
   <details>
   <summary style="font-size:14px"><b><em>Answer</em></b></summary>
