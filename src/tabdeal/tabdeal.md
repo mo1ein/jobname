@@ -3,6 +3,8 @@
 ### Status
 #### 📜📞🔧📝❌
 
+### Back-End Developer (Django)
+
 ### Interview process
 ```mermaid
 flowchart LR
