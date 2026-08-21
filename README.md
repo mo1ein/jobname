@@ -28,6 +28,7 @@
 شرکت‌هایی که در سال ۱۴۰۵ باهاشون مصاحبه داشتم (داغ داغ):
 </p>
 
+- [Yektanet](src/yektanet1405.md)
 - [780](src/780/780.md)
 - [Tabdeal](src/tabdeal/tabdeal.md)
 

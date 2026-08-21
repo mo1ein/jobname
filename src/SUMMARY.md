@@ -13,6 +13,7 @@
 
 
 # Companies
+- [Yektanet](./yektanet1405.md)
 - [780](./780/780.md)
 - [Tabdeal](./tabdeal/tabdeal.md)
 - [Visiwise](./visiwise/visiwise.md)
