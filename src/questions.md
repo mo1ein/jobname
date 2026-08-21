@@ -1,8 +1,8 @@
 # List of all questions
 
 
-**Total questions:** 360 <br />
-**Total unique questions:** 260
+**Total questions:** 361 <br />
+**Total unique questions:** 261
 
 <img src="assets/bullshit_everywhere_meme.jpg" alt="bullshit_everywhere_meme" style="display: block; max-width: 60%; width: 100%; height: auto; margin-left: auto; margin-right: auto; border-radius: 5px; margin-top: 5px;">
 
@@ -1617,6 +1617,44 @@
 - **We have this menu and there are task & subtasks. How you can traverse all items and access to each?** (1 times — [Sternx](https://mo1ein.github.io/jobname/sternx/sternx.html#:~:text=We%20have%20this%20menu%20and%20there%20are%20task%20%26%20subtasks.%20How%20you%20can%20traverse%20all%20items%20and%20access%20to%20each%3F))
 
 - **Math question: The market has reached a state where it has fallen 5 units, then after a while, it rises 1 unit, and this pattern has repeated. How can we predict the market for some time ahead (for example, a month)? How can we assess its probability? Do you have a solution?** (1 times — [Wallex](https://mo1ein.github.io/jobname/wallex/wallex1403.html#:~:text=Math%20question%3A%20The%20market%20has%20reached%20a%20state%20where%20it%20has%20fallen%205%20units%2C%20then%20after%20a%20while%2C%20it%20rises%201%20unit%2C%20and%20this%20pattern%20has%20repeated.%20How%20can%20we%20predict%20the%20market%20for%20some%20time%20ahead%20%28for%20example%2C%20a%20month%29%3F%20How%20can%20we%20assess%20its%20probability%3F%20Do%20you%20have%20a%20solution%3F))
+
+- **Split a string into maximum number of balanced substrings** (1 times — [Yektanet](https://mo1ein.github.io/jobname/yektanet1405.html#:~:text=Split%20a%20string%20into%20maximum%20number%20of%20balanced%20substrings))
+
+  <details>
+  <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+  <div>
+
+  ```python
+  def max_taraz(s: str):
+      counter = 0
+      result = []
+      current_char = ""
+      for ch in s:
+          if ch == "R":
+              counter += 1
+              current_char += ch
+          else:
+              counter -= 1
+              current_char += ch
+          if counter == 0:
+              result.append(current_char)
+              current_char = ""
+
+      return result
+
+
+  # RLRRLLRLRL -> RL, RRLL, RL, RL
+  # RLRRRLLRLL -> RL, RRRLLRLL
+  s1 = "RLRRLLRLRL"
+  s2 = "RLRRRLLRLL"
+  s3 = ""
+  a = max_taraz(s1)
+  b = max_taraz(s2)
+  c = max_taraz(s3)
+  print(a, b, c)
+  ```
+  </div>
+  </details>
 
 - **Implement an LRU Cache in 20 mins.** (1 times — [Tabdeal](https://mo1ein.github.io/jobname/tabdeal/tabdeal.html#:~:text=Implement%20an%20LRU%20Cache%20in%2020%20mins.))
 
